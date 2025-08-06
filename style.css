@@ -1,0 +1,61 @@
+*{
+ padding: 5px;
+  margin: 0px;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo{
+    width:50px;
+    padding:10px;
+}
+.nav-items ul {
+    display:flex;
+   
+}
+.nav-items ul li{
+    font-size: 24px;
+    padding:10px;
+    margin:10px;
+    list-style-type: none;
+}
+.res-cards{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+   
+   
+}
+.cards{
+    width:200px;
+    height:300px;
+    /* border:1px solid black; */
+    background-color: rgb(250, 233, 212);
+   /* text-align: center; */
+   padding:5px;
+   margin-bottom: 10px;
+   cursor: pointer;
+ 
+  
+}
+.cards:hover{
+    border:1px solid black;
+}
+.search{
+    padding:10px;
+}
+.card-logo{
+    width:98%;
+    height:50%;
+   
+  
+}
+.filter-btn{
+    margin-top:10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+
+}

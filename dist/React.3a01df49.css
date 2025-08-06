@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 5px;
+}
+
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 50px;
+  padding: 10px;
+}
+
+.nav-items ul {
+  display: flex;
+}
+
+.nav-items ul li {
+  margin: 10px;
+  padding: 10px;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.res-cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+.cards {
+  cursor: pointer;
+  background-color: #fae9d4;
+  width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.cards:hover {
+  border: 1px solid #000;
+}
+
+.search {
+  padding: 10px;
+}
+
+.card-logo {
+  width: 98%;
+  height: 50%;
+}
+
+.filter-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=React.3a01df49.css.map */
