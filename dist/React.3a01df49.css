@@ -35,7 +35,7 @@
   cursor: pointer;
   background-color: #fae9d4;
   width: 200px;
-  height: 300px;
+  height: 400px;
   margin-bottom: 10px;
   padding: 5px;
 }
@@ -57,5 +57,25 @@
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.shimmer-container {
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: gray;
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+}
+
+.login {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.filter {
+  display: flex;
 }
 /*# sourceMappingURL=React.3a01df49.css.map */
