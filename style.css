@@ -78,3 +78,6 @@
 .filter{
    display: flex;
 }
+.user-card{
+    border: 2px solid black;
+}
