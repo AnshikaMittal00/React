@@ -2,16 +2,16 @@ import ResCard from "./ResCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./shimmer";
 const Body = () => {
-  const [List, setList] = useState([]);
+  const [List, setList] = useState([]); //useState runs on the initial render of component 
   const [filteredRes,setfilteredRes]=useState([]);
   const [searchText, setsearchText]=useState([]);
 
-  useEffect(() => {
+  useEffect(() => { // useEffect run once the component is initial rendered 
     fetchData();
   }, []);
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://corsproxy.io/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
     const restaurants =
@@ -19,6 +19,7 @@ const Body = () => {
         ?.restaurants;
 
     setList(restaurants);
+    setfilteredRes(restaurants);
   };
   return (List.length === 0) ?
     (
@@ -38,10 +39,10 @@ const Body = () => {
             />
             <button 
             onClick={()=>{
-            const filteredList= List.filter((res)=>{
-                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
-               })
-               setList(filteredList);
+            const filteredList= List.filter((res)=>
+               res.info.name.toLowerCase().includes(searchText.toLowerCase())
+               );
+               setfilteredRes(filteredList);
             }}
             
             >search</button>
@@ -50,14 +51,14 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const filtered = List.filter((res) => res.info.avgRating > 4);
-            setList(filtered);
+            setfilteredRes(filtered);
           }}
         >
           Top-Rated Restaurants
         </button>
       </div>
       <div className="res-cards">
-        {List.map((res) => (
+        {filteredRes.map((res) => (
           <ResCard key={res.info.id} resData={res} />
         ))}
       </div>
