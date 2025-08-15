@@ -80,4 +80,21 @@
 }
 .user-card{
     border: 2px solid black;
+    margin-top: 20px;
+}
+.category{
+ display: flex;
+}
+.button{
+    margin: 5px;
+    border:rgb(227, 217, 217) 1px solid;
+    background: transparent;
+    border-radius: 15%;
+    cursor: pointer;
+}
+.button.veg {
+  border: 2px solid rgb(53, 154, 53); 
+}
+.button.non-veg{
+ border: 2px solid rgb(246, 42, 11);
 }
