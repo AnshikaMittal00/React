@@ -1,80 +1,84 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import Shimmer from "./shimmer";
 import { useParams } from "react-router-dom";
-import { Menu_URL } from "../utils/constants";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const Menu = () => {
-    const [isClicked, setisClicked] = useState(false);
-    const [NClicked, setNClicked] = useState(false);
-    const [menuInfo, setMenuInfo] = useState(null);
-    const [filtered, setFiltered] = useState(null); // Initialized with null
-    const { resId } = useParams();
+  // 1. Correctly initialize filter state with booleans
+  const [filters, setFilters] = useState({
+    isVeg: false,
+    isNonveg: false,
+    isBestseller: false,
+  });
 
-    useEffect(() => {
-        fetchMenu();
-    }, []);
+  const { resId } = useParams();
+  const [menuInfo, allItems] = useRestaurantMenu(resId);
 
-    const fetchMenu = async () => {
-        const data = await fetch(Menu_URL + resId);
-        const json = await data.json();
-        const cards = json?.data?.cards;
-        setMenuInfo(cards);
+  while (menuInfo === null) return <Shimmer />;
 
-        const initialItems = cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card?.card?.itemCards;
-        setFiltered(initialItems);
-    };
+  const { name, cuisines, costForTwoMessage } = menuInfo[2]?.card?.card?.info;
 
-    if (menuInfo === null) return <Shimmer />;
+  const handleFilterClick = (filterName) => {
+    setFilters((prev) => ({
+      ...prev,
+      [filterName]: !prev[filterName],
+    }));
+  };
 
-    const { name, cuisines, costForTwoMessage } = menuInfo[2]?.card?.card?.info;
-    
-    const allItems = menuInfo[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card?.card?.itemCards;
-    
-    // Logic to reset filters when buttons are unclicked
-    const handleVegClick = () => {
-        setisClicked(prev => !prev);
-        if (!isClicked) {
-            const vegItems = allItems.filter(item => item.card.info.isVeg === 1);
-            setFiltered(vegItems);
-        } else {
-            setFiltered(allItems);
-        }
-    };
-    
-    const handleNonVegClick = () => {
-        setNClicked(prev => !prev);
-        if(!NClicked){
-            const nonVegItems = allItems.filter(item => item.card.info.isVeg !== 1);
-            setFiltered(nonVegItems);
-        } else {
-            setFiltered(allItems);
-        }
-    };
+  let filteredList = allItems.filter((item) => {
+    const info = item?.card?.info;
 
-    return (
-        <div className="menu">
-            <h1>{name}</h1>
-            <h3>{cuisines.join(",")}</h3>
-            <h3>{costForTwoMessage}</h3>
-            <div className="category">
-                <button 
-                    className={`button ${isClicked ? "veg" : ""}`}
-                    onClick={handleVegClick}>
-                    Veg
-                </button>
-                <button
-                    className={`button ${NClicked ? "non-veg" : ""}`}
-                    onClick={handleNonVegClick}>
-                    Non-Veg
-                </button>
-            </div>
-            {filtered && filtered.map(res =>
-                <ul key={res.card.info.id}>
-                    <li>{res.card.info.name} - {"Rs."}{res.card.info.price / 100}</li>
-                </ul>
-            )}
-        </div>
-    );
+    const vegCondition = filters.isVeg ? info?.isVeg === 1 : true;
+    const nonVegCondition = filters.isNonveg ? info?.isVeg !== 1 : true;
+    const bestSellerCondition = filters.isBestseller
+      ? info?.ratings?.aggregatedRating?.rating > 4
+      : true;
+
+    return vegCondition && nonVegCondition && bestSellerCondition;
+  });
+
+  return (
+    <div className="menu">
+      <div className="info">
+        <h1>{name}</h1>
+        <h3>{cuisines.join(",")}</h3>
+        <h3>{costForTwoMessage}</h3>
+      </div>
+
+      <div className="category">
+        <button
+          className={`button ${filters.isVeg ? "veg" : ""}`}
+          onClick={() => handleFilterClick("isVeg")}
+        >
+          Veg
+        </button>
+        <button
+          className={`button ${filters.isNonveg ? "non-veg" : ""}`}
+          onClick={() => handleFilterClick("isNonveg")}
+        >
+          Non-Veg
+        </button>
+        <button
+          className={`button ${filters.isBestseller ? "Bestseller" : ""}`}
+          onClick={() => handleFilterClick("isBestseller")}
+        >
+          Bestseller
+        </button>
+      </div>
+      {filteredList.length > 0 ? (
+        filteredList.map((res) => (
+          <ul key={res.card.info.id}>
+            <li>
+              {res.card.info.name} - {"Rs."}
+              {res.card.info.price / 100}
+            </li>
+          </ul>
+        ))
+      ) : (
+        <p>No items found for the selected filters.</p>
+      )}
+    </div>
+  );
 };
 
 export default Menu;

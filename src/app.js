@@ -6,7 +6,12 @@ import About from "./components/about";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Menu from "./components/Menu";
+import{lazy,Suspense} from "react";
+import Shimmer from "./components/shimmer";
+// import Grocery from "./components/Grocery";
+ const Grocery =lazy(()=>import("./components/Grocery")) // ondemand Loading
 const AppLayout = () => {
+ 
   return (
     <div className="app">
       <Header />
@@ -35,6 +40,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/menu/:resId",
         element: <Menu />,
+      },
+      {
+        path: "/grocery",
+        element: <Suspense fallback={
+          <Shimmer/>
+        }><Grocery /></Suspense>,
       },
     ],
     errorElement: <Error />,
