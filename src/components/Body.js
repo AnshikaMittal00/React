@@ -44,16 +44,16 @@ const Body = () => {
     )
   :(
     <div className="body">
-      <div className="filter">
-        <div className="search">
-            <input type="text" className="search-Box" 
+      <div className="filter flex">
+        <div className="search m-4 p-4">
+            <input type="text" className="border border-solid border-black" 
             value={searchText} 
             onChange={(e)=>{
                setsearchText(e.target.value);
             }
           }
             />
-            <button 
+            <button className="px-2 py-2 m-2 bg-pink-100 rounded-lg hover:shadow-lg transition-shadow duration-300  active:bg-pink-300"
             onClick={()=>{
             const filteredList= List.filter((res)=>
                res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -64,11 +64,14 @@ const Body = () => {
             
             >search</button>
         </div>
-         <button className="filter-btn" onClick={filterTopRated}>
+        <div className="search m-2 p-2 flex items-center" >
+          <button className="bg-pink-100 px-2 py-2 rounded-lg hover:shadow-lg transition-shadow duration-300 active:bg-pink-300" onClick={filterTopRated}>
           Top-Rated Restaurants
         </button>
+        </div>
+         
       </div>
-      <div className="res-cards">
+      <div className="flex flex-wrap gap-2">
         {filteredRes.map((res) => (
          <Link  key={res.info.id} to={"/menu/"+res.info.id} className="link"> 
          <ResCard  resData={res} />

@@ -1,42 +1,17 @@
-import {useState } from "react";
+import { useState } from "react";
 import Shimmer from "./shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
+import useRestaurantCategory from "../utils/useRestaurantCategory";
 
 const Menu = () => {
-  // 1. Correctly initialize filter state with booleans
-  const [filters, setFilters] = useState({
-    isVeg: false,
-    isNonveg: false,
-    isBestseller: false,
-  });
-
   const { resId } = useParams();
   const [menuInfo, allItems] = useRestaurantMenu(resId);
-
+  const [filteredList, filters, handleFilterClick] =
+    useRestaurantCategory(allItems);
   while (menuInfo === null) return <Shimmer />;
 
   const { name, cuisines, costForTwoMessage } = menuInfo[2]?.card?.card?.info;
-
-  const handleFilterClick = (filterName) => {
-    setFilters((prev) => ({
-      ...prev,
-      [filterName]: !prev[filterName],
-    }));
-  };
-
-  let filteredList = allItems.filter((item) => {
-    const info = item?.card?.info;
-
-    const vegCondition = filters.isVeg ? info?.isVeg === 1 : true;
-    const nonVegCondition = filters.isNonveg ? info?.isVeg !== 1 : true;
-    const bestSellerCondition = filters.isBestseller
-      ? info?.ratings?.aggregatedRating?.rating > 4
-      : true;
-
-    return vegCondition && nonVegCondition && bestSellerCondition;
-  });
-
   return (
     <div className="menu">
       <div className="info">
