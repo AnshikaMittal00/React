@@ -30,5 +30,17 @@ const ResCard = (props) => {
         </div>
     );
 };
+ export const Popular=(ResCard)=>{
+    return(props)=>{
+         return(
+      <div>
+        <label className="absolute bg-black text-white m-2 p-2  rounded-2xl  ">Popular</label>
+        <ResCard {...props}/>
+      </div>
+    )
+
+    }
+   
+}
 
 export default ResCard;

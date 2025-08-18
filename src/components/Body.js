@@ -1,4 +1,4 @@
-import ResCard from "./ResCard";
+import ResCard ,{Popular}from "./ResCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
@@ -8,7 +8,9 @@ const Body = () => {
   const [List, setList] = useState(""); //useState runs on the initial render of component 
   const [filteredRes,setfilteredRes]=useState([]);
   const [searchText, setsearchText]=useState("");
-    const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const PopularRescard=Popular(ResCard);
+
 
   useEffect(() => { // useEffect run once the component is initial rendered 
     fetchData();
@@ -22,6 +24,7 @@ const Body = () => {
 
     setList(restaurants);
     setfilteredRes(restaurants);
+    // console.log(json);
   };
  const onlineStatus=useOnlineStatus();
  if(onlineStatus===false) return (
@@ -44,8 +47,8 @@ const Body = () => {
     )
   :(
     <div className="body">
-      <div className="filter flex">
-        <div className="search m-4 p-4">
+      <div className="flex flex-col md:flex-row">
+        <div className="search m-2 p-2 ">
             <input type="text" className="border border-solid border-black" 
             value={searchText} 
             onChange={(e)=>{
@@ -74,7 +77,10 @@ const Body = () => {
       <div className="flex flex-wrap gap-2">
         {filteredRes.map((res) => (
          <Link  key={res.info.id} to={"/menu/"+res.info.id} className="link"> 
-         <ResCard  resData={res} />
+          {
+            res.info.avgRating > 4.3 ? <PopularRescard resData={res}/>: <ResCard resData={res}/>
+          }
+        
          </Link>
         ))}
       </div>
