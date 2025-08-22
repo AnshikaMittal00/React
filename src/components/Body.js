@@ -4,13 +4,15 @@ import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
 import { Res_URL } from "../utils/constants";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext.js";
+import { useContext } from "react";
 const Body = () => {
   const [List, setList] = useState(""); //useState runs on the initial render of component 
   const [filteredRes,setfilteredRes]=useState([]);
   const [searchText, setsearchText]=useState("");
   const [isLoading, setIsLoading] = useState(false);
   const PopularRescard=Popular(ResCard);
-
+   const {setuserInfo,loggedInUser}=useContext(UserContext);
 
   useEffect(() => { // useEffect run once the component is initial rendered 
     fetchData();
@@ -72,6 +74,12 @@ const Body = () => {
           Top-Rated Restaurants
         </button>
         </div>
+        {/* <div>
+          <label>UserName:</label>
+          <input className="border border-black p-2" value={loggedInUser} onChange={(e)=>setuserInfo(e.target.value)
+
+          }></input>
+        </div> */}
          
       </div>
       <div className="flex flex-wrap gap-2">

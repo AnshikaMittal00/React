@@ -21,13 +21,13 @@ const NestedCategory = ({ data }) => {
         <span className="font-semibold text-base">
           {data.title} ({data?.itemCards?.length || 0})
         </span>
-        <span>{isOpen ? '🔼' : '🔽'}</span> 
+        <span className="cursor-pointer">{isOpen ? '🔼' : '🔽'}</span> 
       </div>
 
      
       {isOpen && data.itemCards && (
         <div className="mt-2">
-          <ItemList items={data.itemCards} type={"nested"} />
+          <ItemList items={data.itemCards}  />
         </div>
       )}
     </div>

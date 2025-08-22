@@ -1,13 +1,16 @@
 import { LOGO_URL } from "../utils/constants";
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useOnlineStatus from "../utils/useOnlineStatus";
-
+import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 const Header = () => {
     const onlineStatus = useOnlineStatus();
     const [btn, setBtn] = useState("Login");
     const [isOpen, setIsOpen] = useState(false);
-
+     const data=useContext(UserContext);
+     console.log(data);
+     const cart=useSelector((store)=>store.cart.items);
     return (
         <header className="bg-pink-100 text-black p-4">
             <div className="container mx-auto flex justify-between items-center relative">
@@ -30,7 +33,7 @@ const Header = () => {
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
                     <li><Link to="/grocery">Grocery</Link></li>
-                    <li><Link to="/cart">Cart</Link></li>
+                    <li><Link to="/cart">Cart({cart.length})</Link></li>
                     <li>
                         <button
                             className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
@@ -50,7 +53,8 @@ const Header = () => {
                         <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
                         <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link></li>
                         <li><Link to="/grocery" onClick={() => setIsOpen(false)}>Grocery</Link></li>
-                        <li><Link to="/cart" onClick={() => setIsOpen(false)}>Cart</Link></li>
+                        <li><Link to="/cart" onClick={() => setIsOpen(false)}>Cart({cart.length})</Link></li>
+                        <li>{data.loggedInUser}</li>
                         <li>
                             <button
                                 className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
