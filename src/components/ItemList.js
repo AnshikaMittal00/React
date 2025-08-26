@@ -1,10 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
 import { IMG_URL } from "../utils/constants";
-import { addItems, removeItem } from "../utils/cartSlice";
+import { addItems, removeItem,clearCart } from "../utils/cartSlice";
 
-const ItemList = ({ items }) => {
+
+const ItemList = ({ items,sla,resId }) => {
+  
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.cart.items);
+  const cartRestaurant=useSelector((store)=>store.cart.Restaurant);
+ 
+  
 
   
   const getCartItemCount = (itemId) => {
@@ -13,8 +18,19 @@ const ItemList = ({ items }) => {
   };
 
   const handleAddItem = (item) => {
-   
-    dispatch(addItems({ ...item, id: item.card.info.id }));
+    if(cartRestaurant&& cartRestaurant.id!== resId){
+      if(window.confirm("you have items from another restaurant. Do you want to clear your cart and start a new order?"))
+   {
+    dispatch(clearCart());
+   }
+   else{
+    return;
+   }
+ }
+    
+    dispatch(addItems({
+      item:{...item, id: item.card.info.id},
+      restaurant:{id:resId, deliveryTime: sla.deliveryTime}  }));
   };
 
   const handleRemoveItem = (item) => {

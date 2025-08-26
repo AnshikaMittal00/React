@@ -1,16 +1,19 @@
 import { useState } from "react";
 import NestedCategory from "./NestedCategory";
 import ItemList from "./ItemList";
+import {MenuShimmer} from "./shimmer";
+import { useParams } from "react-router-dom";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 const RestaurantCategory=({data,showItems,showIndex})=>{
-    // const [isOpen,setisOpen]=useState(false);
-   
-    // console.log(data);
+  const {resId}=useParams();
+  const [menuInfo]=useRestaurantMenu(resId);
+  if (!menuInfo || menuInfo.length === 0) {
+    return <MenuShimmer/>; 
+  }
+  const {sla}=menuInfo[2]?.card?.card?.info;
     const handleClick = () => {
         showIndex();
     };
-    //  const toggle = () => {
-    //     setnestedOpen(!nestedOpen); 
-    // };
      return(
         <div>
         <div className="w-[90%] mx-auto my-4  bg-gray-50 shadow-lg p-4 "  >
@@ -20,7 +23,7 @@ const RestaurantCategory=({data,showItems,showIndex})=>{
               </div>
         
             <div>
-                {showItems&&data.itemCards&&( <ItemList items={data.itemCards}/>)}
+                {showItems&&data.itemCards&&( <ItemList items={data.itemCards} sla={sla} resId={resId}/>)}
             </div>
             
            

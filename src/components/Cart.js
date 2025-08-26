@@ -4,6 +4,7 @@ import { clearCart } from "../utils/cartSlice.js";
 import BillSummary from "./BillSummary";
 import Address from "./Address.js";
 import { Link } from "react-router-dom";
+import Payment from "./Payment.js";
 const Cart=()=>{
 
     const cartItems=useSelector((store)=>store.cart.items);
@@ -32,6 +33,7 @@ const Cart=()=>{
           <div>
              <Address />
             <BillSummary />
+            <Payment/>
            
             <div className="flex my-4 mx-2 space-x-2">
                  <button 

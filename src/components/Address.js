@@ -27,7 +27,7 @@ const Address=()=>{
                     </button>
                 </div>
             ) : (
-                <button onClick={() => setIsModalOpen(true)} className="w-full bg-pink-100 text-pink-600 py-3 px-4 rounded-lg hover:bg-pink-700 hover:text-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 transition-transform transform hover:scale-90">
+                <button onClick={() => setIsModalOpen(true)} className="w-full bg-pink-100 text-pink-600 py-3 px-4 rounded-lg hover:bg-pink-800 hover:text-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 transition-transform transform hover:scale-110">
                     Select An Address
                 </button>
             )}

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import UseAnimatedCheckmark from '../utils/useAnimatedCheckMark';
-
+import { useSelector } from 'react-redux';
 
 const OrderPlaced = () => {
   const [visible, setVisible] = useState(false);
-
+  const cartRestaurant=useSelector((store)=>store.cart.Restaurant);
+   
  
   useEffect(() => {
     
@@ -16,11 +17,11 @@ const OrderPlaced = () => {
 })
 
   return (
-    <div className="flex  justify-center mt-[40%] font-sans">
+    <div className="flex  justify-center mt-[20%]  md:mt-[10%] font-sans">
       <div 
         className={`
-          p-8 bg-white rounded-2xl shadow-2xl text-center
-          transition-all duration-700 ease-out
+          p-8 rounded-2xl shadow-2xl text-center
+          transition-all duration-700 ease-out  bg-pink-100 
           ${visible ? 'transform scale-100 opacity-100' : 'transform scale-90 opacity-0'}
         `}
       >
@@ -43,7 +44,7 @@ const OrderPlaced = () => {
             ${visible ? 'opacity-100' : 'opacity-0'}
           `}
         >
-          Thank you for your purchase.
+          Thank you for your purchase.Your order will be delivered in {cartRestaurant.deliveryTime} minutes
         </p>
       </div>
     </div>

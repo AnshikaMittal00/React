@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Shimmer from "./shimmer";
+import {MenuShimmer} from "./shimmer";
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
@@ -13,9 +13,9 @@ const Menu = () => {
   const[showItems,setshowItems]=useState(null);
   const [filteredList, filters, handleFilterClick] =
     useRestaurantCategory(allItems);
-  while (menuInfo === null) return <Shimmer />;
+  while (menuInfo === null) return <MenuShimmer/>;
 
-  const { name, cuisines, costForTwoMessage } = menuInfo[2]?.card?.card?.info;
+  const { name, cuisines, costForTwoMessage,sla } = menuInfo[2]?.card?.card?.info;
  
   return (
     <div className="">

@@ -7,24 +7,28 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Menu from "./components/Menu";
 import{lazy,Suspense, useEffect,useState} from "react";
-import Shimmer from "./components/shimmer";
+import {HomeShimmer} from "./components/shimmer";
 import UserContext from "./utils/UserContext.js";
 import {Provider} from "react-redux";
 import appStore from "./utils/appStore.js";
 import Cart from "./components/Cart.js";
 import OrderPlaced from "./components/OrderPlaced.js";
+import useOnlineStatus from "./utils/useOnlineStatus.js";
+import OfflinePage from "./components/OfflinePage.js";
+import ThemeManager from "./components/ThemeManager.js";
+import LoginRegister from "./components/LoginRegister.js";
 // import Grocery from "./components/Grocery";
- const Grocery =lazy(()=>import("./components/Grocery")) // ondemand Loading
+ const Grocery =lazy(()=>import("./components/Grocery")) 
+ // ondemand Loading
 const AppLayout = () => {
+  const online=useOnlineStatus();
   const [userInfo,setuserInfo]=useState([]);
   const [time,settime]=useState([]);
   useEffect(()=>{
    const data={
          name:"Anshika Mittal",
-         time:"10 minutes"
     };
     setuserInfo(data.name);
-    settime(data.time);
      
   },[])
 
@@ -32,10 +36,11 @@ const AppLayout = () => {
  
   return (
     <Provider  store={appStore}>
-       <UserContext.Provider value={{loggedInUser:userInfo,setuserInfo,time:time,settime}}>
-       <div className="app">
+       <UserContext.Provider value={{loggedInUser:userInfo,setuserInfo}}>
+        <ThemeManager/>
+       <div className="bg-white text-black  bg-background text-text-primary">
       <Header />
-      <Outlet />
+      { online ? <Outlet /> : <OfflinePage status={online}/> }
     </div>
     </UserContext.Provider>
    
@@ -68,7 +73,7 @@ const appRouter = createBrowserRouter([
       {
         path: "/grocery",
         element: <Suspense fallback={
-          <Shimmer/>
+          <HomeShimmer/>
         }><Grocery /></Suspense>,
       },
        {
@@ -78,6 +83,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/order",
         element: <OrderPlaced />,
+      },
+      {
+        path: "/login",
+        element: <LoginRegister />,
       },
     ],
     errorElement: <Error />,
