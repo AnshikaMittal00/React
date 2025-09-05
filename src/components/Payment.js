@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
-// Helper component for the radio button options
+
 const PaymentOption = ({ value, checked, onChange, children }) => (
   <label className="flex items-center cursor-pointer p-3 rounded-lg hover:bg-pink-50 transition-colors">
     <input
@@ -17,57 +19,75 @@ const PaymentOption = ({ value, checked, onChange, children }) => (
 
 const Payment = () => {
   const [paymentMethod, setPaymentMethod] = useState("");
-  // State to control the visibility of the payment options
-  const [showOptions, setShowOptions] = useState(false);
+  const [showOptions, setShowOptions] = useState(true);
 
-  const handleSelectMethod = (method) => {
-    setPaymentMethod(method);
-    setShowOptions(false); // Hide options after selection
+  const cartItems = useSelector((store) => store.cart.items);
+  const navigate = useNavigate();
+
+
+    const totalAmount=()=>{
+        return cartItems.reduce((total,item)=>{
+          const price=(item?.card?.info?.defaultPrice || 0);
+          const count=item.count;
+          return total+(price*count) ;
+        },0);}
+  const handleContinue = () => {
+    if (!paymentMethod) {
+      alert("Please select a payment method first.");
+      return;
+    }
+  
+    navigate("/checkout", { state: { paymentMethod, totalAmount: totalAmount() } });
   };
 
   return (
-    <div className=" px-1">
-        <div className="my-3 p-4  rounded-md bg-gray-50 shadow-md w-full  ">
-      {/* This is the main button that is always visible */}
+    <div className="my-6 p-4 rounded-lg bg-white shadow-md w-full  mx-auto">
       <button
         onClick={() => setShowOptions(!showOptions)}
-        className="w-full flex justify-between items-center p-2 rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors"
+        className="w-full flex justify-between items-center p-3 rounded-lg bg-pink-100 hover:bg-pink-800 transition-colors"
       >
         <h2 className="font-semibold text-md text-pink-600">
-          {paymentMethod === "" ? "Select Payment Method" : paymentMethod}
+          {paymentMethod === "" ? "Select Payment Method" : `Selected: ${paymentMethod}`}
         </h2>
-        {/* Chevron icon that rotates based on state */}
-        <svg 
-          className={`w-6 h-6 text-pink-600 transition-transform duration-300 ${showOptions ? 'transform rotate-180' : ''}`} 
-          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+        <svg
+          className={`w-6 h-6 text-pink-600 transition-transform duration-300 ${showOptions ? "transform rotate-180" : ""}`}
+          fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
         </svg>
       </button>
 
-      {/* This div contains the options and is shown/hidden based on state */}
       {showOptions && (
         <div className="mt-3 border-t pt-3 space-y-2">
           <PaymentOption
             value="Cash On Delivery"
             checked={paymentMethod === "Cash On Delivery"}
-            onChange={handleSelectMethod}
+            onChange={setPaymentMethod}
           >
             Cash On Delivery
           </PaymentOption>
-          
           <PaymentOption
             value="Stripe"
             checked={paymentMethod === "Stripe"}
-            onChange={handleSelectMethod}
+            onChange={setPaymentMethod}
           >
             Stripe
           </PaymentOption>
         </div>
       )}
+
+      {paymentMethod && (
+        <div className="mt-6 border-t pt-4">
+          <button
+            onClick={handleContinue}
+            className="w-full py-3 px-4 font-semibold text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition-colors"
+          >
+            Continue
+          </button>
+        </div>
+      )}
     </div>
-    </div>
-    
   );
 };
 

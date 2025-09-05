@@ -710,6 +710,10 @@ var _themeManagerJs = require("./components/ThemeManager.js");
 var _themeManagerJsDefault = parcelHelpers.interopDefault(_themeManagerJs);
 var _loginRegisterJs = require("./components/LoginRegister.js");
 var _loginRegisterJsDefault = parcelHelpers.interopDefault(_loginRegisterJs);
+var _reviewOrderJs = require("./components/ReviewOrder.js");
+var _reviewOrderJsDefault = parcelHelpers.interopDefault(_reviewOrderJs);
+var _paymentFailedJs = require("./components/PaymentFailed.js");
+var _paymentFailedJsDefault = parcelHelpers.interopDefault(_paymentFailedJs);
 var _s = $RefreshSig$();
 // import Grocery from "./components/Grocery";
 const Grocery = /*#__PURE__*/ (0, _react.lazy)(()=>require("b9adce3e16aaa7b2"));
@@ -736,7 +740,7 @@ const AppLayout = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _themeManagerJsDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 40,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -744,35 +748,35 @@ const AppLayout = ()=>{
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 42,
+                            lineNumber: 44,
                             columnNumber: 7
                         }, undefined),
                         online ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 43,
+                            lineNumber: 45,
                             columnNumber: 18
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offlinePageJsDefault.default), {
                             status: online
                         }, void 0, false, {
                             fileName: "src/app.js",
-                            lineNumber: 43,
+                            lineNumber: 45,
                             columnNumber: 31
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/app.js",
-                    lineNumber: 41,
+                    lineNumber: 43,
                     columnNumber: 8
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/app.js",
-            lineNumber: 39,
+            lineNumber: 41,
             columnNumber: 8
         }, undefined)
     }, void 0, false, {
         fileName: "src/app.js",
-        lineNumber: 38,
+        lineNumber: 40,
         columnNumber: 5
     }, undefined);
 };
@@ -788,7 +792,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 55,
+            lineNumber: 57,
             columnNumber: 14
         }, undefined),
         children: [
@@ -796,7 +800,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 59,
+                    lineNumber: 61,
                     columnNumber: 18
                 }, undefined)
             },
@@ -804,7 +808,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 63,
+                    lineNumber: 65,
                     columnNumber: 18
                 }, undefined)
             },
@@ -812,7 +816,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 67,
+                    lineNumber: 69,
                     columnNumber: 18
                 }, undefined)
             },
@@ -820,7 +824,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/menu/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _menuDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 71,
+                    lineNumber: 73,
                     columnNumber: 18
                 }, undefined)
             },
@@ -829,17 +833,17 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmer.HomeShimmer), {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 76,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Grocery, {}, void 0, false, {
                         fileName: "src/app.js",
-                        lineNumber: 77,
+                        lineNumber: 79,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 75,
+                    lineNumber: 77,
                     columnNumber: 18
                 }, undefined)
             },
@@ -847,7 +851,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartJsDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 81,
+                    lineNumber: 83,
                     columnNumber: 18
                 }, undefined)
             },
@@ -855,7 +859,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/order",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _orderPlacedJsDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 85,
+                    lineNumber: 87,
                     columnNumber: 18
                 }, undefined)
             },
@@ -863,14 +867,30 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/login",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginRegisterJsDefault.default), {}, void 0, false, {
                     fileName: "src/app.js",
-                    lineNumber: 89,
+                    lineNumber: 91,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "/checkout",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reviewOrderJsDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 95,
+                    columnNumber: 18
+                }, undefined)
+            },
+            {
+                path: "/paymentfail",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _paymentFailedJsDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 99,
                     columnNumber: 18
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/app.js",
-            lineNumber: 92,
+            lineNumber: 102,
             columnNumber: 19
         }, undefined)
     }
@@ -880,7 +900,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/app.js",
-    lineNumber: 104,
+    lineNumber: 114,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -892,7 +912,7 @@ $RefreshReg$(_c1, "AppLayout");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react-dom/client":"hrvwu","./components/Header":"3PJ6N","./components/Body":"loQlg","react-router-dom":"61z4w","./components/about":"500Lo","./components/Contact":"asQvq","./components/Error":"8NIKV","./components/Menu":"5ePEV","react":"jMk1U","./components/shimmer":"8RVF9","./utils/UserContext.js":"8LxkN","react-redux":"hbNxT","./utils/appStore.js":"dpIkN","./components/Cart.js":"h9Vh3","./components/OrderPlaced.js":"Dbpqk","./utils/useOnlineStatus.js":"7Vx9K","./components/OfflinePage.js":"bgR6m","./components/ThemeManager.js":"f2Hk3","./components/LoginRegister.js":"lCE2K","b9adce3e16aaa7b2":"baeVm","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-dom/client":"hrvwu","./components/Header":"3PJ6N","./components/Body":"loQlg","react-router-dom":"61z4w","./components/about":"500Lo","./components/Contact":"asQvq","./components/Error":"8NIKV","./components/Menu":"5ePEV","react":"jMk1U","./components/shimmer":"8RVF9","./utils/UserContext.js":"8LxkN","react-redux":"hbNxT","./utils/appStore.js":"dpIkN","./components/Cart.js":"h9Vh3","./components/OrderPlaced.js":"Dbpqk","./utils/useOnlineStatus.js":"7Vx9K","./components/OfflinePage.js":"bgR6m","./components/ThemeManager.js":"f2Hk3","./components/LoginRegister.js":"lCE2K","./components/ReviewOrder.js":"52tJd","./components/PaymentFailed.js":"gbXY4","b9adce3e16aaa7b2":"baeVm","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -16323,7 +16343,7 @@ const Header = ()=>{
             className: "container mx-auto flex justify-between items-center relative",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "w-20",
+                    className: "rounded-full object-cover w-20 mx-2  border-8 border-white shadow-xl",
                     src: (0, _constants.LOGO_URL),
                     alt: "Logo"
                 }, void 0, false, {
@@ -16465,13 +16485,13 @@ const Header = ()=>{
                                     lineNumber: 38,
                                     columnNumber: 40
                                 }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                username && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                     className: "px-2",
                                     children: username.split(" ")[0]
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 39,
-                                    columnNumber: 28
+                                    columnNumber: 38
                                 }, undefined)
                             ]
                         }, void 0, true, {
@@ -16490,17 +16510,17 @@ const Header = ()=>{
                                     children: btn
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 44,
+                                    lineNumber: 45,
                                     columnNumber: 23
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 43,
+                                lineNumber: 44,
                                 columnNumber: 23
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 21
                         }, undefined)
                     ]
@@ -16520,21 +16540,6 @@ const Header = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 58,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 58,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
-                                onClick: ()=>setIsOpen(false),
-                                children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
                                 lineNumber: 59,
                                 columnNumber: 29
                             }, undefined)
@@ -16545,9 +16550,9 @@ const Header = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
+                                to: "/",
                                 onClick: ()=>setIsOpen(false),
-                                children: "About Us"
+                                children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 60,
@@ -16560,9 +16565,9 @@ const Header = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/contact",
+                                to: "/about",
                                 onClick: ()=>setIsOpen(false),
-                                children: "Contact Us"
+                                children: "About Us"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 61,
@@ -16575,9 +16580,9 @@ const Header = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/grocery",
+                                to: "/contact",
                                 onClick: ()=>setIsOpen(false),
-                                children: "Grocery"
+                                children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 62,
@@ -16586,6 +16591,21 @@ const Header = ()=>{
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 62,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/grocery",
+                                onClick: ()=>setIsOpen(false),
+                                children: "Grocery"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 63,
+                                columnNumber: 29
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 63,
                             columnNumber: 25
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -16599,12 +16619,12 @@ const Header = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 63,
+                                lineNumber: 64,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 63,
+                            lineNumber: 64,
                             columnNumber: 25
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -16617,7 +16637,7 @@ const Header = ()=>{
                                     className: "inline-block ml-1 h-6 w-6 rounded-full"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 65,
+                                    lineNumber: 66,
                                     columnNumber: 40
                                 }, undefined),
                                 username && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -16625,36 +16645,43 @@ const Header = ()=>{
                                     children: username.split(" ")[0]
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 66,
+                                    lineNumber: 67,
                                     columnNumber: 39
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 64,
+                            lineNumber: 65,
                             columnNumber: 25
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded",
-                                onClick: ()=>{
-                                    btn === "Login" ? setBtn("Logout") : setBtn("Login");
-                                },
-                                children: btn
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/login",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded",
+                                    onClick: ()=>{
+                                        btn === "Login" ? setBtn("Logout") : setBtn("Login");
+                                    },
+                                    children: btn
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 72,
+                                    columnNumber: 29
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 70,
+                                lineNumber: 71,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 69,
+                            lineNumber: 70,
                             columnNumber: 25
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 21
                 }, undefined)
             ]
@@ -16694,7 +16721,7 @@ parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
 parcelHelpers.export(exports, "Menu_URL", ()=>Menu_URL);
 parcelHelpers.export(exports, "Res_URL", ()=>Res_URL);
 const IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-const LOGO_URL = "https://png.pngitem.com/pimgs/s/22-227226_delivery-logo-food-delivery-service-hd-png-download.png";
+const LOGO_URL = "https://placehold.co/400x400/fbcfe8/4c1d95?text=Biterun";
 const Menu_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&&restaurantId=";
 const Res_URL = "https://corsproxy.io/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
@@ -28368,6 +28395,17 @@ function executeReducerBuilderCallback(builderCallback) {
             actionsMap[type] = reducer;
             return builder;
         },
+        addAsyncThunk (asyncThunk, reducers) {
+            if (defaultCaseReducer) throw new Error("`builder.addAsyncThunk` should only be called before calling `builder.addDefaultCase`");
+            if (reducers.pending) actionsMap[asyncThunk.pending.type] = reducers.pending;
+            if (reducers.rejected) actionsMap[asyncThunk.rejected.type] = reducers.rejected;
+            if (reducers.fulfilled) actionsMap[asyncThunk.fulfilled.type] = reducers.fulfilled;
+            if (reducers.settled) actionMatchers.push({
+                matcher: asyncThunk.settled,
+                reducer: reducers.settled
+            });
+            return builder;
+        },
         addMatcher (matcher, reducer) {
             if (defaultCaseReducer) throw new Error("`builder.addMatcher` should only be called before calling `builder.addDefaultCase`");
             actionMatchers.push({
@@ -30197,9 +30235,22 @@ function shallowCopy(base, strict) {
 }
 function freeze(obj, deep = false) {
     if (isFrozen(obj) || isDraft(obj) || !isDraftable(obj)) return obj;
-    if (getArchtype(obj) > 1) obj.set = obj.add = obj.clear = obj.delete = dontMutateFrozenCollections;
+    if (getArchtype(obj) > 1) Object.defineProperties(obj, {
+        set: {
+            value: dontMutateFrozenCollections
+        },
+        add: {
+            value: dontMutateFrozenCollections
+        },
+        clear: {
+            value: dontMutateFrozenCollections
+        },
+        delete: {
+            value: dontMutateFrozenCollections
+        }
+    });
     Object.freeze(obj);
-    if (deep) Object.entries(obj).forEach(([key, value])=>freeze(value, true));
+    if (deep) Object.values(obj).forEach((value)=>freeze(value, true));
     return obj;
 }
 function dontMutateFrozenCollections() {
@@ -30320,7 +30371,7 @@ function finalizeProperty(rootScope, parentState, targetObject, prop, childValue
     if (isDraftable(childValue) && !isFrozen(childValue)) {
         if (!rootScope.immer_.autoFreeze_ && rootScope.unfinalizedDrafts_ < 1) return;
         finalize(rootScope, childValue);
-        if ((!parentState || !parentState.scope_.parent_) && typeof prop !== "symbol" && Object.prototype.propertyIsEnumerable.call(targetObject, prop)) maybeFreeze(rootScope, childValue);
+        if ((!parentState || !parentState.scope_.parent_) && typeof prop !== "symbol" && (isMap(targetObject) ? targetObject.has(prop) : Object.prototype.propertyIsEnumerable.call(targetObject, prop))) maybeFreeze(rootScope, childValue);
     }
 }
 function maybeFreeze(scope, value, deep = false) {
@@ -31105,12 +31156,12 @@ function enableMapSet() {
 // src/immer.ts
 var immer = new Immer2();
 var produce = immer.produce;
-var produceWithPatches = immer.produceWithPatches.bind(immer);
-var setAutoFreeze = immer.setAutoFreeze.bind(immer);
-var setUseStrictShallowCopy = immer.setUseStrictShallowCopy.bind(immer);
-var applyPatches = immer.applyPatches.bind(immer);
-var createDraft = immer.createDraft.bind(immer);
-var finishDraft = immer.finishDraft.bind(immer);
+var produceWithPatches = /* @__PURE__ */ immer.produceWithPatches.bind(immer);
+var setAutoFreeze = /* @__PURE__ */ immer.setAutoFreeze.bind(immer);
+var setUseStrictShallowCopy = /* @__PURE__ */ immer.setUseStrictShallowCopy.bind(immer);
+var applyPatches = /* @__PURE__ */ immer.applyPatches.bind(immer);
+var createDraft = /* @__PURE__ */ immer.createDraft.bind(immer);
+var finishDraft = /* @__PURE__ */ immer.finishDraft.bind(immer);
 function castDraft(value) {
     return value;
 }
@@ -31794,135 +31845,300 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _user = require("./User");
-var _userDefault = parcelHelpers.interopDefault(_user);
+const Icon = ({ path, className = "w-8 h-8" })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 24 24",
+        fill: "currentColor",
+        className: className,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+            d: path
+        }, void 0, false, {
+            fileName: "src/components/about.js",
+            lineNumber: 3,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/about.js",
+        lineNumber: 2,
+        columnNumber: 3
+    }, undefined);
+_c = Icon;
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "about"
-            }, void 0, false, {
-                fileName: "src/components/about.js",
-                lineNumber: 5,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "react web series "
-            }, void 0, false, {
-                fileName: "src/components/about.js",
-                lineNumber: 6,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
-                name: "Anshika",
-                location: "mzn"
-            }, void 0, false, {
-                fileName: "src/components/about.js",
-                lineNumber: 7,
-                columnNumber: 10
-            }, undefined)
-        ]
-    }, void 0, true, {
+        className: "bg-white font-sans p-4 sm:p-8",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-4xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-4xl sm:text-5xl font-extrabold text-pink-600 tracking-tight",
+                            children: [
+                                "About ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-gray-800",
+                                    children: "Biterun"
+                                }, void 0, false, {
+                                    fileName: "src/components/about.js",
+                                    lineNumber: 16,
+                                    columnNumber: 19
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/about.js",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-4 text-lg text-gray-600",
+                            children: "Your Daily Bite, On The Run."
+                        }, void 0, false, {
+                            fileName: "src/components/about.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/about.js",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-pink-50 p-6 sm:p-10 rounded-2xl shadow-lg",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid grid-cols-1 md:grid-cols-2 gap-10 items-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex justify-center",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "https://placehold.co/400x400/fbcfe8/4c1d95?text=Biterun",
+                                    alt: "Biterun Logo",
+                                    className: "rounded-full object-cover w-48 h-48 sm:w-64 sm:h-64 border-8 border-white shadow-xl"
+                                }, void 0, false, {
+                                    fileName: "src/components/about.js",
+                                    lineNumber: 29,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/about.js",
+                                lineNumber: 28,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "text-left",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        className: "text-2xl font-bold text-gray-800 mb-4",
+                                        children: "Our Story"
+                                    }, void 0, false, {
+                                        fileName: "src/components/about.js",
+                                        lineNumber: 38,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-gray-700 mb-4",
+                                        children: "At Biterun, we believe that delicious food should never be a compromise, no matter how busy your day gets. Born in the heart of Ghaziabad, our mission is to connect you with the best local restaurants, delivering your favorite meals right to your doorstep, fast and fresh."
+                                    }, void 0, false, {
+                                        fileName: "src/components/about.js",
+                                        lineNumber: 41,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-gray-700",
+                                        children: "We're a team of foodies, tech enthusiasts, and delivery pros dedicated to making your mealtime easier and more enjoyable. From our developers to our delivery partners, we're all part of the Biterun family."
+                                    }, void 0, false, {
+                                        fileName: "src/components/about.js",
+                                        lineNumber: 44,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/about.js",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/about.js",
+                        lineNumber: 25,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/about.js",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mt-16 text-center",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl font-bold text-gray-800 mb-8",
+                            children: "What We Stand For"
+                        }, void 0, false, {
+                            fileName: "src/components/about.js",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "grid grid-cols-1 sm:grid-cols-3 gap-8",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-6 bg-white rounded-lg shadow-md",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex justify-center items-center h-16 w-16 mx-auto rounded-full bg-pink-100",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                path: "M3.75 13.5l3.75-3.75m0 0h12.5m-12.5 0v12.5m12.5-12.5l-3.75-3.75M3.75 13.5l3.75 3.75m0 0h12.5m-12.5 0V3.75m0 9.75l-3.75 3.75M12 12m-3.75 0a3.75 3.75 0 107.5 0 3.75 3.75 0 10-7.5 0z",
+                                                className: "w-8 h-8 text-pink-600"
+                                            }, void 0, false, {
+                                                fileName: "src/components/about.js",
+                                                lineNumber: 59,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 58,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "mt-5 text-xl font-semibold text-gray-800",
+                                            children: "Quality Eateries"
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 61,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "mt-2 text-gray-600",
+                                            children: "We partner with the best local restaurants to bring you a curated selection of high-quality meals."
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 62,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/about.js",
+                                    lineNumber: 57,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-6 bg-white rounded-lg shadow-md",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex justify-center items-center h-16 w-16 mx-auto rounded-full bg-pink-100",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                path: "M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z",
+                                                className: "w-8 h-8 text-pink-600"
+                                            }, void 0, false, {
+                                                fileName: "src/components/about.js",
+                                                lineNumber: 68,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 67,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "mt-5 text-xl font-semibold text-gray-800",
+                                            children: "Speedy Delivery"
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 70,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "mt-2 text-gray-600",
+                                            children: "Our efficient delivery network ensures your food arrives hot and on time, every time."
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 71,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/about.js",
+                                    lineNumber: 66,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-6 bg-white rounded-lg shadow-md",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex justify-center items-center h-16 w-16 mx-auto rounded-full bg-pink-100",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                path: "M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z",
+                                                className: "w-8 h-8 text-pink-600"
+                                            }, void 0, false, {
+                                                fileName: "src/components/about.js",
+                                                lineNumber: 77,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 76,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "mt-5 text-xl font-semibold text-gray-800",
+                                            children: "Customer Love"
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 79,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "mt-2 text-gray-600",
+                                            children: "We're passionate about making our customers happy. Your satisfaction is our top priority."
+                                        }, void 0, false, {
+                                            fileName: "src/components/about.js",
+                                            lineNumber: 80,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/about.js",
+                                    lineNumber: 75,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/about.js",
+                            lineNumber: 54,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/about.js",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/about.js",
+            lineNumber: 11,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/about.js",
-        lineNumber: 4,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
-_c = About;
+_c1 = About;
 exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
+var _c, _c1;
+$RefreshReg$(_c, "Icon");
+$RefreshReg$(_c1, "About");
 
   $parcel$ReactRefreshHelpers$ff6f.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./User":"gT672","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"gT672":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$1070 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$1070.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1070.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class UserClass extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-        console.log(props);
-        this.state = {
-            count: 0,
-            count1: 1
-        };
-    }
-    render() {
-        console.log("hii");
-        const { name, location } = this.props;
-        const { count, count1 } = this.state;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "user-card",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: count
-                }, void 0, false, {
-                    fileName: "src/components/User.js",
-                    lineNumber: 18,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        // never update state variables directly
-                        this.setState({
-                            count: count + 1
-                        });
-                    },
-                    children: "count increase"
-                }, void 0, false, {
-                    fileName: "src/components/User.js",
-                    lineNumber: 19,
-                    columnNumber: 12
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: [
-                        "Name:",
-                        name
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/User.js",
-                    lineNumber: 26,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: [
-                        "location:",
-                        location
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/User.js",
-                    lineNumber: 27,
-                    columnNumber: 13
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/User.js",
-            lineNumber: 17,
-            columnNumber: 13
-        }, this);
-    }
-}
-exports.default = UserClass;
-
-  $parcel$ReactRefreshHelpers$1070.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"asQvq":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"asQvq":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$34fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$34fd.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -31932,43 +32148,453 @@ $parcel$ReactRefreshHelpers$34fd.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Contact", ()=>Contact);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Contact Us"
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 6,
-                columnNumber: 8
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "nearby"
-            }, void 0, false, {
-                fileName: "src/components/Contact.js",
-                lineNumber: 7,
-                columnNumber: 8
-            }, undefined)
-        ]
-    }, void 0, true, {
+var _react = require("react");
+var _s = $RefreshSig$();
+// A small, reusable Icon component to keep the main JSX clean
+const Icon = ({ path, className = "w-6 h-6" })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 24 24",
+        fill: "currentColor",
+        className: className,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+            fillRule: "evenodd",
+            d: path,
+            clipRule: "evenodd"
+        }, void 0, false, {
+            fileName: "src/components/Contact.js",
+            lineNumber: 7,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Contact.js",
-        lineNumber: 5,
+        lineNumber: 6,
+        columnNumber: 3
+    }, undefined);
+_c = Icon;
+const Contact = ()=>{
+    _s();
+    const [formData, setFormData] = (0, _react.useState)({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [status, setStatus] = (0, _react.useState)('');
+    const handleChange = (e)=>{
+        const { name, value } = e.target;
+        setFormData((prev)=>({
+                ...prev,
+                [name]: value
+            }));
+    };
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        // In a real app, you would handle form submission here (e.g., send to an API)
+        console.log("Form submitted:", formData);
+        setStatus('Thank you for your message! We will get back to you soon.');
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        }); // Reset form
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "bg-white font-sans p-4 sm:p-8",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-5xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-4xl sm:text-5xl font-extrabold text-pink-600 tracking-tight",
+                            children: [
+                                "Get In ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-gray-800",
+                                    children: "Touch"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 39,
+                                    columnNumber: 20
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-4 text-lg text-gray-600",
+                            children: "We'd love to hear from you! Whether you have a question, feedback, or just want to say hello."
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 md:grid-cols-2 gap-10",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-pink-50 p-6 sm:p-8 rounded-2xl shadow-lg",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                    className: "text-2xl font-bold text-gray-800 mb-6",
+                                    children: "Contact Information"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 51,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "space-y-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-start",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex-shrink-0 h-12 w-12 flex items-center justify-center bg-white rounded-full shadow",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                            path: "M15 10.5a3 3 0 11-6 0 3 3 0 016 0z",
+                                                            className: "w-6 h-6 text-pink-600"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 57,
+                                                            columnNumber: 20
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                            path: "M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z",
+                                                            className: "w-6 h-6 text-pink-600"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 58,
+                                                            columnNumber: 20
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 56,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "ml-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                            className: "text-lg font-semibold text-gray-800",
+                                                            children: "Our Office"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 61,
+                                                            columnNumber: 19
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-gray-600",
+                                                            children: "R-1/120, Raj Nagar, Ghaziabad, Uttar Pradesh, 201002"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 62,
+                                                            columnNumber: 19
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 60,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.js",
+                                            lineNumber: 55,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-start",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex-shrink-0 h-12 w-12 flex items-center justify-center bg-white rounded-full shadow",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                        path: "M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75",
+                                                        className: "w-6 h-6 text-pink-600"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.js",
+                                                        lineNumber: 69,
+                                                        columnNumber: 20
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 68,
+                                                    columnNumber: 18
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "ml-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                            className: "text-lg font-semibold text-gray-800",
+                                                            children: "Email Us"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 72,
+                                                            columnNumber: 19
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-gray-600",
+                                                            children: "support@biterun.com"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 73,
+                                                            columnNumber: 19
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 71,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.js",
+                                            lineNumber: 67,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-start",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex-shrink-0 h-12 w-12 flex items-center justify-center bg-white rounded-full shadow",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                        path: "M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z",
+                                                        className: "w-6 h-6 text-pink-600"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.js",
+                                                        lineNumber: 80,
+                                                        columnNumber: 20
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 79,
+                                                    columnNumber: 18
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "ml-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                            className: "text-lg font-semibold text-gray-800",
+                                                            children: "Call Us"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 83,
+                                                            columnNumber: 19
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            className: "text-gray-600",
+                                                            children: "+91 120 456 7890"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.js",
+                                                            lineNumber: 84,
+                                                            columnNumber: 19
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 82,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.js",
+                                            lineNumber: 78,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 52,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-white p-6 sm:p-8 rounded-2xl shadow-lg",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                    className: "text-2xl font-bold text-gray-800 mb-6",
+                                    children: "Send a Message"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 93,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                    onSubmit: handleSubmit,
+                                    className: "space-y-5",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                    htmlFor: "name",
+                                                    className: "font-medium text-gray-700",
+                                                    children: "Full Name"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 96,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                    type: "text",
+                                                    id: "name",
+                                                    name: "name",
+                                                    value: formData.name,
+                                                    onChange: handleChange,
+                                                    required: true,
+                                                    className: "mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 97,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.js",
+                                            lineNumber: 95,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                    htmlFor: "email",
+                                                    className: "font-medium text-gray-700",
+                                                    children: "Email Address"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 100,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                    type: "email",
+                                                    id: "email",
+                                                    name: "email",
+                                                    value: formData.email,
+                                                    onChange: handleChange,
+                                                    required: true,
+                                                    className: "mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 101,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.js",
+                                            lineNumber: 99,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                    htmlFor: "message",
+                                                    className: "font-medium text-gray-700",
+                                                    children: "Message"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 104,
+                                                    columnNumber: 17
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                                    id: "message",
+                                                    name: "message",
+                                                    rows: "4",
+                                                    value: formData.message,
+                                                    onChange: handleChange,
+                                                    required: true,
+                                                    className: "mt-2 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.js",
+                                                    lineNumber: 105,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Contact.js",
+                                            lineNumber: 103,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                type: "submit",
+                                                className: "w-full py-3 px-4 font-semibold text-white bg-pink-600 rounded-lg hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 transition-transform transform hover:scale-105",
+                                                children: "Send Message"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.js",
+                                                lineNumber: 108,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Contact.js",
+                                            lineNumber: 107,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 94,
+                                    columnNumber: 13
+                                }, undefined),
+                                status && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "mt-4 text-center text-green-600",
+                                    children: status
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 113,
+                                    columnNumber: 24
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 92,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Contact.js",
+            lineNumber: 34,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Contact.js",
+        lineNumber: 33,
         columnNumber: 5
     }, undefined);
 };
-_c = Contact;
+_s(Contact, "cqqEzHuDVVL/mr35YFtpHQKuEmk=");
+_c1 = Contact;
 exports.default = Contact;
-var _c;
-$RefreshReg$(_c, "Contact");
+var _c, _c1;
+$RefreshReg$(_c, "Icon");
+$RefreshReg$(_c1, "Contact");
 
   $parcel$ReactRefreshHelpers$34fd.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"8NIKV":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"8NIKV":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9f49 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$9f49.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -32712,7 +33338,7 @@ const appStore = (0, _toolkit.configureStore)({
 });
 exports.default = appStore;
 
-},{"@reduxjs/toolkit":"fKS5f","./cartSlice":"8EWXN","./themeSlice":"dzFS4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./userInfoslice":"jAZia"}],"jAZia":[function(require,module,exports,__globalThis) {
+},{"@reduxjs/toolkit":"fKS5f","./cartSlice":"8EWXN","./themeSlice":"dzFS4","./userInfoslice":"jAZia","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jAZia":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "setInfo", ()=>setInfo);
@@ -32800,45 +33426,23 @@ const Cart = ()=>{
                             lineNumber: 34,
                             columnNumber: 14
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _billSummaryDefault.default), {}, void 0, false, {
-                            fileName: "src/components/Cart.js",
-                            lineNumber: 35,
-                            columnNumber: 13
-                        }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _paymentJsDefault.default), {}, void 0, false, {
                             fileName: "src/components/Cart.js",
                             lineNumber: 36,
-                            columnNumber: 13
+                            columnNumber: 14
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex my-4 mx-2 space-x-2",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "p-2 my-2 w-40 flex justify-center items-center font-sans hover:bg-pink-800 hover:text-white font-semibold rounded-lg bg-pink-500 text-white transition-colors",
-                                    onClick: handleCart,
-                                    children: "Clear Cart"
-                                }, void 0, false, {
-                                    fileName: "src/components/Cart.js",
-                                    lineNumber: 39,
-                                    columnNumber: 18
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/order",
-                                    className: " my-2 w-full   flex justify-center items-center font-sans  hover:bg-pink-800 hover:text-white font-semibold rounded-lg bg-pink-500 text-white transition-colors",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        children: "Place Order"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Cart.js",
-                                        lineNumber: 46,
-                                        columnNumber: 14
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/Cart.js",
-                                    lineNumber: 45,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
+                            className: "flex my-4 mx-2 space-x-2 items-center",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "p-2 my-2 w-40 flex justify-center items-center font-sans hover:bg-pink-800 hover:text-white font-semibold rounded-lg bg-pink-600 text-white transition-colors",
+                                onClick: handleCart,
+                                children: "Clear Cart"
+                            }, void 0, false, {
+                                fileName: "src/components/Cart.js",
+                                lineNumber: 39,
+                                columnNumber: 18
+                            }, undefined)
+                        }, void 0, false, {
                             fileName: "src/components/Cart.js",
                             lineNumber: 38,
                             columnNumber: 13
@@ -32877,7 +33481,7 @@ $RefreshReg$(_c, "Cart");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react-redux":"hbNxT","./ItemList":"jI120","../utils/cartSlice.js":"8EWXN","./BillSummary":"aPtmG","./Address.js":"e6SRN","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Payment.js":"jNPAc"}],"aPtmG":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-redux":"hbNxT","./ItemList":"jI120","../utils/cartSlice.js":"8EWXN","./BillSummary":"aPtmG","./Address.js":"e6SRN","react-router-dom":"61z4w","./Payment.js":"jNPAc","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"aPtmG":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$3106 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$3106.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -32890,16 +33494,9 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
-const BillSummary = ()=>{
+const BillSummary = ({ total })=>{
     _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    const calculate = ()=>{
-        return cartItems.reduce((total, item)=>{
-            const price = item?.card?.info?.defaultPrice || 0;
-            const count = item.count;
-            return total + price * count;
-        }, 0);
-    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: " m-2 font-sans shadow-md",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -32911,7 +33508,7 @@ const BillSummary = ()=>{
                         children: "Order Summary"
                     }, void 0, false, {
                         fileName: "src/components/BillSummary.js",
-                        lineNumber: 20,
+                        lineNumber: 14,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -32926,7 +33523,7 @@ const BillSummary = ()=>{
                                             children: "Product"
                                         }, void 0, false, {
                                             fileName: "src/components/BillSummary.js",
-                                            lineNumber: 28,
+                                            lineNumber: 22,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -32934,7 +33531,7 @@ const BillSummary = ()=>{
                                             children: "Quantity"
                                         }, void 0, false, {
                                             fileName: "src/components/BillSummary.js",
-                                            lineNumber: 29,
+                                            lineNumber: 23,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -32942,7 +33539,7 @@ const BillSummary = ()=>{
                                             children: "Price"
                                         }, void 0, false, {
                                             fileName: "src/components/BillSummary.js",
-                                            lineNumber: 30,
+                                            lineNumber: 24,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -32950,18 +33547,18 @@ const BillSummary = ()=>{
                                             children: "Subtotal"
                                         }, void 0, false, {
                                             fileName: "src/components/BillSummary.js",
-                                            lineNumber: 31,
+                                            lineNumber: 25,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/BillSummary.js",
-                                    lineNumber: 27,
+                                    lineNumber: 21,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/BillSummary.js",
-                                lineNumber: 26,
+                                lineNumber: 20,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -32973,7 +33570,7 @@ const BillSummary = ()=>{
                                                 children: item?.card?.info?.name || 'N/A'
                                             }, void 0, false, {
                                                 fileName: "src/components/BillSummary.js",
-                                                lineNumber: 40,
+                                                lineNumber: 34,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -32981,40 +33578,40 @@ const BillSummary = ()=>{
                                                 children: item.count
                                             }, void 0, false, {
                                                 fileName: "src/components/BillSummary.js",
-                                                lineNumber: 42,
+                                                lineNumber: 36,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                                 className: "p-3 text-right",
                                                 children: [
-                                                    "$",
+                                                    "\u20B9",
                                                     ((item?.card?.info?.defaultPrice || 0) / 100).toFixed(2)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/BillSummary.js",
-                                                lineNumber: 44,
+                                                lineNumber: 38,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                                 className: "p-3 text-right ",
                                                 children: [
-                                                    "$",
+                                                    "\u20B9",
                                                     ((item?.card?.info?.defaultPrice || 0) / 100 * item.count).toFixed(2)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/BillSummary.js",
-                                                lineNumber: 48,
+                                                lineNumber: 42,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, index, true, {
                                         fileName: "src/components/BillSummary.js",
-                                        lineNumber: 38,
+                                        lineNumber: 32,
                                         columnNumber: 19
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/components/BillSummary.js",
-                                lineNumber: 35,
+                                lineNumber: 29,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tfoot", {
@@ -33027,51 +33624,51 @@ const BillSummary = ()=>{
                                             children: "Total Price"
                                         }, void 0, false, {
                                             fileName: "src/components/BillSummary.js",
-                                            lineNumber: 57,
+                                            lineNumber: 51,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                             className: "p-3 text-right text-md  text-pink-600",
                                             children: [
-                                                "$",
-                                                calculate().toFixed(2) / 100
+                                                "\u20B9",
+                                                total / 100
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/BillSummary.js",
-                                            lineNumber: 59,
+                                            lineNumber: 53,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/BillSummary.js",
-                                    lineNumber: 56,
+                                    lineNumber: 50,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/BillSummary.js",
-                                lineNumber: 55,
+                                lineNumber: 49,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/BillSummary.js",
-                        lineNumber: 24,
+                        lineNumber: 18,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/BillSummary.js",
-                lineNumber: 19,
+                lineNumber: 13,
                 columnNumber: 11
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/BillSummary.js",
-            lineNumber: 16,
+            lineNumber: 10,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/BillSummary.js",
-        lineNumber: 14,
+        lineNumber: 8,
         columnNumber: 8
     }, undefined);
 };
@@ -33166,7 +33763,7 @@ const Address = ()=>{
                 columnNumber: 17
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: ()=>setIsModalOpen(true),
-                className: "w-full bg-pink-100 text-pink-600 py-3 px-4 rounded-lg hover:bg-pink-800 hover:text-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 transition-transform transform hover:scale-110",
+                className: "w-full bg-pink-100 text-pink-600 py-3 px-4 rounded-lg hover:bg-pink-800 hover:text-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 transition-transform transform ",
                 children: "Select An Address"
             }, void 0, false, {
                 fileName: "src/components/Address.js",
@@ -33669,8 +34266,9 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRedux = require("react-redux");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-// Helper component for the radio button options
 const PaymentOption = ({ value, checked, onChange, children })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
         className: "flex items-center cursor-pointer p-3 rounded-lg hover:bg-pink-50 transition-colors",
         children: [
@@ -33683,7 +34281,7 @@ const PaymentOption = ({ value, checked, onChange, children })=>/*#__PURE__*/ (0
                 className: "w-5 h-5 mr-4 text-pink-600 focus:ring-pink-500 border-gray-300"
             }, void 0, false, {
                 fileName: "src/components/Payment.js",
-                lineNumber: 6,
+                lineNumber: 8,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -33691,111 +34289,141 @@ const PaymentOption = ({ value, checked, onChange, children })=>/*#__PURE__*/ (0
                 children: children
             }, void 0, false, {
                 fileName: "src/components/Payment.js",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Payment.js",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 3
     }, undefined);
 _c = PaymentOption;
 const Payment = ()=>{
     _s();
     const [paymentMethod, setPaymentMethod] = (0, _react.useState)("");
-    // State to control the visibility of the payment options
-    const [showOptions, setShowOptions] = (0, _react.useState)(false);
-    const handleSelectMethod = (method)=>{
-        setPaymentMethod(method);
-        setShowOptions(false); // Hide options after selection
+    const [showOptions, setShowOptions] = (0, _react.useState)(true);
+    const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const totalAmount = ()=>{
+        return cartItems.reduce((total, item)=>{
+            const price = item?.card?.info?.defaultPrice || 0;
+            const count = item.count;
+            return total + price * count;
+        }, 0);
+    };
+    const handleContinue = ()=>{
+        if (!paymentMethod) {
+            alert("Please select a payment method first.");
+            return;
+        }
+        navigate("/checkout", {
+            state: {
+                paymentMethod,
+                totalAmount: totalAmount()
+            }
+        });
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: " px-1",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "my-3 p-4  rounded-md bg-gray-50 shadow-md w-full  ",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>setShowOptions(!showOptions),
-                    className: "w-full flex justify-between items-center p-2 rounded-lg bg-pink-100 hover:bg-pink-200 transition-colors",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "font-semibold text-md text-pink-600",
-                            children: paymentMethod === "" ? "Select Payment Method" : paymentMethod
+        className: "my-6 p-4 rounded-lg bg-white shadow-md w-full  mx-auto",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setShowOptions(!showOptions),
+                className: "w-full flex justify-between items-center p-3 rounded-lg bg-pink-100 hover:bg-pink-800 transition-colors",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "font-semibold text-md text-pink-600",
+                        children: paymentMethod === "" ? "Select Payment Method" : `Selected: ${paymentMethod}`
+                    }, void 0, false, {
+                        fileName: "src/components/Payment.js",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                        className: `w-6 h-6 text-pink-600 transition-transform duration-300 ${showOptions ? "transform rotate-180" : ""}`,
+                        fill: "none",
+                        stroke: "currentColor",
+                        viewBox: "0 0 24 24",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round",
+                            strokeWidth: "2",
+                            d: "M19 9l-7 7-7-7"
                         }, void 0, false, {
                             fileName: "src/components/Payment.js",
-                            lineNumber: 36,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                            className: `w-6 h-6 text-pink-600 transition-transform duration-300 ${showOptions ? 'transform rotate-180' : ''}`,
-                            fill: "none",
-                            stroke: "currentColor",
-                            viewBox: "0 0 24 24",
-                            xmlns: "http://www.w3.org/2000/svg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round",
-                                strokeWidth: "2",
-                                d: "M19 9l-7 7-7-7"
-                            }, void 0, false, {
-                                fileName: "src/components/Payment.js",
-                                lineNumber: 44,
-                                columnNumber: 11
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Payment.js",
-                            lineNumber: 40,
-                            columnNumber: 9
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Payment.js",
-                    lineNumber: 32,
-                    columnNumber: 7
-                }, undefined),
-                showOptions && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "mt-3 border-t pt-3 space-y-2",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PaymentOption, {
-                            value: "Cash On Delivery",
-                            checked: paymentMethod === "Cash On Delivery",
-                            onChange: handleSelectMethod,
-                            children: "Cash On Delivery"
-                        }, void 0, false, {
-                            fileName: "src/components/Payment.js",
-                            lineNumber: 51,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PaymentOption, {
-                            value: "Stripe",
-                            checked: paymentMethod === "Stripe",
-                            onChange: handleSelectMethod,
-                            children: "Stripe"
-                        }, void 0, false, {
-                            fileName: "src/components/Payment.js",
-                            lineNumber: 59,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined)
-                    ]
-                }, void 0, true, {
+                    }, void 0, false, {
+                        fileName: "src/components/Payment.js",
+                        lineNumber: 52,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Payment.js",
+                lineNumber: 45,
+                columnNumber: 7
+            }, undefined),
+            showOptions && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mt-3 border-t pt-3 space-y-2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PaymentOption, {
+                        value: "Cash On Delivery",
+                        checked: paymentMethod === "Cash On Delivery",
+                        onChange: setPaymentMethod,
+                        children: "Cash On Delivery"
+                    }, void 0, false, {
+                        fileName: "src/components/Payment.js",
+                        lineNumber: 63,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PaymentOption, {
+                        value: "Stripe",
+                        checked: paymentMethod === "Stripe",
+                        onChange: setPaymentMethod,
+                        children: "Stripe"
+                    }, void 0, false, {
+                        fileName: "src/components/Payment.js",
+                        lineNumber: 70,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Payment.js",
+                lineNumber: 62,
+                columnNumber: 9
+            }, undefined),
+            paymentMethod && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mt-6 border-t pt-4",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: handleContinue,
+                    className: "w-full py-3 px-4 font-semibold text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition-colors",
+                    children: "Continue"
+                }, void 0, false, {
                     fileName: "src/components/Payment.js",
-                    lineNumber: 50,
-                    columnNumber: 9
+                    lineNumber: 82,
+                    columnNumber: 11
                 }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Payment.js",
-            lineNumber: 30,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "src/components/Payment.js",
+                lineNumber: 81,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Payment.js",
-        lineNumber: 29,
+        lineNumber: 44,
         columnNumber: 5
     }, undefined);
 };
-_s(Payment, "sLh4OtBEiQTZ6uO19c+nd7HrRnI=");
+_s(Payment, "/HRZ3lw+9JhKLv80XEK1yw55OZY=", false, function() {
+    return [
+        (0, _reactRedux.useSelector),
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c1 = Payment;
 exports.default = Payment;
 var _c, _c1;
@@ -33807,7 +34435,7 @@ $RefreshReg$(_c1, "Payment");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"Dbpqk":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-redux":"hbNxT","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"Dbpqk":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e46a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$e46a.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -34470,3838 +35098,13 @@ $RefreshReg$(_c2, "LoginRegister");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./firebaseConfig":"dvzOB","firebase/auth":"4ZBbi","react-redux":"hbNxT","../utils/userInfoslice":"jAZia"}],"dvzOB":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "auth", ()=>auth);
-var _app = require("firebase/app");
-var _auth = require("firebase/auth");
-const firebaseConfig = {
-    apiKey: "AIzaSyBBnp_GZQBlwyKR80gOdrcdqrVPvByu4Gs",
-    authDomain: "biterun-873be.firebaseapp.com",
-    projectId: "biterun-873be",
-    storageBucket: "biterun-873be.firebasestorage.app",
-    messagingSenderId: "641948850638",
-    appId: "1:641948850638:web:46a6e0856b5ce59f19739f",
-    measurementId: "G-2FQWWPQV12"
-};
-const app = (0, _app.initializeApp)(firebaseConfig);
-const auth = (0, _auth.getAuth)(app);
-
-},{"firebase/app":"cYOm2","firebase/auth":"4ZBbi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cYOm2":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _app = require("@firebase/app");
-parcelHelpers.exportAll(_app, exports);
-var name = "firebase";
-var version = "12.1.0";
-/**
- * @license
- * Copyright 2020 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ (0, _app.registerVersion)(name, version, 'app');
-
-},{"@firebase/app":"clWgn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"clWgn":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "FirebaseError", ()=>(0, _util.FirebaseError));
-parcelHelpers.export(exports, "SDK_VERSION", ()=>SDK_VERSION);
-parcelHelpers.export(exports, "_DEFAULT_ENTRY_NAME", ()=>DEFAULT_ENTRY_NAME);
-parcelHelpers.export(exports, "_addComponent", ()=>_addComponent);
-parcelHelpers.export(exports, "_addOrOverwriteComponent", ()=>_addOrOverwriteComponent);
-parcelHelpers.export(exports, "_apps", ()=>_apps);
-parcelHelpers.export(exports, "_clearComponents", ()=>_clearComponents);
-parcelHelpers.export(exports, "_components", ()=>_components);
-parcelHelpers.export(exports, "_getProvider", ()=>_getProvider);
-parcelHelpers.export(exports, "_isFirebaseApp", ()=>_isFirebaseApp);
-parcelHelpers.export(exports, "_isFirebaseServerApp", ()=>_isFirebaseServerApp);
-parcelHelpers.export(exports, "_isFirebaseServerAppSettings", ()=>_isFirebaseServerAppSettings);
-parcelHelpers.export(exports, "_registerComponent", ()=>_registerComponent);
-parcelHelpers.export(exports, "_removeServiceInstance", ()=>_removeServiceInstance);
-parcelHelpers.export(exports, "_serverApps", ()=>_serverApps);
-parcelHelpers.export(exports, "deleteApp", ()=>deleteApp);
-parcelHelpers.export(exports, "getApp", ()=>getApp);
-parcelHelpers.export(exports, "getApps", ()=>getApps);
-parcelHelpers.export(exports, "initializeApp", ()=>initializeApp);
-parcelHelpers.export(exports, "initializeServerApp", ()=>initializeServerApp);
-parcelHelpers.export(exports, "onLog", ()=>onLog);
-parcelHelpers.export(exports, "registerVersion", ()=>registerVersion);
-parcelHelpers.export(exports, "setLogLevel", ()=>setLogLevel);
-var _component = require("@firebase/component");
-var _logger = require("@firebase/logger");
-var _util = require("@firebase/util");
-var _idb = require("idb");
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ class PlatformLoggerServiceImpl {
-    constructor(container){
-        this.container = container;
-    }
-    // In initial implementation, this will be called by installations on
-    // auth token refresh, and installations will send this string.
-    getPlatformInfoString() {
-        const providers = this.container.getProviders();
-        // Loop through providers and get library/version pairs from any that are
-        // version components.
-        return providers.map((provider)=>{
-            if (isVersionServiceProvider(provider)) {
-                const service = provider.getImmediate();
-                return `${service.library}/${service.version}`;
-            } else return null;
-        }).filter((logString)=>logString).join(' ');
-    }
-}
-/**
- *
- * @param provider check if this provider provides a VersionService
- *
- * NOTE: Using Provider<'app-version'> is a hack to indicate that the provider
- * provides VersionService. The provider is not necessarily a 'app-version'
- * provider.
- */ function isVersionServiceProvider(provider) {
-    const component = provider.getComponent();
-    return component?.type === "VERSION" /* ComponentType.VERSION */ ;
-}
-const name$q = "@firebase/app";
-const version$1 = "0.14.1";
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const logger = new (0, _logger.Logger)('@firebase/app');
-const name$p = "@firebase/app-compat";
-const name$o = "@firebase/analytics-compat";
-const name$n = "@firebase/analytics";
-const name$m = "@firebase/app-check-compat";
-const name$l = "@firebase/app-check";
-const name$k = "@firebase/auth";
-const name$j = "@firebase/auth-compat";
-const name$i = "@firebase/database";
-const name$h = "@firebase/data-connect";
-const name$g = "@firebase/database-compat";
-const name$f = "@firebase/functions";
-const name$e = "@firebase/functions-compat";
-const name$d = "@firebase/installations";
-const name$c = "@firebase/installations-compat";
-const name$b = "@firebase/messaging";
-const name$a = "@firebase/messaging-compat";
-const name$9 = "@firebase/performance";
-const name$8 = "@firebase/performance-compat";
-const name$7 = "@firebase/remote-config";
-const name$6 = "@firebase/remote-config-compat";
-const name$5 = "@firebase/storage";
-const name$4 = "@firebase/storage-compat";
-const name$3 = "@firebase/firestore";
-const name$2 = "@firebase/ai";
-const name$1 = "@firebase/firestore-compat";
-const name = "firebase";
-const version = "12.1.0";
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * The default app name
- *
- * @internal
- */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
-const PLATFORM_LOG_STRING = {
-    [name$q]: 'fire-core',
-    [name$p]: 'fire-core-compat',
-    [name$n]: 'fire-analytics',
-    [name$o]: 'fire-analytics-compat',
-    [name$l]: 'fire-app-check',
-    [name$m]: 'fire-app-check-compat',
-    [name$k]: 'fire-auth',
-    [name$j]: 'fire-auth-compat',
-    [name$i]: 'fire-rtdb',
-    [name$h]: 'fire-data-connect',
-    [name$g]: 'fire-rtdb-compat',
-    [name$f]: 'fire-fn',
-    [name$e]: 'fire-fn-compat',
-    [name$d]: 'fire-iid',
-    [name$c]: 'fire-iid-compat',
-    [name$b]: 'fire-fcm',
-    [name$a]: 'fire-fcm-compat',
-    [name$9]: 'fire-perf',
-    [name$8]: 'fire-perf-compat',
-    [name$7]: 'fire-rc',
-    [name$6]: 'fire-rc-compat',
-    [name$5]: 'fire-gcs',
-    [name$4]: 'fire-gcs-compat',
-    [name$3]: 'fire-fst',
-    [name$1]: 'fire-fst-compat',
-    [name$2]: 'fire-vertex',
-    'fire-js': 'fire-js',
-    [name]: 'fire-js-all'
-};
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * @internal
- */ const _apps = new Map();
-/**
- * @internal
- */ const _serverApps = new Map();
-/**
- * Registered components.
- *
- * @internal
- */ // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const _components = new Map();
-/**
- * @param component - the component being added to this app's container
- *
- * @internal
- */ function _addComponent(app, component) {
-    try {
-        app.container.addComponent(component);
-    } catch (e) {
-        logger.debug(`Component ${component.name} failed to register with FirebaseApp ${app.name}`, e);
-    }
-}
-/**
- *
- * @internal
- */ function _addOrOverwriteComponent(app, component) {
-    app.container.addOrOverwriteComponent(component);
-}
-/**
- *
- * @param component - the component to register
- * @returns whether or not the component is registered successfully
- *
- * @internal
- */ function _registerComponent(component) {
-    const componentName = component.name;
-    if (_components.has(componentName)) {
-        logger.debug(`There were multiple attempts to register component ${componentName}.`);
-        return false;
-    }
-    _components.set(componentName, component);
-    // add the component to existing app instances
-    for (const app of _apps.values())_addComponent(app, component);
-    for (const serverApp of _serverApps.values())_addComponent(serverApp, component);
-    return true;
-}
-/**
- *
- * @param app - FirebaseApp instance
- * @param name - service name
- *
- * @returns the provider for the service with the matching name
- *
- * @internal
- */ function _getProvider(app, name) {
-    const heartbeatController = app.container.getProvider('heartbeat').getImmediate({
-        optional: true
-    });
-    if (heartbeatController) heartbeatController.triggerHeartbeat();
-    return app.container.getProvider(name);
-}
-/**
- *
- * @param app - FirebaseApp instance
- * @param name - service name
- * @param instanceIdentifier - service instance identifier in case the service supports multiple instances
- *
- * @internal
- */ function _removeServiceInstance(app, name, instanceIdentifier = DEFAULT_ENTRY_NAME) {
-    _getProvider(app, name).clearInstance(instanceIdentifier);
-}
-/**
- *
- * @param obj - an object of type FirebaseApp, FirebaseOptions or FirebaseAppSettings.
- *
- * @returns true if the provide object is of type FirebaseApp.
- *
- * @internal
- */ function _isFirebaseApp(obj) {
-    return obj.options !== undefined;
-}
-/**
- *
- * @param obj - an object of type FirebaseApp, FirebaseOptions or FirebaseAppSettings.
- *
- * @returns true if the provided object is of type FirebaseServerAppImpl.
- *
- * @internal
- */ function _isFirebaseServerAppSettings(obj) {
-    if (_isFirebaseApp(obj)) return false;
-    return 'authIdToken' in obj || 'appCheckToken' in obj || 'releaseOnDeref' in obj || 'automaticDataCollectionEnabled' in obj;
-}
-/**
- *
- * @param obj - an object of type FirebaseApp.
- *
- * @returns true if the provided object is of type FirebaseServerAppImpl.
- *
- * @internal
- */ function _isFirebaseServerApp(obj) {
-    if (obj === null || obj === undefined) return false;
-    return obj.settings !== undefined;
-}
-/**
- * Test only
- *
- * @internal
- */ function _clearComponents() {
-    _components.clear();
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const ERRORS = {
-    ["no-app" /* AppError.NO_APP */ ]: "No Firebase App '{$appName}' has been created - call initializeApp() first",
-    ["bad-app-name" /* AppError.BAD_APP_NAME */ ]: "Illegal App name: '{$appName}'",
-    ["duplicate-app" /* AppError.DUPLICATE_APP */ ]: "Firebase App named '{$appName}' already exists with different options or config",
-    ["app-deleted" /* AppError.APP_DELETED */ ]: "Firebase App named '{$appName}' already deleted",
-    ["server-app-deleted" /* AppError.SERVER_APP_DELETED */ ]: 'Firebase Server App has been deleted',
-    ["no-options" /* AppError.NO_OPTIONS */ ]: 'Need to provide options, when not being deployed to hosting via source.',
-    ["invalid-app-argument" /* AppError.INVALID_APP_ARGUMENT */ ]: "firebase.{$appName}() takes either no argument or a Firebase App instance.",
-    ["invalid-log-argument" /* AppError.INVALID_LOG_ARGUMENT */ ]: 'First argument to `onLog` must be null or a function.',
-    ["idb-open" /* AppError.IDB_OPEN */ ]: 'Error thrown when opening IndexedDB. Original error: {$originalErrorMessage}.',
-    ["idb-get" /* AppError.IDB_GET */ ]: 'Error thrown when reading from IndexedDB. Original error: {$originalErrorMessage}.',
-    ["idb-set" /* AppError.IDB_WRITE */ ]: 'Error thrown when writing to IndexedDB. Original error: {$originalErrorMessage}.',
-    ["idb-delete" /* AppError.IDB_DELETE */ ]: 'Error thrown when deleting from IndexedDB. Original error: {$originalErrorMessage}.',
-    ["finalization-registry-not-supported" /* AppError.FINALIZATION_REGISTRY_NOT_SUPPORTED */ ]: 'FirebaseServerApp deleteOnDeref field defined but the JS runtime does not support FinalizationRegistry.',
-    ["invalid-server-app-environment" /* AppError.INVALID_SERVER_APP_ENVIRONMENT */ ]: 'FirebaseServerApp is not for use in browser environments.'
-};
-const ERROR_FACTORY = new (0, _util.ErrorFactory)('app', 'Firebase', ERRORS);
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ class FirebaseAppImpl {
-    constructor(options, config, container){
-        this._isDeleted = false;
-        this._options = {
-            ...options
-        };
-        this._config = {
-            ...config
-        };
-        this._name = config.name;
-        this._automaticDataCollectionEnabled = config.automaticDataCollectionEnabled;
-        this._container = container;
-        this.container.addComponent(new (0, _component.Component)('app', ()=>this, "PUBLIC" /* ComponentType.PUBLIC */ ));
-    }
-    get automaticDataCollectionEnabled() {
-        this.checkDestroyed();
-        return this._automaticDataCollectionEnabled;
-    }
-    set automaticDataCollectionEnabled(val) {
-        this.checkDestroyed();
-        this._automaticDataCollectionEnabled = val;
-    }
-    get name() {
-        this.checkDestroyed();
-        return this._name;
-    }
-    get options() {
-        this.checkDestroyed();
-        return this._options;
-    }
-    get config() {
-        this.checkDestroyed();
-        return this._config;
-    }
-    get container() {
-        return this._container;
-    }
-    get isDeleted() {
-        return this._isDeleted;
-    }
-    set isDeleted(val) {
-        this._isDeleted = val;
-    }
-    /**
-     * This function will throw an Error if the App has already been deleted -
-     * use before performing API actions on the App.
-     */ checkDestroyed() {
-        if (this.isDeleted) throw ERROR_FACTORY.create("app-deleted" /* AppError.APP_DELETED */ , {
-            appName: this._name
-        });
-    }
-}
-/**
- * @license
- * Copyright 2023 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ // Parse the token and check to see if the `exp` claim is in the future.
-// Reports an error to the console if the token or claim could not be parsed, or if `exp` is in
-// the past.
-function validateTokenTTL(base64Token, tokenName) {
-    const secondPart = (0, _util.base64Decode)(base64Token.split('.')[1]);
-    if (secondPart === null) {
-        console.error(`FirebaseServerApp ${tokenName} is invalid: second part could not be parsed.`);
-        return;
-    }
-    const expClaim = JSON.parse(secondPart).exp;
-    if (expClaim === undefined) {
-        console.error(`FirebaseServerApp ${tokenName} is invalid: expiration claim could not be parsed`);
-        return;
-    }
-    const exp = JSON.parse(secondPart).exp * 1000;
-    const now = new Date().getTime();
-    const diff = exp - now;
-    if (diff <= 0) console.error(`FirebaseServerApp ${tokenName} is invalid: the token has expired.`);
-}
-class FirebaseServerAppImpl extends FirebaseAppImpl {
-    constructor(options, serverConfig, name, container){
-        // Build configuration parameters for the FirebaseAppImpl base class.
-        const automaticDataCollectionEnabled = serverConfig.automaticDataCollectionEnabled !== undefined ? serverConfig.automaticDataCollectionEnabled : true;
-        // Create the FirebaseAppSettings object for the FirebaseAppImp constructor.
-        const config = {
-            name,
-            automaticDataCollectionEnabled
-        };
-        if (options.apiKey !== undefined) // Construct the parent FirebaseAppImp object.
-        super(options, config, container);
-        else {
-            const appImpl = options;
-            super(appImpl.options, config, container);
-        }
-        // Now construct the data for the FirebaseServerAppImpl.
-        this._serverConfig = {
-            automaticDataCollectionEnabled,
-            ...serverConfig
-        };
-        // Ensure that the current time is within the `authIdtoken` window of validity.
-        if (this._serverConfig.authIdToken) validateTokenTTL(this._serverConfig.authIdToken, 'authIdToken');
-        // Ensure that the current time is within the `appCheckToken` window of validity.
-        if (this._serverConfig.appCheckToken) validateTokenTTL(this._serverConfig.appCheckToken, 'appCheckToken');
-        this._finalizationRegistry = null;
-        if (typeof FinalizationRegistry !== 'undefined') this._finalizationRegistry = new FinalizationRegistry(()=>{
-            this.automaticCleanup();
-        });
-        this._refCount = 0;
-        this.incRefCount(this._serverConfig.releaseOnDeref);
-        // Do not retain a hard reference to the dref object, otherwise the FinalizationRegistry
-        // will never trigger.
-        this._serverConfig.releaseOnDeref = undefined;
-        serverConfig.releaseOnDeref = undefined;
-        registerVersion(name$q, version$1, 'serverapp');
-    }
-    toJSON() {
-        return undefined;
-    }
-    get refCount() {
-        return this._refCount;
-    }
-    // Increment the reference count of this server app. If an object is provided, register it
-    // with the finalization registry.
-    incRefCount(obj) {
-        if (this.isDeleted) return;
-        this._refCount++;
-        if (obj !== undefined && this._finalizationRegistry !== null) this._finalizationRegistry.register(obj, this);
-    }
-    // Decrement the reference count.
-    decRefCount() {
-        if (this.isDeleted) return 0;
-        return --this._refCount;
-    }
-    // Invoked by the FinalizationRegistry callback to note that this app should go through its
-    // reference counts and delete itself if no reference count remain. The coordinating logic that
-    // handles this is in deleteApp(...).
-    automaticCleanup() {
-        deleteApp(this);
-    }
-    get settings() {
-        this.checkDestroyed();
-        return this._serverConfig;
-    }
-    /**
-     * This function will throw an Error if the App has already been deleted -
-     * use before performing API actions on the App.
-     */ checkDestroyed() {
-        if (this.isDeleted) throw ERROR_FACTORY.create("server-app-deleted" /* AppError.SERVER_APP_DELETED */ );
-    }
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * The current SDK version.
- *
- * @public
- */ const SDK_VERSION = version;
-function initializeApp(_options, rawConfig = {}) {
-    let options = _options;
-    if (typeof rawConfig !== 'object') {
-        const name = rawConfig;
-        rawConfig = {
-            name
-        };
-    }
-    const config = {
-        name: DEFAULT_ENTRY_NAME,
-        automaticDataCollectionEnabled: true,
-        ...rawConfig
-    };
-    const name = config.name;
-    if (typeof name !== 'string' || !name) throw ERROR_FACTORY.create("bad-app-name" /* AppError.BAD_APP_NAME */ , {
-        appName: String(name)
-    });
-    options || (options = (0, _util.getDefaultAppConfig)());
-    if (!options) throw ERROR_FACTORY.create("no-options" /* AppError.NO_OPTIONS */ );
-    const existingApp = _apps.get(name);
-    if (existingApp) {
-        // return the existing app if options and config deep equal the ones in the existing app.
-        if ((0, _util.deepEqual)(options, existingApp.options) && (0, _util.deepEqual)(config, existingApp.config)) return existingApp;
-        else throw ERROR_FACTORY.create("duplicate-app" /* AppError.DUPLICATE_APP */ , {
-            appName: name
-        });
-    }
-    const container = new (0, _component.ComponentContainer)(name);
-    for (const component of _components.values())container.addComponent(component);
-    const newApp = new FirebaseAppImpl(options, config, container);
-    _apps.set(name, newApp);
-    return newApp;
-}
-function initializeServerApp(_options, _serverAppConfig = {}) {
-    if ((0, _util.isBrowser)() && !(0, _util.isWebWorker)()) // FirebaseServerApp isn't designed to be run in browsers.
-    throw ERROR_FACTORY.create("invalid-server-app-environment" /* AppError.INVALID_SERVER_APP_ENVIRONMENT */ );
-    let firebaseOptions;
-    let serverAppSettings = _serverAppConfig || {};
-    if (_options) {
-        if (_isFirebaseApp(_options)) firebaseOptions = _options.options;
-        else if (_isFirebaseServerAppSettings(_options)) serverAppSettings = _options;
-        else firebaseOptions = _options;
-    }
-    if (serverAppSettings.automaticDataCollectionEnabled === undefined) serverAppSettings.automaticDataCollectionEnabled = true;
-    firebaseOptions || (firebaseOptions = (0, _util.getDefaultAppConfig)());
-    if (!firebaseOptions) throw ERROR_FACTORY.create("no-options" /* AppError.NO_OPTIONS */ );
-    // Build an app name based on a hash of the configuration options.
-    const nameObj = {
-        ...serverAppSettings,
-        ...firebaseOptions
-    };
-    // However, Do not mangle the name based on releaseOnDeref, since it will vary between the
-    // construction of FirebaseServerApp instances. For example, if the object is the request headers.
-    if (nameObj.releaseOnDeref !== undefined) delete nameObj.releaseOnDeref;
-    const hashCode = (s)=>{
-        return [
-            ...s
-        ].reduce((hash, c)=>Math.imul(31, hash) + c.charCodeAt(0) | 0, 0);
-    };
-    if (serverAppSettings.releaseOnDeref !== undefined) {
-        if (typeof FinalizationRegistry === 'undefined') throw ERROR_FACTORY.create("finalization-registry-not-supported" /* AppError.FINALIZATION_REGISTRY_NOT_SUPPORTED */ , {});
-    }
-    const nameString = '' + hashCode(JSON.stringify(nameObj));
-    const existingApp = _serverApps.get(nameString);
-    if (existingApp) {
-        existingApp.incRefCount(serverAppSettings.releaseOnDeref);
-        return existingApp;
-    }
-    const container = new (0, _component.ComponentContainer)(nameString);
-    for (const component of _components.values())container.addComponent(component);
-    const newApp = new FirebaseServerAppImpl(firebaseOptions, serverAppSettings, nameString, container);
-    _serverApps.set(nameString, newApp);
-    return newApp;
-}
-/**
- * Retrieves a {@link @firebase/app#FirebaseApp} instance.
- *
- * When called with no arguments, the default app is returned. When an app name
- * is provided, the app corresponding to that name is returned.
- *
- * An exception is thrown if the app being retrieved has not yet been
- * initialized.
- *
- * @example
- * ```javascript
- * // Return the default app
- * const app = getApp();
- * ```
- *
- * @example
- * ```javascript
- * // Return a named app
- * const otherApp = getApp("otherApp");
- * ```
- *
- * @param name - Optional name of the app to return. If no name is
- *   provided, the default is `"[DEFAULT]"`.
- *
- * @returns The app corresponding to the provided app name.
- *   If no app name is provided, the default app is returned.
- *
- * @public
- */ function getApp(name = DEFAULT_ENTRY_NAME) {
-    const app = _apps.get(name);
-    if (!app && name === DEFAULT_ENTRY_NAME && (0, _util.getDefaultAppConfig)()) return initializeApp();
-    if (!app) throw ERROR_FACTORY.create("no-app" /* AppError.NO_APP */ , {
-        appName: name
-    });
-    return app;
-}
-/**
- * A (read-only) array of all initialized apps.
- * @public
- */ function getApps() {
-    return Array.from(_apps.values());
-}
-/**
- * Renders this app unusable and frees the resources of all associated
- * services.
- *
- * @example
- * ```javascript
- * deleteApp(app)
- *   .then(function() {
- *     console.log("App deleted successfully");
- *   })
- *   .catch(function(error) {
- *     console.log("Error deleting app:", error);
- *   });
- * ```
- *
- * @public
- */ async function deleteApp(app) {
-    let cleanupProviders = false;
-    const name = app.name;
-    if (_apps.has(name)) {
-        cleanupProviders = true;
-        _apps.delete(name);
-    } else if (_serverApps.has(name)) {
-        const firebaseServerApp = app;
-        if (firebaseServerApp.decRefCount() <= 0) {
-            _serverApps.delete(name);
-            cleanupProviders = true;
-        }
-    }
-    if (cleanupProviders) {
-        await Promise.all(app.container.getProviders().map((provider)=>provider.delete()));
-        app.isDeleted = true;
-    }
-}
-/**
- * Registers a library's name and version for platform logging purposes.
- * @param library - Name of 1p or 3p library (e.g. firestore, angularfire)
- * @param version - Current version of that library.
- * @param variant - Bundle variant, e.g., node, rn, etc.
- *
- * @public
- */ function registerVersion(libraryKeyOrName, version, variant) {
-    // TODO: We can use this check to whitelist strings when/if we set up
-    // a good whitelist system.
-    let library = PLATFORM_LOG_STRING[libraryKeyOrName] ?? libraryKeyOrName;
-    if (variant) library += `-${variant}`;
-    const libraryMismatch = library.match(/\s|\//);
-    const versionMismatch = version.match(/\s|\//);
-    if (libraryMismatch || versionMismatch) {
-        const warning = [
-            `Unable to register library "${library}" with version "${version}":`
-        ];
-        if (libraryMismatch) warning.push(`library name "${library}" contains illegal characters (whitespace or "/")`);
-        if (libraryMismatch && versionMismatch) warning.push('and');
-        if (versionMismatch) warning.push(`version name "${version}" contains illegal characters (whitespace or "/")`);
-        logger.warn(warning.join(' '));
-        return;
-    }
-    _registerComponent(new (0, _component.Component)(`${library}-version`, ()=>({
-            library,
-            version
-        }), "VERSION" /* ComponentType.VERSION */ ));
-}
-/**
- * Sets log handler for all Firebase SDKs.
- * @param logCallback - An optional custom log handler that executes user code whenever
- * the Firebase SDK makes a logging call.
- *
- * @public
- */ function onLog(logCallback, options) {
-    if (logCallback !== null && typeof logCallback !== 'function') throw ERROR_FACTORY.create("invalid-log-argument" /* AppError.INVALID_LOG_ARGUMENT */ );
-    (0, _logger.setUserLogHandler)(logCallback, options);
-}
-/**
- * Sets log level for all Firebase SDKs.
- *
- * All of the log types above the current log level are captured (i.e. if
- * you set the log level to `info`, errors are logged, but `debug` and
- * `verbose` logs are not).
- *
- * @public
- */ function setLogLevel(logLevel) {
-    (0, _logger.setLogLevel)(logLevel);
-}
-/**
- * @license
- * Copyright 2021 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const DB_NAME = 'firebase-heartbeat-database';
-const DB_VERSION = 1;
-const STORE_NAME = 'firebase-heartbeat-store';
-let dbPromise = null;
-function getDbPromise() {
-    if (!dbPromise) dbPromise = (0, _idb.openDB)(DB_NAME, DB_VERSION, {
-        upgrade: (db, oldVersion)=>{
-            // We don't use 'break' in this switch statement, the fall-through
-            // behavior is what we want, because if there are multiple versions between
-            // the old version and the current version, we want ALL the migrations
-            // that correspond to those versions to run, not only the last one.
-            // eslint-disable-next-line default-case
-            switch(oldVersion){
-                case 0:
-                    try {
-                        db.createObjectStore(STORE_NAME);
-                    } catch (e) {
-                        // Safari/iOS browsers throw occasional exceptions on
-                        // db.createObjectStore() that may be a bug. Avoid blocking
-                        // the rest of the app functionality.
-                        console.warn(e);
-                    }
-            }
-        }
-    }).catch((e)=>{
-        throw ERROR_FACTORY.create("idb-open" /* AppError.IDB_OPEN */ , {
-            originalErrorMessage: e.message
-        });
-    });
-    return dbPromise;
-}
-async function readHeartbeatsFromIndexedDB(app) {
-    try {
-        const db = await getDbPromise();
-        const tx = db.transaction(STORE_NAME);
-        const result = await tx.objectStore(STORE_NAME).get(computeKey(app));
-        // We already have the value but tx.done can throw,
-        // so we need to await it here to catch errors
-        await tx.done;
-        return result;
-    } catch (e) {
-        if (e instanceof (0, _util.FirebaseError)) logger.warn(e.message);
-        else {
-            const idbGetError = ERROR_FACTORY.create("idb-get" /* AppError.IDB_GET */ , {
-                originalErrorMessage: e?.message
-            });
-            logger.warn(idbGetError.message);
-        }
-    }
-}
-async function writeHeartbeatsToIndexedDB(app, heartbeatObject) {
-    try {
-        const db = await getDbPromise();
-        const tx = db.transaction(STORE_NAME, 'readwrite');
-        const objectStore = tx.objectStore(STORE_NAME);
-        await objectStore.put(heartbeatObject, computeKey(app));
-        await tx.done;
-    } catch (e) {
-        if (e instanceof (0, _util.FirebaseError)) logger.warn(e.message);
-        else {
-            const idbGetError = ERROR_FACTORY.create("idb-set" /* AppError.IDB_WRITE */ , {
-                originalErrorMessage: e?.message
-            });
-            logger.warn(idbGetError.message);
-        }
-    }
-}
-function computeKey(app) {
-    return `${app.name}!${app.options.appId}`;
-}
-/**
- * @license
- * Copyright 2021 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const MAX_HEADER_BYTES = 1024;
-const MAX_NUM_STORED_HEARTBEATS = 30;
-class HeartbeatServiceImpl {
-    constructor(container){
-        this.container = container;
-        /**
-         * In-memory cache for heartbeats, used by getHeartbeatsHeader() to generate
-         * the header string.
-         * Stores one record per date. This will be consolidated into the standard
-         * format of one record per user agent string before being sent as a header.
-         * Populated from indexedDB when the controller is instantiated and should
-         * be kept in sync with indexedDB.
-         * Leave public for easier testing.
-         */ this._heartbeatsCache = null;
-        const app = this.container.getProvider('app').getImmediate();
-        this._storage = new HeartbeatStorageImpl(app);
-        this._heartbeatsCachePromise = this._storage.read().then((result)=>{
-            this._heartbeatsCache = result;
-            return result;
-        });
-    }
-    /**
-     * Called to report a heartbeat. The function will generate
-     * a HeartbeatsByUserAgent object, update heartbeatsCache, and persist it
-     * to IndexedDB.
-     * Note that we only store one heartbeat per day. So if a heartbeat for today is
-     * already logged, subsequent calls to this function in the same day will be ignored.
-     */ async triggerHeartbeat() {
-        try {
-            const platformLogger = this.container.getProvider('platform-logger').getImmediate();
-            // This is the "Firebase user agent" string from the platform logger
-            // service, not the browser user agent.
-            const agent = platformLogger.getPlatformInfoString();
-            const date = getUTCDateString();
-            if (this._heartbeatsCache?.heartbeats == null) {
-                this._heartbeatsCache = await this._heartbeatsCachePromise;
-                // If we failed to construct a heartbeats cache, then return immediately.
-                if (this._heartbeatsCache?.heartbeats == null) return;
-            }
-            // Do not store a heartbeat if one is already stored for this day
-            // or if a header has already been sent today.
-            if (this._heartbeatsCache.lastSentHeartbeatDate === date || this._heartbeatsCache.heartbeats.some((singleDateHeartbeat)=>singleDateHeartbeat.date === date)) return;
-            else {
-                // There is no entry for this date. Create one.
-                this._heartbeatsCache.heartbeats.push({
-                    date,
-                    agent
-                });
-                // If the number of stored heartbeats exceeds the maximum number of stored heartbeats, remove the heartbeat with the earliest date.
-                // Since this is executed each time a heartbeat is pushed, the limit can only be exceeded by one, so only one needs to be removed.
-                if (this._heartbeatsCache.heartbeats.length > MAX_NUM_STORED_HEARTBEATS) {
-                    const earliestHeartbeatIdx = getEarliestHeartbeatIdx(this._heartbeatsCache.heartbeats);
-                    this._heartbeatsCache.heartbeats.splice(earliestHeartbeatIdx, 1);
-                }
-            }
-            return this._storage.overwrite(this._heartbeatsCache);
-        } catch (e) {
-            logger.warn(e);
-        }
-    }
-    /**
-     * Returns a base64 encoded string which can be attached to the heartbeat-specific header directly.
-     * It also clears all heartbeats from memory as well as in IndexedDB.
-     *
-     * NOTE: Consuming product SDKs should not send the header if this method
-     * returns an empty string.
-     */ async getHeartbeatsHeader() {
-        try {
-            if (this._heartbeatsCache === null) await this._heartbeatsCachePromise;
-            // If it's still null or the array is empty, there is no data to send.
-            if (this._heartbeatsCache?.heartbeats == null || this._heartbeatsCache.heartbeats.length === 0) return '';
-            const date = getUTCDateString();
-            // Extract as many heartbeats from the cache as will fit under the size limit.
-            const { heartbeatsToSend, unsentEntries } = extractHeartbeatsForHeader(this._heartbeatsCache.heartbeats);
-            const headerString = (0, _util.base64urlEncodeWithoutPadding)(JSON.stringify({
-                version: 2,
-                heartbeats: heartbeatsToSend
-            }));
-            // Store last sent date to prevent another being logged/sent for the same day.
-            this._heartbeatsCache.lastSentHeartbeatDate = date;
-            if (unsentEntries.length > 0) {
-                // Store any unsent entries if they exist.
-                this._heartbeatsCache.heartbeats = unsentEntries;
-                // This seems more likely than emptying the array (below) to lead to some odd state
-                // since the cache isn't empty and this will be called again on the next request,
-                // and is probably safest if we await it.
-                await this._storage.overwrite(this._heartbeatsCache);
-            } else {
-                this._heartbeatsCache.heartbeats = [];
-                // Do not wait for this, to reduce latency.
-                this._storage.overwrite(this._heartbeatsCache);
-            }
-            return headerString;
-        } catch (e) {
-            logger.warn(e);
-            return '';
-        }
-    }
-}
-function getUTCDateString() {
-    const today = new Date();
-    // Returns date format 'YYYY-MM-DD'
-    return today.toISOString().substring(0, 10);
-}
-function extractHeartbeatsForHeader(heartbeatsCache, maxSize = MAX_HEADER_BYTES) {
-    // Heartbeats grouped by user agent in the standard format to be sent in
-    // the header.
-    const heartbeatsToSend = [];
-    // Single date format heartbeats that are not sent.
-    let unsentEntries = heartbeatsCache.slice();
-    for (const singleDateHeartbeat of heartbeatsCache){
-        // Look for an existing entry with the same user agent.
-        const heartbeatEntry = heartbeatsToSend.find((hb)=>hb.agent === singleDateHeartbeat.agent);
-        if (!heartbeatEntry) {
-            // If no entry for this user agent exists, create one.
-            heartbeatsToSend.push({
-                agent: singleDateHeartbeat.agent,
-                dates: [
-                    singleDateHeartbeat.date
-                ]
-            });
-            if (countBytes(heartbeatsToSend) > maxSize) {
-                // If the header would exceed max size, remove the added heartbeat
-                // entry and stop adding to the header.
-                heartbeatsToSend.pop();
-                break;
-            }
-        } else {
-            heartbeatEntry.dates.push(singleDateHeartbeat.date);
-            // If the header would exceed max size, remove the added date
-            // and stop adding to the header.
-            if (countBytes(heartbeatsToSend) > maxSize) {
-                heartbeatEntry.dates.pop();
-                break;
-            }
-        }
-        // Pop unsent entry from queue. (Skipped if adding the entry exceeded
-        // quota and the loop breaks early.)
-        unsentEntries = unsentEntries.slice(1);
-    }
-    return {
-        heartbeatsToSend,
-        unsentEntries
-    };
-}
-class HeartbeatStorageImpl {
-    constructor(app){
-        this.app = app;
-        this._canUseIndexedDBPromise = this.runIndexedDBEnvironmentCheck();
-    }
-    async runIndexedDBEnvironmentCheck() {
-        if (!(0, _util.isIndexedDBAvailable)()) return false;
-        else return (0, _util.validateIndexedDBOpenable)().then(()=>true).catch(()=>false);
-    }
-    /**
-     * Read all heartbeats.
-     */ async read() {
-        const canUseIndexedDB = await this._canUseIndexedDBPromise;
-        if (!canUseIndexedDB) return {
-            heartbeats: []
-        };
-        else {
-            const idbHeartbeatObject = await readHeartbeatsFromIndexedDB(this.app);
-            if (idbHeartbeatObject?.heartbeats) return idbHeartbeatObject;
-            else return {
-                heartbeats: []
-            };
-        }
-    }
-    // overwrite the storage with the provided heartbeats
-    async overwrite(heartbeatsObject) {
-        const canUseIndexedDB = await this._canUseIndexedDBPromise;
-        if (!canUseIndexedDB) return;
-        else {
-            const existingHeartbeatsObject = await this.read();
-            return writeHeartbeatsToIndexedDB(this.app, {
-                lastSentHeartbeatDate: heartbeatsObject.lastSentHeartbeatDate ?? existingHeartbeatsObject.lastSentHeartbeatDate,
-                heartbeats: heartbeatsObject.heartbeats
-            });
-        }
-    }
-    // add heartbeats
-    async add(heartbeatsObject) {
-        const canUseIndexedDB = await this._canUseIndexedDBPromise;
-        if (!canUseIndexedDB) return;
-        else {
-            const existingHeartbeatsObject = await this.read();
-            return writeHeartbeatsToIndexedDB(this.app, {
-                lastSentHeartbeatDate: heartbeatsObject.lastSentHeartbeatDate ?? existingHeartbeatsObject.lastSentHeartbeatDate,
-                heartbeats: [
-                    ...existingHeartbeatsObject.heartbeats,
-                    ...heartbeatsObject.heartbeats
-                ]
-            });
-        }
-    }
-}
-/**
- * Calculate bytes of a HeartbeatsByUserAgent array after being wrapped
- * in a platform logging header JSON object, stringified, and converted
- * to base 64.
- */ function countBytes(heartbeatsCache) {
-    // base64 has a restricted set of characters, all of which should be 1 byte.
-    return (0, _util.base64urlEncodeWithoutPadding)(// heartbeatsCache wrapper properties
-    JSON.stringify({
-        version: 2,
-        heartbeats: heartbeatsCache
-    })).length;
-}
-/**
- * Returns the index of the heartbeat with the earliest date.
- * If the heartbeats array is empty, -1 is returned.
- */ function getEarliestHeartbeatIdx(heartbeats) {
-    if (heartbeats.length === 0) return -1;
-    let earliestHeartbeatIdx = 0;
-    let earliestHeartbeatDate = heartbeats[0].date;
-    for(let i = 1; i < heartbeats.length; i++)if (heartbeats[i].date < earliestHeartbeatDate) {
-        earliestHeartbeatDate = heartbeats[i].date;
-        earliestHeartbeatIdx = i;
-    }
-    return earliestHeartbeatIdx;
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ function registerCoreComponents(variant) {
-    _registerComponent(new (0, _component.Component)('platform-logger', (container)=>new PlatformLoggerServiceImpl(container), "PRIVATE" /* ComponentType.PRIVATE */ ));
-    _registerComponent(new (0, _component.Component)('heartbeat', (container)=>new HeartbeatServiceImpl(container), "PRIVATE" /* ComponentType.PRIVATE */ ));
-    // Register `app` package.
-    registerVersion(name$q, version$1, variant);
-    // BUILD_TARGET will be replaced by values like esm, cjs, etc during the compilation
-    registerVersion(name$q, version$1, 'esm2020');
-    // Register platform SDK identifier (no version).
-    registerVersion('fire-js', '');
-}
-/**
- * Firebase App
- *
- * @remarks This package coordinates the communication between the different Firebase components
- * @packageDocumentation
- */ registerCoreComponents('');
-
-},{"@firebase/component":"d6O5O","@firebase/logger":"9cikG","@firebase/util":"jy04l","idb":"258QC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"d6O5O":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Component", ()=>Component);
-parcelHelpers.export(exports, "ComponentContainer", ()=>ComponentContainer);
-parcelHelpers.export(exports, "Provider", ()=>Provider);
-var _util = require("@firebase/util");
-/**
- * Component for service name T, e.g. `auth`, `auth-internal`
- */ class Component {
-    /**
-     *
-     * @param name The public service name, e.g. app, auth, firestore, database
-     * @param instanceFactory Service factory responsible for creating the public interface
-     * @param type whether the service provided by the component is public or private
-     */ constructor(name, instanceFactory, type){
-        this.name = name;
-        this.instanceFactory = instanceFactory;
-        this.type = type;
-        this.multipleInstances = false;
-        /**
-         * Properties to be added to the service namespace
-         */ this.serviceProps = {};
-        this.instantiationMode = "LAZY" /* InstantiationMode.LAZY */ ;
-        this.onInstanceCreated = null;
-    }
-    setInstantiationMode(mode) {
-        this.instantiationMode = mode;
-        return this;
-    }
-    setMultipleInstances(multipleInstances) {
-        this.multipleInstances = multipleInstances;
-        return this;
-    }
-    setServiceProps(props) {
-        this.serviceProps = props;
-        return this;
-    }
-    setInstanceCreatedCallback(callback) {
-        this.onInstanceCreated = callback;
-        return this;
-    }
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Provider for instance for service name T, e.g. 'auth', 'auth-internal'
- * NameServiceMapping[T] is an alias for the type of the instance
- */ class Provider {
-    constructor(name, container){
-        this.name = name;
-        this.container = container;
-        this.component = null;
-        this.instances = new Map();
-        this.instancesDeferred = new Map();
-        this.instancesOptions = new Map();
-        this.onInitCallbacks = new Map();
-    }
-    /**
-     * @param identifier A provider can provide multiple instances of a service
-     * if this.component.multipleInstances is true.
-     */ get(identifier) {
-        // if multipleInstances is not supported, use the default name
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
-        if (!this.instancesDeferred.has(normalizedIdentifier)) {
-            const deferred = new (0, _util.Deferred)();
-            this.instancesDeferred.set(normalizedIdentifier, deferred);
-            if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) // initialize the service if it can be auto-initialized
-            try {
-                const instance = this.getOrInitializeService({
-                    instanceIdentifier: normalizedIdentifier
-                });
-                if (instance) deferred.resolve(instance);
-            } catch (e) {
-            // when the instance factory throws an exception during get(), it should not cause
-            // a fatal error. We just return the unresolved promise in this case.
-            }
-        }
-        return this.instancesDeferred.get(normalizedIdentifier).promise;
-    }
-    getImmediate(options) {
-        // if multipleInstances is not supported, use the default name
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(options?.identifier);
-        const optional = options?.optional ?? false;
-        if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) try {
-            return this.getOrInitializeService({
-                instanceIdentifier: normalizedIdentifier
-            });
-        } catch (e) {
-            if (optional) return null;
-            else throw e;
-        }
-        else {
-            // In case a component is not initialized and should/cannot be auto-initialized at the moment, return null if the optional flag is set, or throw
-            if (optional) return null;
-            else throw Error(`Service ${this.name} is not available`);
-        }
-    }
-    getComponent() {
-        return this.component;
-    }
-    setComponent(component) {
-        if (component.name !== this.name) throw Error(`Mismatching Component ${component.name} for Provider ${this.name}.`);
-        if (this.component) throw Error(`Component for ${this.name} has already been provided`);
-        this.component = component;
-        // return early without attempting to initialize the component if the component requires explicit initialization (calling `Provider.initialize()`)
-        if (!this.shouldAutoInitialize()) return;
-        // if the service is eager, initialize the default instance
-        if (isComponentEager(component)) try {
-            this.getOrInitializeService({
-                instanceIdentifier: DEFAULT_ENTRY_NAME
-            });
-        } catch (e) {
-        // when the instance factory for an eager Component throws an exception during the eager
-        // initialization, it should not cause a fatal error.
-        // TODO: Investigate if we need to make it configurable, because some component may want to cause
-        // a fatal error in this case?
-        }
-        // Create service instances for the pending promises and resolve them
-        // NOTE: if this.multipleInstances is false, only the default instance will be created
-        // and all promises with resolve with it regardless of the identifier.
-        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
-            const normalizedIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
-            try {
-                // `getOrInitializeService()` should always return a valid instance since a component is guaranteed. use ! to make typescript happy.
-                const instance = this.getOrInitializeService({
-                    instanceIdentifier: normalizedIdentifier
-                });
-                instanceDeferred.resolve(instance);
-            } catch (e) {
-            // when the instance factory throws an exception, it should not cause
-            // a fatal error. We just leave the promise unresolved.
-            }
-        }
-    }
-    clearInstance(identifier = DEFAULT_ENTRY_NAME) {
-        this.instancesDeferred.delete(identifier);
-        this.instancesOptions.delete(identifier);
-        this.instances.delete(identifier);
-    }
-    // app.delete() will call this method on every provider to delete the services
-    // TODO: should we mark the provider as deleted?
-    async delete() {
-        const services = Array.from(this.instances.values());
-        await Promise.all([
-            ...services.filter((service)=>'INTERNAL' in service) // legacy services
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            .map((service)=>service.INTERNAL.delete()),
-            ...services.filter((service)=>'_delete' in service) // modularized services
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            .map((service)=>service._delete())
-        ]);
-    }
-    isComponentSet() {
-        return this.component != null;
-    }
-    isInitialized(identifier = DEFAULT_ENTRY_NAME) {
-        return this.instances.has(identifier);
-    }
-    getOptions(identifier = DEFAULT_ENTRY_NAME) {
-        return this.instancesOptions.get(identifier) || {};
-    }
-    initialize(opts = {}) {
-        const { options = {} } = opts;
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(opts.instanceIdentifier);
-        if (this.isInitialized(normalizedIdentifier)) throw Error(`${this.name}(${normalizedIdentifier}) has already been initialized`);
-        if (!this.isComponentSet()) throw Error(`Component ${this.name} has not been registered yet`);
-        const instance = this.getOrInitializeService({
-            instanceIdentifier: normalizedIdentifier,
-            options
-        });
-        // resolve any pending promise waiting for the service instance
-        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
-            const normalizedDeferredIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
-            if (normalizedIdentifier === normalizedDeferredIdentifier) instanceDeferred.resolve(instance);
-        }
-        return instance;
-    }
-    /**
-     *
-     * @param callback - a function that will be invoked  after the provider has been initialized by calling provider.initialize().
-     * The function is invoked SYNCHRONOUSLY, so it should not execute any longrunning tasks in order to not block the program.
-     *
-     * @param identifier An optional instance identifier
-     * @returns a function to unregister the callback
-     */ onInit(callback, identifier) {
-        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
-        const existingCallbacks = this.onInitCallbacks.get(normalizedIdentifier) ?? new Set();
-        existingCallbacks.add(callback);
-        this.onInitCallbacks.set(normalizedIdentifier, existingCallbacks);
-        const existingInstance = this.instances.get(normalizedIdentifier);
-        if (existingInstance) callback(existingInstance, normalizedIdentifier);
-        return ()=>{
-            existingCallbacks.delete(callback);
-        };
-    }
-    /**
-     * Invoke onInit callbacks synchronously
-     * @param instance the service instance`
-     */ invokeOnInitCallbacks(instance, identifier) {
-        const callbacks = this.onInitCallbacks.get(identifier);
-        if (!callbacks) return;
-        for (const callback of callbacks)try {
-            callback(instance, identifier);
-        } catch  {
-        // ignore errors in the onInit callback
-        }
-    }
-    getOrInitializeService({ instanceIdentifier, options = {} }) {
-        let instance = this.instances.get(instanceIdentifier);
-        if (!instance && this.component) {
-            instance = this.component.instanceFactory(this.container, {
-                instanceIdentifier: normalizeIdentifierForFactory(instanceIdentifier),
-                options
-            });
-            this.instances.set(instanceIdentifier, instance);
-            this.instancesOptions.set(instanceIdentifier, options);
-            /**
-             * Invoke onInit listeners.
-             * Note this.component.onInstanceCreated is different, which is used by the component creator,
-             * while onInit listeners are registered by consumers of the provider.
-             */ this.invokeOnInitCallbacks(instance, instanceIdentifier);
-            /**
-             * Order is important
-             * onInstanceCreated() should be called after this.instances.set(instanceIdentifier, instance); which
-             * makes `isInitialized()` return true.
-             */ if (this.component.onInstanceCreated) try {
-                this.component.onInstanceCreated(this.container, instanceIdentifier, instance);
-            } catch  {
-            // ignore errors in the onInstanceCreatedCallback
-            }
-        }
-        return instance || null;
-    }
-    normalizeInstanceIdentifier(identifier = DEFAULT_ENTRY_NAME) {
-        if (this.component) return this.component.multipleInstances ? identifier : DEFAULT_ENTRY_NAME;
-        else return identifier; // assume multiple instances are supported before the component is provided.
-    }
-    shouldAutoInitialize() {
-        return !!this.component && this.component.instantiationMode !== "EXPLICIT" /* InstantiationMode.EXPLICIT */ ;
-    }
-}
-// undefined should be passed to the service factory for the default instance
-function normalizeIdentifierForFactory(identifier) {
-    return identifier === DEFAULT_ENTRY_NAME ? undefined : identifier;
-}
-function isComponentEager(component) {
-    return component.instantiationMode === "EAGER" /* InstantiationMode.EAGER */ ;
-}
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * ComponentContainer that provides Providers for service name T, e.g. `auth`, `auth-internal`
- */ class ComponentContainer {
-    constructor(name){
-        this.name = name;
-        this.providers = new Map();
-    }
-    /**
-     *
-     * @param component Component being added
-     * @param overwrite When a component with the same name has already been registered,
-     * if overwrite is true: overwrite the existing component with the new component and create a new
-     * provider with the new component. It can be useful in tests where you want to use different mocks
-     * for different tests.
-     * if overwrite is false: throw an exception
-     */ addComponent(component) {
-        const provider = this.getProvider(component.name);
-        if (provider.isComponentSet()) throw new Error(`Component ${component.name} has already been registered with ${this.name}`);
-        provider.setComponent(component);
-    }
-    addOrOverwriteComponent(component) {
-        const provider = this.getProvider(component.name);
-        if (provider.isComponentSet()) // delete the existing provider from the container, so we can register the new component
-        this.providers.delete(component.name);
-        this.addComponent(component);
-    }
-    /**
-     * getProvider provides a type safe interface where it can only be called with a field name
-     * present in NameServiceMapping interface.
-     *
-     * Firebase SDKs providing services should extend NameServiceMapping interface to register
-     * themselves.
-     */ getProvider(name) {
-        if (this.providers.has(name)) return this.providers.get(name);
-        // create a Provider for a service that hasn't registered with Firebase
-        const provider = new Provider(name, this);
-        this.providers.set(name, provider);
-        return provider;
-    }
-    getProviders() {
-        return Array.from(this.providers.values());
-    }
-}
-
-},{"@firebase/util":"jy04l","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jy04l":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CONSTANTS", ()=>CONSTANTS);
-parcelHelpers.export(exports, "DecodeBase64StringError", ()=>DecodeBase64StringError);
-parcelHelpers.export(exports, "Deferred", ()=>Deferred);
-parcelHelpers.export(exports, "ErrorFactory", ()=>ErrorFactory);
-parcelHelpers.export(exports, "FirebaseError", ()=>FirebaseError);
-parcelHelpers.export(exports, "MAX_VALUE_MILLIS", ()=>MAX_VALUE_MILLIS);
-parcelHelpers.export(exports, "RANDOM_FACTOR", ()=>RANDOM_FACTOR);
-parcelHelpers.export(exports, "Sha1", ()=>Sha1);
-parcelHelpers.export(exports, "areCookiesEnabled", ()=>areCookiesEnabled);
-parcelHelpers.export(exports, "assert", ()=>assert);
-parcelHelpers.export(exports, "assertionError", ()=>assertionError);
-parcelHelpers.export(exports, "async", ()=>async);
-parcelHelpers.export(exports, "base64", ()=>base64);
-parcelHelpers.export(exports, "base64Decode", ()=>base64Decode);
-parcelHelpers.export(exports, "base64Encode", ()=>base64Encode);
-parcelHelpers.export(exports, "base64urlEncodeWithoutPadding", ()=>base64urlEncodeWithoutPadding);
-parcelHelpers.export(exports, "calculateBackoffMillis", ()=>calculateBackoffMillis);
-parcelHelpers.export(exports, "contains", ()=>contains);
-parcelHelpers.export(exports, "createMockUserToken", ()=>createMockUserToken);
-parcelHelpers.export(exports, "createSubscribe", ()=>createSubscribe);
-parcelHelpers.export(exports, "decode", ()=>decode);
-parcelHelpers.export(exports, "deepCopy", ()=>deepCopy);
-parcelHelpers.export(exports, "deepEqual", ()=>deepEqual);
-parcelHelpers.export(exports, "deepExtend", ()=>deepExtend);
-parcelHelpers.export(exports, "errorPrefix", ()=>errorPrefix);
-parcelHelpers.export(exports, "extractQuerystring", ()=>extractQuerystring);
-parcelHelpers.export(exports, "getDefaultAppConfig", ()=>getDefaultAppConfig);
-parcelHelpers.export(exports, "getDefaultEmulatorHost", ()=>getDefaultEmulatorHost);
-parcelHelpers.export(exports, "getDefaultEmulatorHostnameAndPort", ()=>getDefaultEmulatorHostnameAndPort);
-parcelHelpers.export(exports, "getDefaults", ()=>getDefaults);
-parcelHelpers.export(exports, "getExperimentalSetting", ()=>getExperimentalSetting);
-parcelHelpers.export(exports, "getGlobal", ()=>getGlobal);
-parcelHelpers.export(exports, "getModularInstance", ()=>getModularInstance);
-parcelHelpers.export(exports, "getUA", ()=>getUA);
-parcelHelpers.export(exports, "isAdmin", ()=>isAdmin);
-parcelHelpers.export(exports, "isBrowser", ()=>isBrowser);
-parcelHelpers.export(exports, "isBrowserExtension", ()=>isBrowserExtension);
-parcelHelpers.export(exports, "isCloudWorkstation", ()=>isCloudWorkstation);
-parcelHelpers.export(exports, "isCloudflareWorker", ()=>isCloudflareWorker);
-parcelHelpers.export(exports, "isElectron", ()=>isElectron);
-parcelHelpers.export(exports, "isEmpty", ()=>isEmpty);
-parcelHelpers.export(exports, "isIE", ()=>isIE);
-parcelHelpers.export(exports, "isIndexedDBAvailable", ()=>isIndexedDBAvailable);
-parcelHelpers.export(exports, "isMobileCordova", ()=>isMobileCordova);
-parcelHelpers.export(exports, "isNode", ()=>isNode);
-parcelHelpers.export(exports, "isNodeSdk", ()=>isNodeSdk);
-parcelHelpers.export(exports, "isReactNative", ()=>isReactNative);
-parcelHelpers.export(exports, "isSafari", ()=>isSafari);
-parcelHelpers.export(exports, "isSafariOrWebkit", ()=>isSafariOrWebkit);
-parcelHelpers.export(exports, "isUWP", ()=>isUWP);
-parcelHelpers.export(exports, "isValidFormat", ()=>isValidFormat);
-parcelHelpers.export(exports, "isValidTimestamp", ()=>isValidTimestamp);
-parcelHelpers.export(exports, "isWebWorker", ()=>isWebWorker);
-parcelHelpers.export(exports, "issuedAtTime", ()=>issuedAtTime);
-parcelHelpers.export(exports, "jsonEval", ()=>jsonEval);
-parcelHelpers.export(exports, "map", ()=>map);
-parcelHelpers.export(exports, "ordinal", ()=>ordinal);
-parcelHelpers.export(exports, "pingServer", ()=>pingServer);
-parcelHelpers.export(exports, "promiseWithTimeout", ()=>promiseWithTimeout);
-parcelHelpers.export(exports, "querystring", ()=>querystring);
-parcelHelpers.export(exports, "querystringDecode", ()=>querystringDecode);
-parcelHelpers.export(exports, "safeGet", ()=>safeGet);
-parcelHelpers.export(exports, "stringLength", ()=>stringLength);
-parcelHelpers.export(exports, "stringToByteArray", ()=>stringToByteArray);
-parcelHelpers.export(exports, "stringify", ()=>stringify);
-parcelHelpers.export(exports, "updateEmulatorBanner", ()=>updateEmulatorBanner);
-parcelHelpers.export(exports, "validateArgCount", ()=>validateArgCount);
-parcelHelpers.export(exports, "validateCallback", ()=>validateCallback);
-parcelHelpers.export(exports, "validateContextObject", ()=>validateContextObject);
-parcelHelpers.export(exports, "validateIndexedDBOpenable", ()=>validateIndexedDBOpenable);
-parcelHelpers.export(exports, "validateNamespace", ()=>validateNamespace);
-var _postinstallMjs = require("./postinstall.mjs");
-var global = arguments[3];
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * @fileoverview Firebase constants.  Some of these (@defines) can be overridden at compile-time.
- */ const CONSTANTS = {
-    /**
-     * @define {boolean} Whether this is the client Node.js SDK.
-     */ NODE_CLIENT: false,
-    /**
-     * @define {boolean} Whether this is the Admin Node.js SDK.
-     */ NODE_ADMIN: false,
-    /**
-     * Firebase SDK Version
-     */ SDK_VERSION: '${JSCORE_VERSION}'
-};
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Throws an error if the provided assertion is falsy
- */ const assert = function(assertion, message) {
-    if (!assertion) throw assertionError(message);
-};
-/**
- * Returns an Error object suitable for throwing.
- */ const assertionError = function(message) {
-    return new Error('Firebase Database (' + CONSTANTS.SDK_VERSION + ') INTERNAL ASSERT FAILED: ' + message);
-};
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const stringToByteArray$1 = function(str) {
-    // TODO(user): Use native implementations if/when available
-    const out = [];
-    let p = 0;
-    for(let i = 0; i < str.length; i++){
-        let c = str.charCodeAt(i);
-        if (c < 128) out[p++] = c;
-        else if (c < 2048) {
-            out[p++] = c >> 6 | 192;
-            out[p++] = c & 63 | 128;
-        } else if ((c & 0xfc00) === 0xd800 && i + 1 < str.length && (str.charCodeAt(i + 1) & 0xfc00) === 0xdc00) {
-            // Surrogate Pair
-            c = 0x10000 + ((c & 0x03ff) << 10) + (str.charCodeAt(++i) & 0x03ff);
-            out[p++] = c >> 18 | 240;
-            out[p++] = c >> 12 & 63 | 128;
-            out[p++] = c >> 6 & 63 | 128;
-            out[p++] = c & 63 | 128;
-        } else {
-            out[p++] = c >> 12 | 224;
-            out[p++] = c >> 6 & 63 | 128;
-            out[p++] = c & 63 | 128;
-        }
-    }
-    return out;
-};
-/**
- * Turns an array of numbers into the string given by the concatenation of the
- * characters to which the numbers correspond.
- * @param bytes Array of numbers representing characters.
- * @return Stringification of the array.
- */ const byteArrayToString = function(bytes) {
-    // TODO(user): Use native implementations if/when available
-    const out = [];
-    let pos = 0, c = 0;
-    while(pos < bytes.length){
-        const c1 = bytes[pos++];
-        if (c1 < 128) out[c++] = String.fromCharCode(c1);
-        else if (c1 > 191 && c1 < 224) {
-            const c2 = bytes[pos++];
-            out[c++] = String.fromCharCode((c1 & 31) << 6 | c2 & 63);
-        } else if (c1 > 239 && c1 < 365) {
-            // Surrogate Pair
-            const c2 = bytes[pos++];
-            const c3 = bytes[pos++];
-            const c4 = bytes[pos++];
-            const u = ((c1 & 7) << 18 | (c2 & 63) << 12 | (c3 & 63) << 6 | c4 & 63) - 0x10000;
-            out[c++] = String.fromCharCode(0xd800 + (u >> 10));
-            out[c++] = String.fromCharCode(0xdc00 + (u & 1023));
-        } else {
-            const c2 = bytes[pos++];
-            const c3 = bytes[pos++];
-            out[c++] = String.fromCharCode((c1 & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
-        }
-    }
-    return out.join('');
-};
-// We define it as an object literal instead of a class because a class compiled down to es5 can't
-// be treeshaked. https://github.com/rollup/rollup/issues/1691
-// Static lookup maps, lazily populated by init_()
-// TODO(dlarocque): Define this as a class, since we no longer target ES5.
-const base64 = {
-    /**
-     * Maps bytes to characters.
-     */ byteToCharMap_: null,
-    /**
-     * Maps characters to bytes.
-     */ charToByteMap_: null,
-    /**
-     * Maps bytes to websafe characters.
-     * @private
-     */ byteToCharMapWebSafe_: null,
-    /**
-     * Maps websafe characters to bytes.
-     * @private
-     */ charToByteMapWebSafe_: null,
-    /**
-     * Our default alphabet, shared between
-     * ENCODED_VALS and ENCODED_VALS_WEBSAFE
-     */ ENCODED_VALS_BASE: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
-    /**
-     * Our default alphabet. Value 64 (=) is special; it means "nothing."
-     */ get ENCODED_VALS () {
-        return this.ENCODED_VALS_BASE + '+/=';
-    },
-    /**
-     * Our websafe alphabet.
-     */ get ENCODED_VALS_WEBSAFE () {
-        return this.ENCODED_VALS_BASE + '-_.';
-    },
-    /**
-     * Whether this browser supports the atob and btoa functions. This extension
-     * started at Mozilla but is now implemented by many browsers. We use the
-     * ASSUME_* variables to avoid pulling in the full useragent detection library
-     * but still allowing the standard per-browser compilations.
-     *
-     */ HAS_NATIVE_SUPPORT: typeof atob === 'function',
-    /**
-     * Base64-encode an array of bytes.
-     *
-     * @param input An array of bytes (numbers with
-     *     value in [0, 255]) to encode.
-     * @param webSafe Boolean indicating we should use the
-     *     alternative alphabet.
-     * @return The base64 encoded string.
-     */ encodeByteArray (input, webSafe) {
-        if (!Array.isArray(input)) throw Error('encodeByteArray takes an array as a parameter');
-        this.init_();
-        const byteToCharMap = webSafe ? this.byteToCharMapWebSafe_ : this.byteToCharMap_;
-        const output = [];
-        for(let i = 0; i < input.length; i += 3){
-            const byte1 = input[i];
-            const haveByte2 = i + 1 < input.length;
-            const byte2 = haveByte2 ? input[i + 1] : 0;
-            const haveByte3 = i + 2 < input.length;
-            const byte3 = haveByte3 ? input[i + 2] : 0;
-            const outByte1 = byte1 >> 2;
-            const outByte2 = (byte1 & 0x03) << 4 | byte2 >> 4;
-            let outByte3 = (byte2 & 0x0f) << 2 | byte3 >> 6;
-            let outByte4 = byte3 & 0x3f;
-            if (!haveByte3) {
-                outByte4 = 64;
-                if (!haveByte2) outByte3 = 64;
-            }
-            output.push(byteToCharMap[outByte1], byteToCharMap[outByte2], byteToCharMap[outByte3], byteToCharMap[outByte4]);
-        }
-        return output.join('');
-    },
-    /**
-     * Base64-encode a string.
-     *
-     * @param input A string to encode.
-     * @param webSafe If true, we should use the
-     *     alternative alphabet.
-     * @return The base64 encoded string.
-     */ encodeString (input, webSafe) {
-        // Shortcut for Mozilla browsers that implement
-        // a native base64 encoder in the form of "btoa/atob"
-        if (this.HAS_NATIVE_SUPPORT && !webSafe) return btoa(input);
-        return this.encodeByteArray(stringToByteArray$1(input), webSafe);
-    },
-    /**
-     * Base64-decode a string.
-     *
-     * @param input to decode.
-     * @param webSafe True if we should use the
-     *     alternative alphabet.
-     * @return string representing the decoded value.
-     */ decodeString (input, webSafe) {
-        // Shortcut for Mozilla browsers that implement
-        // a native base64 encoder in the form of "btoa/atob"
-        if (this.HAS_NATIVE_SUPPORT && !webSafe) return atob(input);
-        return byteArrayToString(this.decodeStringToByteArray(input, webSafe));
-    },
-    /**
-     * Base64-decode a string.
-     *
-     * In base-64 decoding, groups of four characters are converted into three
-     * bytes.  If the encoder did not apply padding, the input length may not
-     * be a multiple of 4.
-     *
-     * In this case, the last group will have fewer than 4 characters, and
-     * padding will be inferred.  If the group has one or two characters, it decodes
-     * to one byte.  If the group has three characters, it decodes to two bytes.
-     *
-     * @param input Input to decode.
-     * @param webSafe True if we should use the web-safe alphabet.
-     * @return bytes representing the decoded value.
-     */ decodeStringToByteArray (input, webSafe) {
-        this.init_();
-        const charToByteMap = webSafe ? this.charToByteMapWebSafe_ : this.charToByteMap_;
-        const output = [];
-        for(let i = 0; i < input.length;){
-            const byte1 = charToByteMap[input.charAt(i++)];
-            const haveByte2 = i < input.length;
-            const byte2 = haveByte2 ? charToByteMap[input.charAt(i)] : 0;
-            ++i;
-            const haveByte3 = i < input.length;
-            const byte3 = haveByte3 ? charToByteMap[input.charAt(i)] : 64;
-            ++i;
-            const haveByte4 = i < input.length;
-            const byte4 = haveByte4 ? charToByteMap[input.charAt(i)] : 64;
-            ++i;
-            if (byte1 == null || byte2 == null || byte3 == null || byte4 == null) throw new DecodeBase64StringError();
-            const outByte1 = byte1 << 2 | byte2 >> 4;
-            output.push(outByte1);
-            if (byte3 !== 64) {
-                const outByte2 = byte2 << 4 & 0xf0 | byte3 >> 2;
-                output.push(outByte2);
-                if (byte4 !== 64) {
-                    const outByte3 = byte3 << 6 & 0xc0 | byte4;
-                    output.push(outByte3);
-                }
-            }
-        }
-        return output;
-    },
-    /**
-     * Lazy static initialization function. Called before
-     * accessing any of the static map variables.
-     * @private
-     */ init_ () {
-        if (!this.byteToCharMap_) {
-            this.byteToCharMap_ = {};
-            this.charToByteMap_ = {};
-            this.byteToCharMapWebSafe_ = {};
-            this.charToByteMapWebSafe_ = {};
-            // We want quick mappings back and forth, so we precompute two maps.
-            for(let i = 0; i < this.ENCODED_VALS.length; i++){
-                this.byteToCharMap_[i] = this.ENCODED_VALS.charAt(i);
-                this.charToByteMap_[this.byteToCharMap_[i]] = i;
-                this.byteToCharMapWebSafe_[i] = this.ENCODED_VALS_WEBSAFE.charAt(i);
-                this.charToByteMapWebSafe_[this.byteToCharMapWebSafe_[i]] = i;
-                // Be forgiving when decoding and correctly decode both encodings.
-                if (i >= this.ENCODED_VALS_BASE.length) {
-                    this.charToByteMap_[this.ENCODED_VALS_WEBSAFE.charAt(i)] = i;
-                    this.charToByteMapWebSafe_[this.ENCODED_VALS.charAt(i)] = i;
-                }
-            }
-        }
-    }
-};
-/**
- * An error encountered while decoding base64 string.
- */ class DecodeBase64StringError extends Error {
-    constructor(){
-        super(...arguments);
-        this.name = 'DecodeBase64StringError';
-    }
-}
-/**
- * URL-safe base64 encoding
- */ const base64Encode = function(str) {
-    const utf8Bytes = stringToByteArray$1(str);
-    return base64.encodeByteArray(utf8Bytes, true);
-};
-/**
- * URL-safe base64 encoding (without "." padding in the end).
- * e.g. Used in JSON Web Token (JWT) parts.
- */ const base64urlEncodeWithoutPadding = function(str) {
-    // Use base64url encoding and remove padding in the end (dot characters).
-    return base64Encode(str).replace(/\./g, '');
-};
-/**
- * URL-safe base64 decoding
- *
- * NOTE: DO NOT use the global atob() function - it does NOT support the
- * base64Url variant encoding.
- *
- * @param str To be decoded
- * @return Decoded result, if possible
- */ const base64Decode = function(str) {
-    try {
-        return base64.decodeString(str, true);
-    } catch (e) {
-        console.error('base64Decode failed: ', e);
-    }
-    return null;
-};
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Do a deep-copy of basic JavaScript Objects or Arrays.
- */ function deepCopy(value) {
-    return deepExtend(undefined, value);
-}
-/**
- * Copy properties from source to target (recursively allows extension
- * of Objects and Arrays).  Scalar values in the target are over-written.
- * If target is undefined, an object of the appropriate type will be created
- * (and returned).
- *
- * We recursively copy all child properties of plain Objects in the source- so
- * that namespace- like dictionaries are merged.
- *
- * Note that the target can be a function, in which case the properties in
- * the source Object are copied onto it as static properties of the Function.
- *
- * Note: we don't merge __proto__ to prevent prototype pollution
- */ function deepExtend(target, source) {
-    if (!(source instanceof Object)) return source;
-    switch(source.constructor){
-        case Date:
-            // Treat Dates like scalars; if the target date object had any child
-            // properties - they will be lost!
-            const dateValue = source;
-            return new Date(dateValue.getTime());
-        case Object:
-            if (target === undefined) target = {};
-            break;
-        case Array:
-            // Always copy the array source and overwrite the target.
-            target = [];
-            break;
-        default:
-            // Not a plain Object - treat it as a scalar.
-            return source;
-    }
-    for(const prop in source){
-        // use isValidKey to guard against prototype pollution. See https://snyk.io/vuln/SNYK-JS-LODASH-450202
-        if (!source.hasOwnProperty(prop) || !isValidKey(prop)) continue;
-        target[prop] = deepExtend(target[prop], source[prop]);
-    }
-    return target;
-}
-function isValidKey(key) {
-    return key !== '__proto__';
-}
-/**
- * @license
- * Copyright 2022 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Polyfill for `globalThis` object.
- * @returns the `globalThis` object for the given environment.
- * @public
- */ function getGlobal() {
-    if (typeof self !== 'undefined') return self;
-    if (typeof window !== 'undefined') return window;
-    if (typeof global !== 'undefined') return global;
-    throw new Error('Unable to locate global object.');
-}
-/**
- * @license
- * Copyright 2022 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ const getDefaultsFromGlobal = ()=>getGlobal().__FIREBASE_DEFAULTS__;
-/**
- * Attempt to read defaults from a JSON string provided to
- * process(.)env(.)__FIREBASE_DEFAULTS__ or a JSON file whose path is in
- * process(.)env(.)__FIREBASE_DEFAULTS_PATH__
- * The dots are in parens because certain compilers (Vite?) cannot
- * handle seeing that variable in comments.
- * See https://github.com/firebase/firebase-js-sdk/issues/6838
- */ const getDefaultsFromEnvVariable = ()=>{
-    return;
-};
-const getDefaultsFromCookie = ()=>{
-    if (typeof document === 'undefined') return;
-    let match;
-    try {
-        match = document.cookie.match(/__FIREBASE_DEFAULTS__=([^;]+)/);
-    } catch (e) {
-        // Some environments such as Angular Universal SSR have a
-        // `document` object but error on accessing `document.cookie`.
-        return;
-    }
-    const decoded = match && base64Decode(match[1]);
-    return decoded && JSON.parse(decoded);
-};
-/**
- * Get the __FIREBASE_DEFAULTS__ object. It checks in order:
- * (1) if such an object exists as a property of `globalThis`
- * (2) if such an object was provided on a shell environment variable
- * (3) if such an object exists in a cookie
- * @public
- */ const getDefaults = ()=>{
-    try {
-        return (0, _postinstallMjs.getDefaultsFromPostinstall)() || getDefaultsFromGlobal() || getDefaultsFromEnvVariable() || getDefaultsFromCookie();
-    } catch (e) {
-        /**
-         * Catch-all for being unable to get __FIREBASE_DEFAULTS__ due
-         * to any environment case we have not accounted for. Log to
-         * info instead of swallowing so we can find these unknown cases
-         * and add paths for them if needed.
-         */ console.info(`Unable to get __FIREBASE_DEFAULTS__ due to: ${e}`);
-        return;
-    }
-};
-/**
- * Returns emulator host stored in the __FIREBASE_DEFAULTS__ object
- * for the given product.
- * @returns a URL host formatted like `127.0.0.1:9999` or `[::1]:4000` if available
- * @public
- */ const getDefaultEmulatorHost = (productName)=>getDefaults()?.emulatorHosts?.[productName];
-/**
- * Returns emulator hostname and port stored in the __FIREBASE_DEFAULTS__ object
- * for the given product.
- * @returns a pair of hostname and port like `["::1", 4000]` if available
- * @public
- */ const getDefaultEmulatorHostnameAndPort = (productName)=>{
-    const host = getDefaultEmulatorHost(productName);
-    if (!host) return undefined;
-    const separatorIndex = host.lastIndexOf(':'); // Finding the last since IPv6 addr also has colons.
-    if (separatorIndex <= 0 || separatorIndex + 1 === host.length) throw new Error(`Invalid host ${host} with no separate hostname and port!`);
-    // eslint-disable-next-line no-restricted-globals
-    const port = parseInt(host.substring(separatorIndex + 1), 10);
-    if (host[0] === '[') // Bracket-quoted `[ipv6addr]:port` => return "ipv6addr" (without brackets).
-    return [
-        host.substring(1, separatorIndex - 1),
-        port
-    ];
-    else return [
-        host.substring(0, separatorIndex),
-        port
-    ];
-};
-/**
- * Returns Firebase app config stored in the __FIREBASE_DEFAULTS__ object.
- * @public
- */ const getDefaultAppConfig = ()=>getDefaults()?.config;
-/**
- * Returns an experimental setting on the __FIREBASE_DEFAULTS__ object (properties
- * prefixed by "_")
- * @public
- */ const getExperimentalSetting = (name)=>getDefaults()?.[`_${name}`];
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ class Deferred {
-    constructor(){
-        this.reject = ()=>{};
-        this.resolve = ()=>{};
-        this.promise = new Promise((resolve, reject)=>{
-            this.resolve = resolve;
-            this.reject = reject;
-        });
-    }
-    /**
-     * Our API internals are not promisified and cannot because our callback APIs have subtle expectations around
-     * invoking promises inline, which Promises are forbidden to do. This method accepts an optional node-style callback
-     * and returns a node-style callback which will resolve or reject the Deferred's promise.
-     */ wrapCallback(callback) {
-        return (error, value)=>{
-            if (error) this.reject(error);
-            else this.resolve(value);
-            if (typeof callback === 'function') {
-                // Attaching noop handler just in case developer wasn't expecting
-                // promises
-                this.promise.catch(()=>{});
-                // Some of our callbacks don't expect a value and our own tests
-                // assert that the parameter length is 1
-                if (callback.length === 1) callback(error);
-                else callback(error, value);
-            }
-        };
-    }
-}
-/**
- * @license
- * Copyright 2025 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Checks whether host is a cloud workstation or not.
- * @public
- */ function isCloudWorkstation(url) {
-    // `isCloudWorkstation` is called without protocol in certain connect*Emulator functions
-    // In HTTP request builders, it's called with the protocol.
-    // If called with protocol prefix, it's a valid URL, so we extract the hostname
-    // If called without, we assume the string is the hostname.
-    try {
-        const host = url.startsWith('http://') || url.startsWith('https://') ? new URL(url).hostname : url;
-        return host.endsWith('.cloudworkstations.dev');
-    } catch  {
-        return false;
-    }
-}
-/**
- * Makes a fetch request to the given server.
- * Mostly used for forwarding cookies in Firebase Studio.
- * @public
- */ async function pingServer(endpoint) {
-    const result = await fetch(endpoint, {
-        credentials: 'include'
-    });
-    return result.ok;
-}
-/**
- * @license
- * Copyright 2021 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ function createMockUserToken(token, projectId) {
-    if (token.uid) throw new Error('The "uid" field is no longer supported by mockUserToken. Please use "sub" instead for Firebase Auth User ID.');
-    // Unsecured JWTs use "none" as the algorithm.
-    const header = {
-        alg: 'none',
-        type: 'JWT'
-    };
-    const project = projectId || 'demo-project';
-    const iat = token.iat || 0;
-    const sub = token.sub || token.user_id;
-    if (!sub) throw new Error("mockUserToken must contain 'sub' or 'user_id' field!");
-    const payload = {
-        // Set all required fields to decent defaults
-        iss: `https://securetoken.google.com/${project}`,
-        aud: project,
-        iat,
-        exp: iat + 3600,
-        auth_time: iat,
-        sub,
-        user_id: sub,
-        firebase: {
-            sign_in_provider: 'custom',
-            identities: {}
-        },
-        // Override with user options
-        ...token
-    };
-    // Unsecured JWTs use the empty string as a signature.
-    const signature = '';
-    return [
-        base64urlEncodeWithoutPadding(JSON.stringify(header)),
-        base64urlEncodeWithoutPadding(JSON.stringify(payload)),
-        signature
-    ].join('.');
-}
-const emulatorStatus = {};
-// Checks whether any products are running on an emulator
-function getEmulatorSummary() {
-    const summary = {
-        prod: [],
-        emulator: []
-    };
-    for (const key of Object.keys(emulatorStatus))if (emulatorStatus[key]) summary.emulator.push(key);
-    else summary.prod.push(key);
-    return summary;
-}
-function getOrCreateEl(id) {
-    let parentDiv = document.getElementById(id);
-    let created = false;
-    if (!parentDiv) {
-        parentDiv = document.createElement('div');
-        parentDiv.setAttribute('id', id);
-        created = true;
-    }
-    return {
-        created,
-        element: parentDiv
-    };
-}
-let previouslyDismissed = false;
-/**
- * Updates Emulator Banner. Primarily used for Firebase Studio
- * @param name
- * @param isRunningEmulator
- * @public
- */ function updateEmulatorBanner(name, isRunningEmulator) {
-    if (typeof window === 'undefined' || typeof document === 'undefined' || !isCloudWorkstation(window.location.host) || emulatorStatus[name] === isRunningEmulator || emulatorStatus[name] || // If already set to use emulator, can't go back to prod.
-    previouslyDismissed) return;
-    emulatorStatus[name] = isRunningEmulator;
-    function prefixedId(id) {
-        return `__firebase__banner__${id}`;
-    }
-    const bannerId = '__firebase__banner';
-    const summary = getEmulatorSummary();
-    const showError = summary.prod.length > 0;
-    function tearDown() {
-        const element = document.getElementById(bannerId);
-        if (element) element.remove();
-    }
-    function setupBannerStyles(bannerEl) {
-        bannerEl.style.display = 'flex';
-        bannerEl.style.background = '#7faaf0';
-        bannerEl.style.position = 'fixed';
-        bannerEl.style.bottom = '5px';
-        bannerEl.style.left = '5px';
-        bannerEl.style.padding = '.5em';
-        bannerEl.style.borderRadius = '5px';
-        bannerEl.style.alignItems = 'center';
-    }
-    function setupIconStyles(prependIcon, iconId) {
-        prependIcon.setAttribute('width', '24');
-        prependIcon.setAttribute('id', iconId);
-        prependIcon.setAttribute('height', '24');
-        prependIcon.setAttribute('viewBox', '0 0 24 24');
-        prependIcon.setAttribute('fill', 'none');
-        prependIcon.style.marginLeft = '-6px';
-    }
-    function setupCloseBtn() {
-        const closeBtn = document.createElement('span');
-        closeBtn.style.cursor = 'pointer';
-        closeBtn.style.marginLeft = '16px';
-        closeBtn.style.fontSize = '24px';
-        closeBtn.innerHTML = ' &times;';
-        closeBtn.onclick = ()=>{
-            previouslyDismissed = true;
-            tearDown();
-        };
-        return closeBtn;
-    }
-    function setupLinkStyles(learnMoreLink, learnMoreId) {
-        learnMoreLink.setAttribute('id', learnMoreId);
-        learnMoreLink.innerText = 'Learn more';
-        learnMoreLink.href = 'https://firebase.google.com/docs/studio/preview-apps#preview-backend';
-        learnMoreLink.setAttribute('target', '__blank');
-        learnMoreLink.style.paddingLeft = '5px';
-        learnMoreLink.style.textDecoration = 'underline';
-    }
-    function setupDom() {
-        const banner = getOrCreateEl(bannerId);
-        const firebaseTextId = prefixedId('text');
-        const firebaseText = document.getElementById(firebaseTextId) || document.createElement('span');
-        const learnMoreId = prefixedId('learnmore');
-        const learnMoreLink = document.getElementById(learnMoreId) || document.createElement('a');
-        const prependIconId = prefixedId('preprendIcon');
-        const prependIcon = document.getElementById(prependIconId) || document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        if (banner.created) {
-            // update styles
-            const bannerEl = banner.element;
-            setupBannerStyles(bannerEl);
-            setupLinkStyles(learnMoreLink, learnMoreId);
-            const closeBtn = setupCloseBtn();
-            setupIconStyles(prependIcon, prependIconId);
-            bannerEl.append(prependIcon, firebaseText, learnMoreLink, closeBtn);
-            document.body.appendChild(bannerEl);
-        }
-        if (showError) {
-            firebaseText.innerText = `Preview backend disconnected.`;
-            prependIcon.innerHTML = `<g clip-path="url(#clip0_6013_33858)">
-<path d="M4.8 17.6L12 5.6L19.2 17.6H4.8ZM6.91667 16.4H17.0833L12 7.93333L6.91667 16.4ZM12 15.6C12.1667 15.6 12.3056 15.5444 12.4167 15.4333C12.5389 15.3111 12.6 15.1667 12.6 15C12.6 14.8333 12.5389 14.6944 12.4167 14.5833C12.3056 14.4611 12.1667 14.4 12 14.4C11.8333 14.4 11.6889 14.4611 11.5667 14.5833C11.4556 14.6944 11.4 14.8333 11.4 15C11.4 15.1667 11.4556 15.3111 11.5667 15.4333C11.6889 15.5444 11.8333 15.6 12 15.6ZM11.4 13.6H12.6V10.4H11.4V13.6Z" fill="#212121"/>
-</g>
-<defs>
-<clipPath id="clip0_6013_33858">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>`;
-        } else {
-            prependIcon.innerHTML = `<g clip-path="url(#clip0_6083_34804)">
-<path d="M11.4 15.2H12.6V11.2H11.4V15.2ZM12 10C12.1667 10 12.3056 9.94444 12.4167 9.83333C12.5389 9.71111 12.6 9.56667 12.6 9.4C12.6 9.23333 12.5389 9.09444 12.4167 8.98333C12.3056 8.86111 12.1667 8.8 12 8.8C11.8333 8.8 11.6889 8.86111 11.5667 8.98333C11.4556 9.09444 11.4 9.23333 11.4 9.4C11.4 9.56667 11.4556 9.71111 11.5667 9.83333C11.6889 9.94444 11.8333 10 12 10ZM12 18.4C11.1222 18.4 10.2944 18.2333 9.51667 17.9C8.73889 17.5667 8.05556 17.1111 7.46667 16.5333C6.88889 15.9444 6.43333 15.2611 6.1 14.4833C5.76667 13.7056 5.6 12.8778 5.6 12C5.6 11.1111 5.76667 10.2833 6.1 9.51667C6.43333 8.73889 6.88889 8.06111 7.46667 7.48333C8.05556 6.89444 8.73889 6.43333 9.51667 6.1C10.2944 5.76667 11.1222 5.6 12 5.6C12.8889 5.6 13.7167 5.76667 14.4833 6.1C15.2611 6.43333 15.9389 6.89444 16.5167 7.48333C17.1056 8.06111 17.5667 8.73889 17.9 9.51667C18.2333 10.2833 18.4 11.1111 18.4 12C18.4 12.8778 18.2333 13.7056 17.9 14.4833C17.5667 15.2611 17.1056 15.9444 16.5167 16.5333C15.9389 17.1111 15.2611 17.5667 14.4833 17.9C13.7167 18.2333 12.8889 18.4 12 18.4ZM12 17.2C13.4444 17.2 14.6722 16.6944 15.6833 15.6833C16.6944 14.6722 17.2 13.4444 17.2 12C17.2 10.5556 16.6944 9.32778 15.6833 8.31667C14.6722 7.30555 13.4444 6.8 12 6.8C10.5556 6.8 9.32778 7.30555 8.31667 8.31667C7.30556 9.32778 6.8 10.5556 6.8 12C6.8 13.4444 7.30556 14.6722 8.31667 15.6833C9.32778 16.6944 10.5556 17.2 12 17.2Z" fill="#212121"/>
-</g>
-<defs>
-<clipPath id="clip0_6083_34804">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>`;
-            firebaseText.innerText = 'Preview backend running in this workspace.';
-        }
-        firebaseText.setAttribute('id', firebaseTextId);
-    }
-    if (document.readyState === 'loading') window.addEventListener('DOMContentLoaded', setupDom);
-    else setupDom();
-}
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Returns navigator.userAgent string or '' if it's not defined.
- * @return user agent string
- */ function getUA() {
-    if (typeof navigator !== 'undefined' && typeof navigator['userAgent'] === 'string') return navigator['userAgent'];
-    else return '';
-}
-/**
- * Detect Cordova / PhoneGap / Ionic frameworks on a mobile device.
- *
- * Deliberately does not rely on checking `file://` URLs (as this fails PhoneGap
- * in the Ripple emulator) nor Cordova `onDeviceReady`, which would normally
- * wait for a callback.
- */ function isMobileCordova() {
-    return typeof window !== 'undefined' && // @ts-ignore Setting up an broadly applicable index signature for Window
-    // just to deal with this case would probably be a bad idea.
-    !!(window['cordova'] || window['phonegap'] || window['PhoneGap']) && /ios|iphone|ipod|ipad|android|blackberry|iemobile/i.test(getUA());
-}
-/**
- * Detect Node.js.
- *
- * @return true if Node.js environment is detected or specified.
- */ // Node detection logic from: https://github.com/iliakan/detect-node/
-function isNode() {
-    const forceEnvironment = getDefaults()?.forceEnvironment;
-    if (forceEnvironment === 'node') return true;
-    else if (forceEnvironment === 'browser') return false;
-    try {
-        return Object.prototype.toString.call(global.process) === '[object process]';
-    } catch (e) {
-        return false;
-    }
-}
-/**
- * Detect Browser Environment.
- * Note: This will return true for certain test frameworks that are incompletely
- * mimicking a browser, and should not lead to assuming all browser APIs are
- * available.
- */ function isBrowser() {
-    return typeof window !== 'undefined' || isWebWorker();
-}
-/**
- * Detect Web Worker context.
- */ function isWebWorker() {
-    return typeof WorkerGlobalScope !== 'undefined' && typeof self !== 'undefined' && self instanceof WorkerGlobalScope;
-}
-/**
- * Detect Cloudflare Worker context.
- */ function isCloudflareWorker() {
-    return typeof navigator !== 'undefined' && navigator.userAgent === 'Cloudflare-Workers';
-}
-function isBrowserExtension() {
-    const runtime = typeof chrome === 'object' ? chrome.runtime : typeof browser === 'object' ? browser.runtime : undefined;
-    return typeof runtime === 'object' && runtime.id !== undefined;
-}
-/**
- * Detect React Native.
- *
- * @return true if ReactNative environment is detected.
- */ function isReactNative() {
-    return typeof navigator === 'object' && navigator['product'] === 'ReactNative';
-}
-/** Detects Electron apps. */ function isElectron() {
-    return getUA().indexOf('Electron/') >= 0;
-}
-/** Detects Internet Explorer. */ function isIE() {
-    const ua = getUA();
-    return ua.indexOf('MSIE ') >= 0 || ua.indexOf('Trident/') >= 0;
-}
-/** Detects Universal Windows Platform apps. */ function isUWP() {
-    return getUA().indexOf('MSAppHost/') >= 0;
-}
-/**
- * Detect whether the current SDK build is the Node version.
- *
- * @return true if it's the Node SDK build.
- */ function isNodeSdk() {
-    return CONSTANTS.NODE_CLIENT === true || CONSTANTS.NODE_ADMIN === true;
-}
-/** Returns true if we are running in Safari. */ function isSafari() {
-    return !isNode() && !!navigator.userAgent && navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome');
-}
-/** Returns true if we are running in Safari or WebKit */ function isSafariOrWebkit() {
-    return !isNode() && !!navigator.userAgent && (navigator.userAgent.includes('Safari') || navigator.userAgent.includes('WebKit')) && !navigator.userAgent.includes('Chrome');
-}
-/**
- * This method checks if indexedDB is supported by current browser/service worker context
- * @return true if indexedDB is supported by current browser/service worker context
- */ function isIndexedDBAvailable() {
-    try {
-        return typeof indexedDB === 'object';
-    } catch (e) {
-        return false;
-    }
-}
-/**
- * This method validates browser/sw context for indexedDB by opening a dummy indexedDB database and reject
- * if errors occur during the database open operation.
- *
- * @throws exception if current browser/sw context can't run idb.open (ex: Safari iframe, Firefox
- * private browsing)
- */ function validateIndexedDBOpenable() {
-    return new Promise((resolve, reject)=>{
-        try {
-            let preExist = true;
-            const DB_CHECK_NAME = 'validate-browser-context-for-indexeddb-analytics-module';
-            const request = self.indexedDB.open(DB_CHECK_NAME);
-            request.onsuccess = ()=>{
-                request.result.close();
-                // delete database only when it doesn't pre-exist
-                if (!preExist) self.indexedDB.deleteDatabase(DB_CHECK_NAME);
-                resolve(true);
-            };
-            request.onupgradeneeded = ()=>{
-                preExist = false;
-            };
-            request.onerror = ()=>{
-                reject(request.error?.message || '');
-            };
-        } catch (error) {
-            reject(error);
-        }
-    });
-}
-/**
- *
- * This method checks whether cookie is enabled within current browser
- * @return true if cookie is enabled within current browser
- */ function areCookiesEnabled() {
-    if (typeof navigator === 'undefined' || !navigator.cookieEnabled) return false;
-    return true;
-}
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * @fileoverview Standardized Firebase Error.
- *
- * Usage:
- *
- *   // TypeScript string literals for type-safe codes
- *   type Err =
- *     'unknown' |
- *     'object-not-found'
- *     ;
- *
- *   // Closure enum for type-safe error codes
- *   // at-enum {string}
- *   var Err = {
- *     UNKNOWN: 'unknown',
- *     OBJECT_NOT_FOUND: 'object-not-found',
- *   }
- *
- *   let errors: Map<Err, string> = {
- *     'generic-error': "Unknown error",
- *     'file-not-found': "Could not find file: {$file}",
- *   };
- *
- *   // Type-safe function - must pass a valid error code as param.
- *   let error = new ErrorFactory<Err>('service', 'Service', errors);
- *
- *   ...
- *   throw error.create(Err.GENERIC);
- *   ...
- *   throw error.create(Err.FILE_NOT_FOUND, {'file': fileName});
- *   ...
- *   // Service: Could not file file: foo.txt (service/file-not-found).
- *
- *   catch (e) {
- *     assert(e.message === "Could not find file: foo.txt.");
- *     if ((e as FirebaseError)?.code === 'service/file-not-found') {
- *       console.log("Could not read file: " + e['file']);
- *     }
- *   }
- */ const ERROR_NAME = 'FirebaseError';
-// Based on code from:
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Custom_Error_Types
-class FirebaseError extends Error {
-    constructor(/** The error code for this error. */ code, message, /** Custom data for this error. */ customData){
-        super(message);
-        this.code = code;
-        this.customData = customData;
-        /** The custom name for all FirebaseErrors. */ this.name = ERROR_NAME;
-        // Fix For ES5
-        // https://github.com/Microsoft/TypeScript-wiki/blob/master/Breaking-Changes.md#extending-built-ins-like-error-array-and-map-may-no-longer-work
-        // TODO(dlarocque): Replace this with `new.target`: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html#support-for-newtarget
-        //                   which we can now use since we no longer target ES5.
-        Object.setPrototypeOf(this, FirebaseError.prototype);
-        // Maintains proper stack trace for where our error was thrown.
-        // Only available on V8.
-        if (Error.captureStackTrace) Error.captureStackTrace(this, ErrorFactory.prototype.create);
-    }
-}
-class ErrorFactory {
-    constructor(service, serviceName, errors){
-        this.service = service;
-        this.serviceName = serviceName;
-        this.errors = errors;
-    }
-    create(code, ...data) {
-        const customData = data[0] || {};
-        const fullCode = `${this.service}/${code}`;
-        const template = this.errors[code];
-        const message = template ? replaceTemplate(template, customData) : 'Error';
-        // Service Name: Error message (service/code).
-        const fullMessage = `${this.serviceName}: ${message} (${fullCode}).`;
-        const error = new FirebaseError(fullCode, fullMessage, customData);
-        return error;
-    }
-}
-function replaceTemplate(template, data) {
-    return template.replace(PATTERN, (_, key)=>{
-        const value = data[key];
-        return value != null ? String(value) : `<${key}?>`;
-    });
-}
-const PATTERN = /\{\$([^}]+)}/g;
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Evaluates a JSON string into a javascript object.
- *
- * @param {string} str A string containing JSON.
- * @return {*} The javascript object representing the specified JSON.
- */ function jsonEval(str) {
-    return JSON.parse(str);
-}
-/**
- * Returns JSON representing a javascript object.
- * @param {*} data JavaScript object to be stringified.
- * @return {string} The JSON contents of the object.
- */ function stringify(data) {
-    return JSON.stringify(data);
-}
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Decodes a Firebase auth. token into constituent parts.
- *
- * Notes:
- * - May return with invalid / incomplete claims if there's no native base64 decoding support.
- * - Doesn't check if the token is actually valid.
- */ const decode = function(token) {
-    let header = {}, claims = {}, data = {}, signature = '';
-    try {
-        const parts = token.split('.');
-        header = jsonEval(base64Decode(parts[0]) || '');
-        claims = jsonEval(base64Decode(parts[1]) || '');
-        signature = parts[2];
-        data = claims['d'] || {};
-        delete claims['d'];
-    } catch (e) {}
-    return {
-        header,
-        claims,
-        data,
-        signature
-    };
-};
-/**
- * Decodes a Firebase auth. token and checks the validity of its time-based claims. Will return true if the
- * token is within the time window authorized by the 'nbf' (not-before) and 'iat' (issued-at) claims.
- *
- * Notes:
- * - May return a false negative if there's no native base64 decoding support.
- * - Doesn't check if the token is actually valid.
- */ const isValidTimestamp = function(token) {
-    const claims = decode(token).claims;
-    const now = Math.floor(new Date().getTime() / 1000);
-    let validSince = 0, validUntil = 0;
-    if (typeof claims === 'object') {
-        if (claims.hasOwnProperty('nbf')) validSince = claims['nbf'];
-        else if (claims.hasOwnProperty('iat')) validSince = claims['iat'];
-        if (claims.hasOwnProperty('exp')) validUntil = claims['exp'];
-        else // token will expire after 24h by default
-        validUntil = validSince + 86400;
-    }
-    return !!now && !!validSince && !!validUntil && now >= validSince && now <= validUntil;
-};
-/**
- * Decodes a Firebase auth. token and returns its issued at time if valid, null otherwise.
- *
- * Notes:
- * - May return null if there's no native base64 decoding support.
- * - Doesn't check if the token is actually valid.
- */ const issuedAtTime = function(token) {
-    const claims = decode(token).claims;
-    if (typeof claims === 'object' && claims.hasOwnProperty('iat')) return claims['iat'];
-    return null;
-};
-/**
- * Decodes a Firebase auth. token and checks the validity of its format. Expects a valid issued-at time.
- *
- * Notes:
- * - May return a false negative if there's no native base64 decoding support.
- * - Doesn't check if the token is actually valid.
- */ const isValidFormat = function(token) {
-    const decoded = decode(token), claims = decoded.claims;
-    return !!claims && typeof claims === 'object' && claims.hasOwnProperty('iat');
-};
-/**
- * Attempts to peer into an auth token and determine if it's an admin auth token by looking at the claims portion.
- *
- * Notes:
- * - May return a false negative if there's no native base64 decoding support.
- * - Doesn't check if the token is actually valid.
- */ const isAdmin = function(token) {
-    const claims = decode(token).claims;
-    return typeof claims === 'object' && claims['admin'] === true;
-};
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ function contains(obj, key) {
-    return Object.prototype.hasOwnProperty.call(obj, key);
-}
-function safeGet(obj, key) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) return obj[key];
-    else return undefined;
-}
-function isEmpty(obj) {
-    for(const key in obj){
-        if (Object.prototype.hasOwnProperty.call(obj, key)) return false;
-    }
-    return true;
-}
-function map(obj, fn, contextObj) {
-    const res = {};
-    for(const key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) res[key] = fn.call(contextObj, obj[key], key, obj);
-    return res;
-}
-/**
- * Deep equal two objects. Support Arrays and Objects.
- */ function deepEqual(a, b) {
-    if (a === b) return true;
-    const aKeys = Object.keys(a);
-    const bKeys = Object.keys(b);
-    for (const k of aKeys){
-        if (!bKeys.includes(k)) return false;
-        const aProp = a[k];
-        const bProp = b[k];
-        if (isObject(aProp) && isObject(bProp)) {
-            if (!deepEqual(aProp, bProp)) return false;
-        } else if (aProp !== bProp) return false;
-    }
-    for (const k of bKeys){
-        if (!aKeys.includes(k)) return false;
-    }
-    return true;
-}
-function isObject(thing) {
-    return thing !== null && typeof thing === 'object';
-}
-/**
- * @license
- * Copyright 2022 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Rejects if the given promise doesn't resolve in timeInMS milliseconds.
- * @internal
- */ function promiseWithTimeout(promise, timeInMS = 2000) {
-    const deferredPromise = new Deferred();
-    setTimeout(()=>deferredPromise.reject('timeout!'), timeInMS);
-    promise.then(deferredPromise.resolve, deferredPromise.reject);
-    return deferredPromise.promise;
-}
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Returns a querystring-formatted string (e.g. &arg=val&arg2=val2) from a
- * params object (e.g. {arg: 'val', arg2: 'val2'})
- * Note: You must prepend it with ? when adding it to a URL.
- */ function querystring(querystringParams) {
-    const params = [];
-    for (const [key, value] of Object.entries(querystringParams))if (Array.isArray(value)) value.forEach((arrayVal)=>{
-        params.push(encodeURIComponent(key) + '=' + encodeURIComponent(arrayVal));
-    });
-    else params.push(encodeURIComponent(key) + '=' + encodeURIComponent(value));
-    return params.length ? '&' + params.join('&') : '';
-}
-/**
- * Decodes a querystring (e.g. ?arg=val&arg2=val2) into a params object
- * (e.g. {arg: 'val', arg2: 'val2'})
- */ function querystringDecode(querystring) {
-    const obj = {};
-    const tokens = querystring.replace(/^\?/, '').split('&');
-    tokens.forEach((token)=>{
-        if (token) {
-            const [key, value] = token.split('=');
-            obj[decodeURIComponent(key)] = decodeURIComponent(value);
-        }
-    });
-    return obj;
-}
-/**
- * Extract the query string part of a URL, including the leading question mark (if present).
- */ function extractQuerystring(url) {
-    const queryStart = url.indexOf('?');
-    if (!queryStart) return '';
-    const fragmentStart = url.indexOf('#', queryStart);
-    return url.substring(queryStart, fragmentStart > 0 ? fragmentStart : undefined);
-}
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * @fileoverview SHA-1 cryptographic hash.
- * Variable names follow the notation in FIPS PUB 180-3:
- * http://csrc.nist.gov/publications/fips/fips180-3/fips180-3_final.pdf.
- *
- * Usage:
- *   var sha1 = new sha1();
- *   sha1.update(bytes);
- *   var hash = sha1.digest();
- *
- * Performance:
- *   Chrome 23:   ~400 Mbit/s
- *   Firefox 16:  ~250 Mbit/s
- *
- */ /**
- * SHA-1 cryptographic hash constructor.
- *
- * The properties declared here are discussed in the above algorithm document.
- * @constructor
- * @final
- * @struct
- */ class Sha1 {
-    constructor(){
-        /**
-         * Holds the previous values of accumulated variables a-e in the compress_
-         * function.
-         * @private
-         */ this.chain_ = [];
-        /**
-         * A buffer holding the partially computed hash result.
-         * @private
-         */ this.buf_ = [];
-        /**
-         * An array of 80 bytes, each a part of the message to be hashed.  Referred to
-         * as the message schedule in the docs.
-         * @private
-         */ this.W_ = [];
-        /**
-         * Contains data needed to pad messages less than 64 bytes.
-         * @private
-         */ this.pad_ = [];
-        /**
-         * @private {number}
-         */ this.inbuf_ = 0;
-        /**
-         * @private {number}
-         */ this.total_ = 0;
-        this.blockSize = 64;
-        this.pad_[0] = 128;
-        for(let i = 1; i < this.blockSize; ++i)this.pad_[i] = 0;
-        this.reset();
-    }
-    reset() {
-        this.chain_[0] = 0x67452301;
-        this.chain_[1] = 0xefcdab89;
-        this.chain_[2] = 0x98badcfe;
-        this.chain_[3] = 0x10325476;
-        this.chain_[4] = 0xc3d2e1f0;
-        this.inbuf_ = 0;
-        this.total_ = 0;
-    }
-    /**
-     * Internal compress helper function.
-     * @param buf Block to compress.
-     * @param offset Offset of the block in the buffer.
-     * @private
-     */ compress_(buf, offset) {
-        if (!offset) offset = 0;
-        const W = this.W_;
-        // get 16 big endian words
-        if (typeof buf === 'string') for(let i = 0; i < 16; i++){
-            // TODO(user): [bug 8140122] Recent versions of Safari for Mac OS and iOS
-            // have a bug that turns the post-increment ++ operator into pre-increment
-            // during JIT compilation.  We have code that depends heavily on SHA-1 for
-            // correctness and which is affected by this bug, so I've removed all uses
-            // of post-increment ++ in which the result value is used.  We can revert
-            // this change once the Safari bug
-            // (https://bugs.webkit.org/show_bug.cgi?id=109036) has been fixed and
-            // most clients have been updated.
-            W[i] = buf.charCodeAt(offset) << 24 | buf.charCodeAt(offset + 1) << 16 | buf.charCodeAt(offset + 2) << 8 | buf.charCodeAt(offset + 3);
-            offset += 4;
-        }
-        else for(let i = 0; i < 16; i++){
-            W[i] = buf[offset] << 24 | buf[offset + 1] << 16 | buf[offset + 2] << 8 | buf[offset + 3];
-            offset += 4;
-        }
-        // expand to 80 words
-        for(let i = 16; i < 80; i++){
-            const t = W[i - 3] ^ W[i - 8] ^ W[i - 14] ^ W[i - 16];
-            W[i] = (t << 1 | t >>> 31) & 0xffffffff;
-        }
-        let a = this.chain_[0];
-        let b = this.chain_[1];
-        let c = this.chain_[2];
-        let d = this.chain_[3];
-        let e = this.chain_[4];
-        let f, k;
-        // TODO(user): Try to unroll this loop to speed up the computation.
-        for(let i = 0; i < 80; i++){
-            if (i < 40) {
-                if (i < 20) {
-                    f = d ^ b & (c ^ d);
-                    k = 0x5a827999;
-                } else {
-                    f = b ^ c ^ d;
-                    k = 0x6ed9eba1;
-                }
-            } else if (i < 60) {
-                f = b & c | d & (b | c);
-                k = 0x8f1bbcdc;
-            } else {
-                f = b ^ c ^ d;
-                k = 0xca62c1d6;
-            }
-            const t = (a << 5 | a >>> 27) + f + e + k + W[i] & 0xffffffff;
-            e = d;
-            d = c;
-            c = (b << 30 | b >>> 2) & 0xffffffff;
-            b = a;
-            a = t;
-        }
-        this.chain_[0] = this.chain_[0] + a & 0xffffffff;
-        this.chain_[1] = this.chain_[1] + b & 0xffffffff;
-        this.chain_[2] = this.chain_[2] + c & 0xffffffff;
-        this.chain_[3] = this.chain_[3] + d & 0xffffffff;
-        this.chain_[4] = this.chain_[4] + e & 0xffffffff;
-    }
-    update(bytes, length) {
-        // TODO(johnlenz): tighten the function signature and remove this check
-        if (bytes == null) return;
-        if (length === undefined) length = bytes.length;
-        const lengthMinusBlock = length - this.blockSize;
-        let n = 0;
-        // Using local instead of member variables gives ~5% speedup on Firefox 16.
-        const buf = this.buf_;
-        let inbuf = this.inbuf_;
-        // The outer while loop should execute at most twice.
-        while(n < length){
-            // When we have no data in the block to top up, we can directly process the
-            // input buffer (assuming it contains sufficient data). This gives ~25%
-            // speedup on Chrome 23 and ~15% speedup on Firefox 16, but requires that
-            // the data is provided in large chunks (or in multiples of 64 bytes).
-            if (inbuf === 0) while(n <= lengthMinusBlock){
-                this.compress_(bytes, n);
-                n += this.blockSize;
-            }
-            if (typeof bytes === 'string') while(n < length){
-                buf[inbuf] = bytes.charCodeAt(n);
-                ++inbuf;
-                ++n;
-                if (inbuf === this.blockSize) {
-                    this.compress_(buf);
-                    inbuf = 0;
-                    break;
-                }
-            }
-            else while(n < length){
-                buf[inbuf] = bytes[n];
-                ++inbuf;
-                ++n;
-                if (inbuf === this.blockSize) {
-                    this.compress_(buf);
-                    inbuf = 0;
-                    break;
-                }
-            }
-        }
-        this.inbuf_ = inbuf;
-        this.total_ += length;
-    }
-    /** @override */ digest() {
-        const digest = [];
-        let totalBits = this.total_ * 8;
-        // Add pad 0x80 0x00*.
-        if (this.inbuf_ < 56) this.update(this.pad_, 56 - this.inbuf_);
-        else this.update(this.pad_, this.blockSize - (this.inbuf_ - 56));
-        // Add # bits.
-        for(let i = this.blockSize - 1; i >= 56; i--){
-            this.buf_[i] = totalBits & 255;
-            totalBits /= 256; // Don't use bit-shifting here!
-        }
-        this.compress_(this.buf_);
-        let n = 0;
-        for(let i = 0; i < 5; i++)for(let j = 24; j >= 0; j -= 8){
-            digest[n] = this.chain_[i] >> j & 255;
-            ++n;
-        }
-        return digest;
-    }
-}
-/**
- * Helper to make a Subscribe function (just like Promise helps make a
- * Thenable).
- *
- * @param executor Function which can make calls to a single Observer
- *     as a proxy.
- * @param onNoObservers Callback when count of Observers goes to zero.
- */ function createSubscribe(executor, onNoObservers) {
-    const proxy = new ObserverProxy(executor, onNoObservers);
-    return proxy.subscribe.bind(proxy);
-}
-/**
- * Implement fan-out for any number of Observers attached via a subscribe
- * function.
- */ class ObserverProxy {
-    /**
-     * @param executor Function which can make calls to a single Observer
-     *     as a proxy.
-     * @param onNoObservers Callback when count of Observers goes to zero.
-     */ constructor(executor, onNoObservers){
-        this.observers = [];
-        this.unsubscribes = [];
-        this.observerCount = 0;
-        // Micro-task scheduling by calling task.then().
-        this.task = Promise.resolve();
-        this.finalized = false;
-        this.onNoObservers = onNoObservers;
-        // Call the executor asynchronously so subscribers that are called
-        // synchronously after the creation of the subscribe function
-        // can still receive the very first value generated in the executor.
-        this.task.then(()=>{
-            executor(this);
-        }).catch((e)=>{
-            this.error(e);
-        });
-    }
-    next(value) {
-        this.forEachObserver((observer)=>{
-            observer.next(value);
-        });
-    }
-    error(error) {
-        this.forEachObserver((observer)=>{
-            observer.error(error);
-        });
-        this.close(error);
-    }
-    complete() {
-        this.forEachObserver((observer)=>{
-            observer.complete();
-        });
-        this.close();
-    }
-    /**
-     * Subscribe function that can be used to add an Observer to the fan-out list.
-     *
-     * - We require that no event is sent to a subscriber synchronously to their
-     *   call to subscribe().
-     */ subscribe(nextOrObserver, error, complete) {
-        let observer;
-        if (nextOrObserver === undefined && error === undefined && complete === undefined) throw new Error('Missing Observer.');
-        // Assemble an Observer object when passed as callback functions.
-        if (implementsAnyMethods(nextOrObserver, [
-            'next',
-            'error',
-            'complete'
-        ])) observer = nextOrObserver;
-        else observer = {
-            next: nextOrObserver,
-            error,
-            complete
-        };
-        if (observer.next === undefined) observer.next = noop;
-        if (observer.error === undefined) observer.error = noop;
-        if (observer.complete === undefined) observer.complete = noop;
-        const unsub = this.unsubscribeOne.bind(this, this.observers.length);
-        // Attempt to subscribe to a terminated Observable - we
-        // just respond to the Observer with the final error or complete
-        // event.
-        if (this.finalized) // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        this.task.then(()=>{
-            try {
-                if (this.finalError) observer.error(this.finalError);
-                else observer.complete();
-            } catch (e) {
-            // nothing
-            }
-            return;
-        });
-        this.observers.push(observer);
-        return unsub;
-    }
-    // Unsubscribe is synchronous - we guarantee that no events are sent to
-    // any unsubscribed Observer.
-    unsubscribeOne(i) {
-        if (this.observers === undefined || this.observers[i] === undefined) return;
-        delete this.observers[i];
-        this.observerCount -= 1;
-        if (this.observerCount === 0 && this.onNoObservers !== undefined) this.onNoObservers(this);
-    }
-    forEachObserver(fn) {
-        if (this.finalized) // Already closed by previous event....just eat the additional values.
-        return;
-        // Since sendOne calls asynchronously - there is no chance that
-        // this.observers will become undefined.
-        for(let i = 0; i < this.observers.length; i++)this.sendOne(i, fn);
-    }
-    // Call the Observer via one of it's callback function. We are careful to
-    // confirm that the observe has not been unsubscribed since this asynchronous
-    // function had been queued.
-    sendOne(i, fn) {
-        // Execute the callback asynchronously
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        this.task.then(()=>{
-            if (this.observers !== undefined && this.observers[i] !== undefined) try {
-                fn(this.observers[i]);
-            } catch (e) {
-                // Ignore exceptions raised in Observers or missing methods of an
-                // Observer.
-                // Log error to console. b/31404806
-                if (typeof console !== 'undefined' && console.error) console.error(e);
-            }
-        });
-    }
-    close(err) {
-        if (this.finalized) return;
-        this.finalized = true;
-        if (err !== undefined) this.finalError = err;
-        // Proxy is no longer needed - garbage collect references
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        this.task.then(()=>{
-            this.observers = undefined;
-            this.onNoObservers = undefined;
-        });
-    }
-}
-/** Turn synchronous function into one called asynchronously. */ // eslint-disable-next-line @typescript-eslint/ban-types
-function async(fn, onError) {
-    return (...args)=>{
-        Promise.resolve(true).then(()=>{
-            fn(...args);
-        }).catch((error)=>{
-            if (onError) onError(error);
-        });
-    };
-}
-/**
- * Return true if the object passed in implements any of the named methods.
- */ function implementsAnyMethods(obj, methods) {
-    if (typeof obj !== 'object' || obj === null) return false;
-    for (const method of methods){
-        if (method in obj && typeof obj[method] === 'function') return true;
-    }
-    return false;
-}
-function noop() {
-// do nothing
-}
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Check to make sure the appropriate number of arguments are provided for a public function.
- * Throws an error if it fails.
- *
- * @param fnName The function name
- * @param minCount The minimum number of arguments to allow for the function call
- * @param maxCount The maximum number of argument to allow for the function call
- * @param argCount The actual number of arguments provided.
- */ const validateArgCount = function(fnName, minCount, maxCount, argCount) {
-    let argError;
-    if (argCount < minCount) argError = 'at least ' + minCount;
-    else if (argCount > maxCount) argError = maxCount === 0 ? 'none' : 'no more than ' + maxCount;
-    if (argError) {
-        const error = fnName + ' failed: Was called with ' + argCount + (argCount === 1 ? ' argument.' : ' arguments.') + ' Expects ' + argError + '.';
-        throw new Error(error);
-    }
-};
-/**
- * Generates a string to prefix an error message about failed argument validation
- *
- * @param fnName The function name
- * @param argName The name of the argument
- * @return The prefix to add to the error thrown for validation.
- */ function errorPrefix(fnName, argName) {
-    return `${fnName} failed: ${argName} argument `;
-}
-/**
- * @param fnName
- * @param argumentNumber
- * @param namespace
- * @param optional
- */ function validateNamespace(fnName, namespace, optional) {
-    if (optional && !namespace) return;
-    if (typeof namespace !== 'string') //TODO: I should do more validation here. We only allow certain chars in namespaces.
-    throw new Error(errorPrefix(fnName, 'namespace') + 'must be a valid firebase namespace.');
-}
-function validateCallback(fnName, argumentName, // eslint-disable-next-line @typescript-eslint/ban-types
-callback, optional) {
-    if (optional && !callback) return;
-    if (typeof callback !== 'function') throw new Error(errorPrefix(fnName, argumentName) + 'must be a valid function.');
-}
-function validateContextObject(fnName, argumentName, context, optional) {
-    if (optional && !context) return;
-    if (typeof context !== 'object' || context === null) throw new Error(errorPrefix(fnName, argumentName) + 'must be a valid context object.');
-}
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ // Code originally came from goog.crypt.stringToUtf8ByteArray, but for some reason they
-// automatically replaced '\r\n' with '\n', and they didn't handle surrogate pairs,
-// so it's been modified.
-// Note that not all Unicode characters appear as single characters in JavaScript strings.
-// fromCharCode returns the UTF-16 encoding of a character - so some Unicode characters
-// use 2 characters in JavaScript.  All 4-byte UTF-8 characters begin with a first
-// character in the range 0xD800 - 0xDBFF (the first character of a so-called surrogate
-// pair).
-// See http://www.ecma-international.org/ecma-262/5.1/#sec-15.1.3
-/**
- * @param {string} str
- * @return {Array}
- */ const stringToByteArray = function(str) {
-    const out = [];
-    let p = 0;
-    for(let i = 0; i < str.length; i++){
-        let c = str.charCodeAt(i);
-        // Is this the lead surrogate in a surrogate pair?
-        if (c >= 0xd800 && c <= 0xdbff) {
-            const high = c - 0xd800; // the high 10 bits.
-            i++;
-            assert(i < str.length, 'Surrogate pair missing trail surrogate.');
-            const low = str.charCodeAt(i) - 0xdc00; // the low 10 bits.
-            c = 0x10000 + (high << 10) + low;
-        }
-        if (c < 128) out[p++] = c;
-        else if (c < 2048) {
-            out[p++] = c >> 6 | 192;
-            out[p++] = c & 63 | 128;
-        } else if (c < 65536) {
-            out[p++] = c >> 12 | 224;
-            out[p++] = c >> 6 & 63 | 128;
-            out[p++] = c & 63 | 128;
-        } else {
-            out[p++] = c >> 18 | 240;
-            out[p++] = c >> 12 & 63 | 128;
-            out[p++] = c >> 6 & 63 | 128;
-            out[p++] = c & 63 | 128;
-        }
-    }
-    return out;
-};
-/**
- * Calculate length without actually converting; useful for doing cheaper validation.
- * @param {string} str
- * @return {number}
- */ const stringLength = function(str) {
-    let p = 0;
-    for(let i = 0; i < str.length; i++){
-        const c = str.charCodeAt(i);
-        if (c < 128) p++;
-        else if (c < 2048) p += 2;
-        else if (c >= 0xd800 && c <= 0xdbff) {
-            // Lead surrogate of a surrogate pair.  The pair together will take 4 bytes to represent.
-            p += 4;
-            i++; // skip trail surrogate.
-        } else p += 3;
-    }
-    return p;
-};
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * The amount of milliseconds to exponentially increase.
- */ const DEFAULT_INTERVAL_MILLIS = 1000;
-/**
- * The factor to backoff by.
- * Should be a number greater than 1.
- */ const DEFAULT_BACKOFF_FACTOR = 2;
-/**
- * The maximum milliseconds to increase to.
- *
- * <p>Visible for testing
- */ const MAX_VALUE_MILLIS = 14400000; // Four hours, like iOS and Android.
-/**
- * The percentage of backoff time to randomize by.
- * See
- * http://go/safe-client-behavior#step-1-determine-the-appropriate-retry-interval-to-handle-spike-traffic
- * for context.
- *
- * <p>Visible for testing
- */ const RANDOM_FACTOR = 0.5;
-/**
- * Based on the backoff method from
- * https://github.com/google/closure-library/blob/master/closure/goog/math/exponentialbackoff.js.
- * Extracted here so we don't need to pass metadata and a stateful ExponentialBackoff object around.
- */ function calculateBackoffMillis(backoffCount, intervalMillis = DEFAULT_INTERVAL_MILLIS, backoffFactor = DEFAULT_BACKOFF_FACTOR) {
-    // Calculates an exponentially increasing value.
-    // Deviation: calculates value from count and a constant interval, so we only need to save value
-    // and count to restore state.
-    const currBaseValue = intervalMillis * Math.pow(backoffFactor, backoffCount);
-    // A random "fuzz" to avoid waves of retries.
-    // Deviation: randomFactor is required.
-    const randomWait = Math.round(// A fraction of the backoff value to add/subtract.
-    // Deviation: changes multiplication order to improve readability.
-    RANDOM_FACTOR * currBaseValue * // A random float (rounded to int by Math.round above) in the range [-1, 1]. Determines
-    // if we add or subtract.
-    (Math.random() - 0.5) * 2);
-    // Limits backoff to max to avoid effectively permanent backoff.
-    return Math.min(MAX_VALUE_MILLIS, currBaseValue + randomWait);
-}
-/**
- * @license
- * Copyright 2020 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * Provide English ordinal letters after a number
- */ function ordinal(i) {
-    if (!Number.isFinite(i)) return `${i}`;
-    return i + indicator(i);
-}
-function indicator(i) {
-    i = Math.abs(i);
-    const cent = i % 100;
-    if (cent >= 10 && cent <= 20) return 'th';
-    const dec = i % 10;
-    if (dec === 1) return 'st';
-    if (dec === 2) return 'nd';
-    if (dec === 3) return 'rd';
-    return 'th';
-}
-/**
- * @license
- * Copyright 2021 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ function getModularInstance(service) {
-    if (service && service._delegate) return service._delegate;
-    else return service;
-}
-
-},{"./postinstall.mjs":"2zIBV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2zIBV":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getDefaultsFromPostinstall", ()=>getDefaultsFromPostinstall);
-const getDefaultsFromPostinstall = ()=>undefined;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9cikG":[function(require,module,exports,__globalThis) {
-/**
- * @license
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */ /**
- * A container for all of the Logger instances
- */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "LogLevel", ()=>LogLevel);
-parcelHelpers.export(exports, "Logger", ()=>Logger);
-parcelHelpers.export(exports, "setLogLevel", ()=>setLogLevel);
-parcelHelpers.export(exports, "setUserLogHandler", ()=>setUserLogHandler);
-const instances = [];
-/**
- * The JS SDK supports 5 log levels and also allows a user the ability to
- * silence the logs altogether.
- *
- * The order is a follows:
- * DEBUG < VERBOSE < INFO < WARN < ERROR
- *
- * All of the log types above the current log level will be captured (i.e. if
- * you set the log level to `INFO`, errors will still be logged, but `DEBUG` and
- * `VERBOSE` logs will not)
- */ var LogLevel;
-(function(LogLevel) {
-    LogLevel[LogLevel["DEBUG"] = 0] = "DEBUG";
-    LogLevel[LogLevel["VERBOSE"] = 1] = "VERBOSE";
-    LogLevel[LogLevel["INFO"] = 2] = "INFO";
-    LogLevel[LogLevel["WARN"] = 3] = "WARN";
-    LogLevel[LogLevel["ERROR"] = 4] = "ERROR";
-    LogLevel[LogLevel["SILENT"] = 5] = "SILENT";
-})(LogLevel || (LogLevel = {}));
-const levelStringToEnum = {
-    'debug': LogLevel.DEBUG,
-    'verbose': LogLevel.VERBOSE,
-    'info': LogLevel.INFO,
-    'warn': LogLevel.WARN,
-    'error': LogLevel.ERROR,
-    'silent': LogLevel.SILENT
-};
-/**
- * The default log level
- */ const defaultLogLevel = LogLevel.INFO;
-/**
- * By default, `console.debug` is not displayed in the developer console (in
- * chrome). To avoid forcing users to have to opt-in to these logs twice
- * (i.e. once for firebase, and once in the console), we are sending `DEBUG`
- * logs to the `console.log` function.
- */ const ConsoleMethod = {
-    [LogLevel.DEBUG]: 'log',
-    [LogLevel.VERBOSE]: 'log',
-    [LogLevel.INFO]: 'info',
-    [LogLevel.WARN]: 'warn',
-    [LogLevel.ERROR]: 'error'
-};
-/**
- * The default log handler will forward DEBUG, VERBOSE, INFO, WARN, and ERROR
- * messages on to their corresponding console counterparts (if the log method
- * is supported by the current log level)
- */ const defaultLogHandler = (instance, logType, ...args)=>{
-    if (logType < instance.logLevel) return;
-    const now = new Date().toISOString();
-    const method = ConsoleMethod[logType];
-    if (method) console[method](`[${now}]  ${instance.name}:`, ...args);
-    else throw new Error(`Attempted to log a message with an invalid logType (value: ${logType})`);
-};
-class Logger {
-    /**
-     * Gives you an instance of a Logger to capture messages according to
-     * Firebase's logging scheme.
-     *
-     * @param name The name that the logs will be associated with
-     */ constructor(name){
-        this.name = name;
-        /**
-         * The log level of the given Logger instance.
-         */ this._logLevel = defaultLogLevel;
-        /**
-         * The main (internal) log handler for the Logger instance.
-         * Can be set to a new function in internal package code but not by user.
-         */ this._logHandler = defaultLogHandler;
-        /**
-         * The optional, additional, user-defined log handler for the Logger instance.
-         */ this._userLogHandler = null;
-        /**
-         * Capture the current instance for later use
-         */ instances.push(this);
-    }
-    get logLevel() {
-        return this._logLevel;
-    }
-    set logLevel(val) {
-        if (!(val in LogLevel)) throw new TypeError(`Invalid value "${val}" assigned to \`logLevel\``);
-        this._logLevel = val;
-    }
-    // Workaround for setter/getter having to be the same type.
-    setLogLevel(val) {
-        this._logLevel = typeof val === 'string' ? levelStringToEnum[val] : val;
-    }
-    get logHandler() {
-        return this._logHandler;
-    }
-    set logHandler(val) {
-        if (typeof val !== 'function') throw new TypeError('Value assigned to `logHandler` must be a function');
-        this._logHandler = val;
-    }
-    get userLogHandler() {
-        return this._userLogHandler;
-    }
-    set userLogHandler(val) {
-        this._userLogHandler = val;
-    }
-    /**
-     * The functions below are all based on the `console` interface
-     */ debug(...args) {
-        this._userLogHandler && this._userLogHandler(this, LogLevel.DEBUG, ...args);
-        this._logHandler(this, LogLevel.DEBUG, ...args);
-    }
-    log(...args) {
-        this._userLogHandler && this._userLogHandler(this, LogLevel.VERBOSE, ...args);
-        this._logHandler(this, LogLevel.VERBOSE, ...args);
-    }
-    info(...args) {
-        this._userLogHandler && this._userLogHandler(this, LogLevel.INFO, ...args);
-        this._logHandler(this, LogLevel.INFO, ...args);
-    }
-    warn(...args) {
-        this._userLogHandler && this._userLogHandler(this, LogLevel.WARN, ...args);
-        this._logHandler(this, LogLevel.WARN, ...args);
-    }
-    error(...args) {
-        this._userLogHandler && this._userLogHandler(this, LogLevel.ERROR, ...args);
-        this._logHandler(this, LogLevel.ERROR, ...args);
-    }
-}
-function setLogLevel(level) {
-    instances.forEach((inst)=>{
-        inst.setLogLevel(level);
-    });
-}
-function setUserLogHandler(logCallback, options) {
-    for (const instance of instances){
-        let customLogLevel = null;
-        if (options && options.level) customLogLevel = levelStringToEnum[options.level];
-        if (logCallback === null) instance.userLogHandler = null;
-        else instance.userLogHandler = (instance, level, ...args)=>{
-            const message = args.map((arg)=>{
-                if (arg == null) return null;
-                else if (typeof arg === 'string') return arg;
-                else if (typeof arg === 'number' || typeof arg === 'boolean') return arg.toString();
-                else if (arg instanceof Error) return arg.message;
-                else try {
-                    return JSON.stringify(arg);
-                } catch (ignored) {
-                    return null;
-                }
-            }).filter((arg)=>arg).join(' ');
-            if (level >= (customLogLevel ?? instance.logLevel)) logCallback({
-                level: LogLevel[level].toLowerCase(),
-                message,
-                args,
-                type: instance.name
-            });
-        };
-    }
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"258QC":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "unwrap", ()=>(0, _wrapIdbValueJs.u));
-parcelHelpers.export(exports, "wrap", ()=>(0, _wrapIdbValueJs.w));
-parcelHelpers.export(exports, "deleteDB", ()=>deleteDB);
-parcelHelpers.export(exports, "openDB", ()=>openDB);
-var _wrapIdbValueJs = require("./wrap-idb-value.js");
-/**
- * Open a database.
- *
- * @param name Name of the database.
- * @param version Schema version.
- * @param callbacks Additional callbacks.
- */ function openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {
-    const request = indexedDB.open(name, version);
-    const openPromise = (0, _wrapIdbValueJs.w)(request);
-    if (upgrade) request.addEventListener('upgradeneeded', (event)=>{
-        upgrade((0, _wrapIdbValueJs.w)(request.result), event.oldVersion, event.newVersion, (0, _wrapIdbValueJs.w)(request.transaction), event);
-    });
-    if (blocked) request.addEventListener('blocked', (event)=>blocked(// Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
-        event.oldVersion, event.newVersion, event));
-    openPromise.then((db)=>{
-        if (terminated) db.addEventListener('close', ()=>terminated());
-        if (blocking) db.addEventListener('versionchange', (event)=>blocking(event.oldVersion, event.newVersion, event));
-    }).catch(()=>{});
-    return openPromise;
-}
-/**
- * Delete a database.
- *
- * @param name Name of the database.
- */ function deleteDB(name, { blocked } = {}) {
-    const request = indexedDB.deleteDatabase(name);
-    if (blocked) request.addEventListener('blocked', (event)=>blocked(// Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
-        event.oldVersion, event));
-    return (0, _wrapIdbValueJs.w)(request).then(()=>undefined);
-}
-const readMethods = [
-    'get',
-    'getKey',
-    'getAll',
-    'getAllKeys',
-    'count'
-];
-const writeMethods = [
-    'put',
-    'add',
-    'delete',
-    'clear'
-];
-const cachedMethods = new Map();
-function getMethod(target, prop) {
-    if (!(target instanceof IDBDatabase && !(prop in target) && typeof prop === 'string')) return;
-    if (cachedMethods.get(prop)) return cachedMethods.get(prop);
-    const targetFuncName = prop.replace(/FromIndex$/, '');
-    const useIndex = prop !== targetFuncName;
-    const isWrite = writeMethods.includes(targetFuncName);
-    if (// Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.
-    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) || !(isWrite || readMethods.includes(targetFuncName))) return;
-    const method = async function(storeName, ...args) {
-        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(
-        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');
-        let target = tx.store;
-        if (useIndex) target = target.index(args.shift());
-        // Must reject if op rejects.
-        // If it's a write operation, must reject if tx.done rejects.
-        // Must reject with op rejection first.
-        // Must resolve with op value.
-        // Must handle both promises (no unhandled rejections)
-        return (await Promise.all([
-            target[targetFuncName](...args),
-            isWrite && tx.done
-        ]))[0];
-    };
-    cachedMethods.set(prop, method);
-    return method;
-}
-(0, _wrapIdbValueJs.r)((oldTraps)=>({
-        ...oldTraps,
-        get: (target, prop, receiver)=>getMethod(target, prop) || oldTraps.get(target, prop, receiver),
-        has: (target, prop)=>!!getMethod(target, prop) || oldTraps.has(target, prop)
-    }));
-
-},{"./wrap-idb-value.js":"98T2L","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"98T2L":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "a", ()=>reverseTransformCache);
-parcelHelpers.export(exports, "i", ()=>instanceOfAny);
-parcelHelpers.export(exports, "r", ()=>replaceTraps);
-parcelHelpers.export(exports, "u", ()=>unwrap);
-parcelHelpers.export(exports, "w", ()=>wrap);
-const instanceOfAny = (object, constructors)=>constructors.some((c)=>object instanceof c);
-let idbProxyableTypes;
-let cursorAdvanceMethods;
-// This is a function to prevent it throwing up in node environments.
-function getIdbProxyableTypes() {
-    return idbProxyableTypes || (idbProxyableTypes = [
-        IDBDatabase,
-        IDBObjectStore,
-        IDBIndex,
-        IDBCursor,
-        IDBTransaction
-    ]);
-}
-// This is a function to prevent it throwing up in node environments.
-function getCursorAdvanceMethods() {
-    return cursorAdvanceMethods || (cursorAdvanceMethods = [
-        IDBCursor.prototype.advance,
-        IDBCursor.prototype.continue,
-        IDBCursor.prototype.continuePrimaryKey
-    ]);
-}
-const cursorRequestMap = new WeakMap();
-const transactionDoneMap = new WeakMap();
-const transactionStoreNamesMap = new WeakMap();
-const transformCache = new WeakMap();
-const reverseTransformCache = new WeakMap();
-function promisifyRequest(request) {
-    const promise = new Promise((resolve, reject)=>{
-        const unlisten = ()=>{
-            request.removeEventListener('success', success);
-            request.removeEventListener('error', error);
-        };
-        const success = ()=>{
-            resolve(wrap(request.result));
-            unlisten();
-        };
-        const error = ()=>{
-            reject(request.error);
-            unlisten();
-        };
-        request.addEventListener('success', success);
-        request.addEventListener('error', error);
-    });
-    promise.then((value)=>{
-        // Since cursoring reuses the IDBRequest (*sigh*), we cache it for later retrieval
-        // (see wrapFunction).
-        if (value instanceof IDBCursor) cursorRequestMap.set(value, request);
-    // Catching to avoid "Uncaught Promise exceptions"
-    }).catch(()=>{});
-    // This mapping exists in reverseTransformCache but doesn't doesn't exist in transformCache. This
-    // is because we create many promises from a single IDBRequest.
-    reverseTransformCache.set(promise, request);
-    return promise;
-}
-function cacheDonePromiseForTransaction(tx) {
-    // Early bail if we've already created a done promise for this transaction.
-    if (transactionDoneMap.has(tx)) return;
-    const done = new Promise((resolve, reject)=>{
-        const unlisten = ()=>{
-            tx.removeEventListener('complete', complete);
-            tx.removeEventListener('error', error);
-            tx.removeEventListener('abort', error);
-        };
-        const complete = ()=>{
-            resolve();
-            unlisten();
-        };
-        const error = ()=>{
-            reject(tx.error || new DOMException('AbortError', 'AbortError'));
-            unlisten();
-        };
-        tx.addEventListener('complete', complete);
-        tx.addEventListener('error', error);
-        tx.addEventListener('abort', error);
-    });
-    // Cache it for later retrieval.
-    transactionDoneMap.set(tx, done);
-}
-let idbProxyTraps = {
-    get (target, prop, receiver) {
-        if (target instanceof IDBTransaction) {
-            // Special handling for transaction.done.
-            if (prop === 'done') return transactionDoneMap.get(target);
-            // Polyfill for objectStoreNames because of Edge.
-            if (prop === 'objectStoreNames') return target.objectStoreNames || transactionStoreNamesMap.get(target);
-            // Make tx.store return the only store in the transaction, or undefined if there are many.
-            if (prop === 'store') return receiver.objectStoreNames[1] ? undefined : receiver.objectStore(receiver.objectStoreNames[0]);
-        }
-        // Else transform whatever we get back.
-        return wrap(target[prop]);
-    },
-    set (target, prop, value) {
-        target[prop] = value;
-        return true;
-    },
-    has (target, prop) {
-        if (target instanceof IDBTransaction && (prop === 'done' || prop === 'store')) return true;
-        return prop in target;
-    }
-};
-function replaceTraps(callback) {
-    idbProxyTraps = callback(idbProxyTraps);
-}
-function wrapFunction(func) {
-    // Due to expected object equality (which is enforced by the caching in `wrap`), we
-    // only create one new func per func.
-    // Edge doesn't support objectStoreNames (booo), so we polyfill it here.
-    if (func === IDBDatabase.prototype.transaction && !('objectStoreNames' in IDBTransaction.prototype)) return function(storeNames, ...args) {
-        const tx = func.call(unwrap(this), storeNames, ...args);
-        transactionStoreNamesMap.set(tx, storeNames.sort ? storeNames.sort() : [
-            storeNames
-        ]);
-        return wrap(tx);
-    };
-    // Cursor methods are special, as the behaviour is a little more different to standard IDB. In
-    // IDB, you advance the cursor and wait for a new 'success' on the IDBRequest that gave you the
-    // cursor. It's kinda like a promise that can resolve with many values. That doesn't make sense
-    // with real promises, so each advance methods returns a new promise for the cursor object, or
-    // undefined if the end of the cursor has been reached.
-    if (getCursorAdvanceMethods().includes(func)) return function(...args) {
-        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
-        // the original object.
-        func.apply(unwrap(this), args);
-        return wrap(cursorRequestMap.get(this));
-    };
-    return function(...args) {
-        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
-        // the original object.
-        return wrap(func.apply(unwrap(this), args));
-    };
-}
-function transformCachableValue(value) {
-    if (typeof value === 'function') return wrapFunction(value);
-    // This doesn't return, it just creates a 'done' promise for the transaction,
-    // which is later returned for transaction.done (see idbObjectHandler).
-    if (value instanceof IDBTransaction) cacheDonePromiseForTransaction(value);
-    if (instanceOfAny(value, getIdbProxyableTypes())) return new Proxy(value, idbProxyTraps);
-    // Return the same value back if we're not going to transform it.
-    return value;
-}
-function wrap(value) {
-    // We sometimes generate multiple promises from a single IDBRequest (eg when cursoring), because
-    // IDB is weird and a single IDBRequest can yield many responses, so these can't be cached.
-    if (value instanceof IDBRequest) return promisifyRequest(value);
-    // If we've already transformed this value before, reuse the transformed value.
-    // This is faster, but it also provides object equality.
-    if (transformCache.has(value)) return transformCache.get(value);
-    const newValue = transformCachableValue(value);
-    // Not all types are transformed.
-    // These may be primitive types, so they can't be WeakMap keys.
-    if (newValue !== value) {
-        transformCache.set(value, newValue);
-        reverseTransformCache.set(newValue, value);
-    }
-    return newValue;
-}
-const unwrap = (value)=>reverseTransformCache.get(value);
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4ZBbi":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","firebase/auth":"4ZBbi","./firebaseConfig":"dvzOB","react-redux":"hbNxT","../utils/userInfoslice":"jAZia","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"4ZBbi":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _auth = require("@firebase/auth");
 parcelHelpers.exportAll(_auth, exports);
 
-},{"@firebase/auth":"enoN1","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"enoN1":[function(require,module,exports,__globalThis) {
+},{"@firebase/auth":"1CC0n","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1CC0n":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ActionCodeOperation", ()=>(0, _index9Ccb475DJs.A));
@@ -38395,7 +35198,7 @@ var _util = require("@firebase/util");
 var _logger = require("@firebase/logger");
 var _component = require("@firebase/component");
 
-},{"./index-9ccb475d.js":"fFYkl","@firebase/app":"clWgn","@firebase/util":"jy04l","@firebase/logger":"9cikG","@firebase/component":"d6O5O","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fFYkl":[function(require,module,exports,__globalThis) {
+},{"./index-9ccb475d.js":"8f3x0","@firebase/app":"3WDcU","@firebase/util":"jy04l","@firebase/logger":"9cikG","@firebase/component":"d6O5O","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8f3x0":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "$", ()=>SAMLAuthProvider);
@@ -48164,7 +44967,4145 @@ _setExternalJSProvider({
 });
 registerAuth("Browser" /* ClientPlatform.BROWSER */ );
 
-},{"@firebase/app":"clWgn","@firebase/util":"jy04l","@firebase/logger":"9cikG","@firebase/component":"d6O5O","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"baeVm":[function(require,module,exports,__globalThis) {
+},{"@firebase/app":"3WDcU","@firebase/util":"jy04l","@firebase/logger":"9cikG","@firebase/component":"d6O5O","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3WDcU":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "FirebaseError", ()=>(0, _util.FirebaseError));
+parcelHelpers.export(exports, "SDK_VERSION", ()=>SDK_VERSION);
+parcelHelpers.export(exports, "_DEFAULT_ENTRY_NAME", ()=>DEFAULT_ENTRY_NAME);
+parcelHelpers.export(exports, "_addComponent", ()=>_addComponent);
+parcelHelpers.export(exports, "_addOrOverwriteComponent", ()=>_addOrOverwriteComponent);
+parcelHelpers.export(exports, "_apps", ()=>_apps);
+parcelHelpers.export(exports, "_clearComponents", ()=>_clearComponents);
+parcelHelpers.export(exports, "_components", ()=>_components);
+parcelHelpers.export(exports, "_getProvider", ()=>_getProvider);
+parcelHelpers.export(exports, "_isFirebaseApp", ()=>_isFirebaseApp);
+parcelHelpers.export(exports, "_isFirebaseServerApp", ()=>_isFirebaseServerApp);
+parcelHelpers.export(exports, "_isFirebaseServerAppSettings", ()=>_isFirebaseServerAppSettings);
+parcelHelpers.export(exports, "_registerComponent", ()=>_registerComponent);
+parcelHelpers.export(exports, "_removeServiceInstance", ()=>_removeServiceInstance);
+parcelHelpers.export(exports, "_serverApps", ()=>_serverApps);
+parcelHelpers.export(exports, "deleteApp", ()=>deleteApp);
+parcelHelpers.export(exports, "getApp", ()=>getApp);
+parcelHelpers.export(exports, "getApps", ()=>getApps);
+parcelHelpers.export(exports, "initializeApp", ()=>initializeApp);
+parcelHelpers.export(exports, "initializeServerApp", ()=>initializeServerApp);
+parcelHelpers.export(exports, "onLog", ()=>onLog);
+parcelHelpers.export(exports, "registerVersion", ()=>registerVersion);
+parcelHelpers.export(exports, "setLogLevel", ()=>setLogLevel);
+var _component = require("@firebase/component");
+var _logger = require("@firebase/logger");
+var _util = require("@firebase/util");
+var _idb = require("idb");
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class PlatformLoggerServiceImpl {
+    constructor(container){
+        this.container = container;
+    }
+    // In initial implementation, this will be called by installations on
+    // auth token refresh, and installations will send this string.
+    getPlatformInfoString() {
+        const providers = this.container.getProviders();
+        // Loop through providers and get library/version pairs from any that are
+        // version components.
+        return providers.map((provider)=>{
+            if (isVersionServiceProvider(provider)) {
+                const service = provider.getImmediate();
+                return `${service.library}/${service.version}`;
+            } else return null;
+        }).filter((logString)=>logString).join(' ');
+    }
+}
+/**
+ *
+ * @param provider check if this provider provides a VersionService
+ *
+ * NOTE: Using Provider<'app-version'> is a hack to indicate that the provider
+ * provides VersionService. The provider is not necessarily a 'app-version'
+ * provider.
+ */ function isVersionServiceProvider(provider) {
+    const component = provider.getComponent();
+    return component?.type === "VERSION" /* ComponentType.VERSION */ ;
+}
+const name$q = "@firebase/app";
+const version$1 = "0.14.2";
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const logger = new (0, _logger.Logger)('@firebase/app');
+const name$p = "@firebase/app-compat";
+const name$o = "@firebase/analytics-compat";
+const name$n = "@firebase/analytics";
+const name$m = "@firebase/app-check-compat";
+const name$l = "@firebase/app-check";
+const name$k = "@firebase/auth";
+const name$j = "@firebase/auth-compat";
+const name$i = "@firebase/database";
+const name$h = "@firebase/data-connect";
+const name$g = "@firebase/database-compat";
+const name$f = "@firebase/functions";
+const name$e = "@firebase/functions-compat";
+const name$d = "@firebase/installations";
+const name$c = "@firebase/installations-compat";
+const name$b = "@firebase/messaging";
+const name$a = "@firebase/messaging-compat";
+const name$9 = "@firebase/performance";
+const name$8 = "@firebase/performance-compat";
+const name$7 = "@firebase/remote-config";
+const name$6 = "@firebase/remote-config-compat";
+const name$5 = "@firebase/storage";
+const name$4 = "@firebase/storage-compat";
+const name$3 = "@firebase/firestore";
+const name$2 = "@firebase/ai";
+const name$1 = "@firebase/firestore-compat";
+const name = "firebase";
+const version = "12.2.0";
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The default app name
+ *
+ * @internal
+ */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
+const PLATFORM_LOG_STRING = {
+    [name$q]: 'fire-core',
+    [name$p]: 'fire-core-compat',
+    [name$n]: 'fire-analytics',
+    [name$o]: 'fire-analytics-compat',
+    [name$l]: 'fire-app-check',
+    [name$m]: 'fire-app-check-compat',
+    [name$k]: 'fire-auth',
+    [name$j]: 'fire-auth-compat',
+    [name$i]: 'fire-rtdb',
+    [name$h]: 'fire-data-connect',
+    [name$g]: 'fire-rtdb-compat',
+    [name$f]: 'fire-fn',
+    [name$e]: 'fire-fn-compat',
+    [name$d]: 'fire-iid',
+    [name$c]: 'fire-iid-compat',
+    [name$b]: 'fire-fcm',
+    [name$a]: 'fire-fcm-compat',
+    [name$9]: 'fire-perf',
+    [name$8]: 'fire-perf-compat',
+    [name$7]: 'fire-rc',
+    [name$6]: 'fire-rc-compat',
+    [name$5]: 'fire-gcs',
+    [name$4]: 'fire-gcs-compat',
+    [name$3]: 'fire-fst',
+    [name$1]: 'fire-fst-compat',
+    [name$2]: 'fire-vertex',
+    'fire-js': 'fire-js',
+    [name]: 'fire-js-all'
+};
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @internal
+ */ const _apps = new Map();
+/**
+ * @internal
+ */ const _serverApps = new Map();
+/**
+ * Registered components.
+ *
+ * @internal
+ */ // eslint-disable-next-line @typescript-eslint/no-explicit-any
+const _components = new Map();
+/**
+ * @param component - the component being added to this app's container
+ *
+ * @internal
+ */ function _addComponent(app, component) {
+    try {
+        app.container.addComponent(component);
+    } catch (e) {
+        logger.debug(`Component ${component.name} failed to register with FirebaseApp ${app.name}`, e);
+    }
+}
+/**
+ *
+ * @internal
+ */ function _addOrOverwriteComponent(app, component) {
+    app.container.addOrOverwriteComponent(component);
+}
+/**
+ *
+ * @param component - the component to register
+ * @returns whether or not the component is registered successfully
+ *
+ * @internal
+ */ function _registerComponent(component) {
+    const componentName = component.name;
+    if (_components.has(componentName)) {
+        logger.debug(`There were multiple attempts to register component ${componentName}.`);
+        return false;
+    }
+    _components.set(componentName, component);
+    // add the component to existing app instances
+    for (const app of _apps.values())_addComponent(app, component);
+    for (const serverApp of _serverApps.values())_addComponent(serverApp, component);
+    return true;
+}
+/**
+ *
+ * @param app - FirebaseApp instance
+ * @param name - service name
+ *
+ * @returns the provider for the service with the matching name
+ *
+ * @internal
+ */ function _getProvider(app, name) {
+    const heartbeatController = app.container.getProvider('heartbeat').getImmediate({
+        optional: true
+    });
+    if (heartbeatController) heartbeatController.triggerHeartbeat();
+    return app.container.getProvider(name);
+}
+/**
+ *
+ * @param app - FirebaseApp instance
+ * @param name - service name
+ * @param instanceIdentifier - service instance identifier in case the service supports multiple instances
+ *
+ * @internal
+ */ function _removeServiceInstance(app, name, instanceIdentifier = DEFAULT_ENTRY_NAME) {
+    _getProvider(app, name).clearInstance(instanceIdentifier);
+}
+/**
+ *
+ * @param obj - an object of type FirebaseApp, FirebaseOptions or FirebaseAppSettings.
+ *
+ * @returns true if the provide object is of type FirebaseApp.
+ *
+ * @internal
+ */ function _isFirebaseApp(obj) {
+    return obj.options !== undefined;
+}
+/**
+ *
+ * @param obj - an object of type FirebaseApp, FirebaseOptions or FirebaseAppSettings.
+ *
+ * @returns true if the provided object is of type FirebaseServerAppImpl.
+ *
+ * @internal
+ */ function _isFirebaseServerAppSettings(obj) {
+    if (_isFirebaseApp(obj)) return false;
+    return 'authIdToken' in obj || 'appCheckToken' in obj || 'releaseOnDeref' in obj || 'automaticDataCollectionEnabled' in obj;
+}
+/**
+ *
+ * @param obj - an object of type FirebaseApp.
+ *
+ * @returns true if the provided object is of type FirebaseServerAppImpl.
+ *
+ * @internal
+ */ function _isFirebaseServerApp(obj) {
+    if (obj === null || obj === undefined) return false;
+    return obj.settings !== undefined;
+}
+/**
+ * Test only
+ *
+ * @internal
+ */ function _clearComponents() {
+    _components.clear();
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const ERRORS = {
+    ["no-app" /* AppError.NO_APP */ ]: "No Firebase App '{$appName}' has been created - call initializeApp() first",
+    ["bad-app-name" /* AppError.BAD_APP_NAME */ ]: "Illegal App name: '{$appName}'",
+    ["duplicate-app" /* AppError.DUPLICATE_APP */ ]: "Firebase App named '{$appName}' already exists with different options or config",
+    ["app-deleted" /* AppError.APP_DELETED */ ]: "Firebase App named '{$appName}' already deleted",
+    ["server-app-deleted" /* AppError.SERVER_APP_DELETED */ ]: 'Firebase Server App has been deleted',
+    ["no-options" /* AppError.NO_OPTIONS */ ]: 'Need to provide options, when not being deployed to hosting via source.',
+    ["invalid-app-argument" /* AppError.INVALID_APP_ARGUMENT */ ]: "firebase.{$appName}() takes either no argument or a Firebase App instance.",
+    ["invalid-log-argument" /* AppError.INVALID_LOG_ARGUMENT */ ]: 'First argument to `onLog` must be null or a function.',
+    ["idb-open" /* AppError.IDB_OPEN */ ]: 'Error thrown when opening IndexedDB. Original error: {$originalErrorMessage}.',
+    ["idb-get" /* AppError.IDB_GET */ ]: 'Error thrown when reading from IndexedDB. Original error: {$originalErrorMessage}.',
+    ["idb-set" /* AppError.IDB_WRITE */ ]: 'Error thrown when writing to IndexedDB. Original error: {$originalErrorMessage}.',
+    ["idb-delete" /* AppError.IDB_DELETE */ ]: 'Error thrown when deleting from IndexedDB. Original error: {$originalErrorMessage}.',
+    ["finalization-registry-not-supported" /* AppError.FINALIZATION_REGISTRY_NOT_SUPPORTED */ ]: 'FirebaseServerApp deleteOnDeref field defined but the JS runtime does not support FinalizationRegistry.',
+    ["invalid-server-app-environment" /* AppError.INVALID_SERVER_APP_ENVIRONMENT */ ]: 'FirebaseServerApp is not for use in browser environments.'
+};
+const ERROR_FACTORY = new (0, _util.ErrorFactory)('app', 'Firebase', ERRORS);
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class FirebaseAppImpl {
+    constructor(options, config, container){
+        this._isDeleted = false;
+        this._options = {
+            ...options
+        };
+        this._config = {
+            ...config
+        };
+        this._name = config.name;
+        this._automaticDataCollectionEnabled = config.automaticDataCollectionEnabled;
+        this._container = container;
+        this.container.addComponent(new (0, _component.Component)('app', ()=>this, "PUBLIC" /* ComponentType.PUBLIC */ ));
+    }
+    get automaticDataCollectionEnabled() {
+        this.checkDestroyed();
+        return this._automaticDataCollectionEnabled;
+    }
+    set automaticDataCollectionEnabled(val) {
+        this.checkDestroyed();
+        this._automaticDataCollectionEnabled = val;
+    }
+    get name() {
+        this.checkDestroyed();
+        return this._name;
+    }
+    get options() {
+        this.checkDestroyed();
+        return this._options;
+    }
+    get config() {
+        this.checkDestroyed();
+        return this._config;
+    }
+    get container() {
+        return this._container;
+    }
+    get isDeleted() {
+        return this._isDeleted;
+    }
+    set isDeleted(val) {
+        this._isDeleted = val;
+    }
+    /**
+     * This function will throw an Error if the App has already been deleted -
+     * use before performing API actions on the App.
+     */ checkDestroyed() {
+        if (this.isDeleted) throw ERROR_FACTORY.create("app-deleted" /* AppError.APP_DELETED */ , {
+            appName: this._name
+        });
+    }
+}
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ // Parse the token and check to see if the `exp` claim is in the future.
+// Reports an error to the console if the token or claim could not be parsed, or if `exp` is in
+// the past.
+function validateTokenTTL(base64Token, tokenName) {
+    const secondPart = (0, _util.base64Decode)(base64Token.split('.')[1]);
+    if (secondPart === null) {
+        console.error(`FirebaseServerApp ${tokenName} is invalid: second part could not be parsed.`);
+        return;
+    }
+    const expClaim = JSON.parse(secondPart).exp;
+    if (expClaim === undefined) {
+        console.error(`FirebaseServerApp ${tokenName} is invalid: expiration claim could not be parsed`);
+        return;
+    }
+    const exp = JSON.parse(secondPart).exp * 1000;
+    const now = new Date().getTime();
+    const diff = exp - now;
+    if (diff <= 0) console.error(`FirebaseServerApp ${tokenName} is invalid: the token has expired.`);
+}
+class FirebaseServerAppImpl extends FirebaseAppImpl {
+    constructor(options, serverConfig, name, container){
+        // Build configuration parameters for the FirebaseAppImpl base class.
+        const automaticDataCollectionEnabled = serverConfig.automaticDataCollectionEnabled !== undefined ? serverConfig.automaticDataCollectionEnabled : true;
+        // Create the FirebaseAppSettings object for the FirebaseAppImp constructor.
+        const config = {
+            name,
+            automaticDataCollectionEnabled
+        };
+        if (options.apiKey !== undefined) // Construct the parent FirebaseAppImp object.
+        super(options, config, container);
+        else {
+            const appImpl = options;
+            super(appImpl.options, config, container);
+        }
+        // Now construct the data for the FirebaseServerAppImpl.
+        this._serverConfig = {
+            automaticDataCollectionEnabled,
+            ...serverConfig
+        };
+        // Ensure that the current time is within the `authIdtoken` window of validity.
+        if (this._serverConfig.authIdToken) validateTokenTTL(this._serverConfig.authIdToken, 'authIdToken');
+        // Ensure that the current time is within the `appCheckToken` window of validity.
+        if (this._serverConfig.appCheckToken) validateTokenTTL(this._serverConfig.appCheckToken, 'appCheckToken');
+        this._finalizationRegistry = null;
+        if (typeof FinalizationRegistry !== 'undefined') this._finalizationRegistry = new FinalizationRegistry(()=>{
+            this.automaticCleanup();
+        });
+        this._refCount = 0;
+        this.incRefCount(this._serverConfig.releaseOnDeref);
+        // Do not retain a hard reference to the dref object, otherwise the FinalizationRegistry
+        // will never trigger.
+        this._serverConfig.releaseOnDeref = undefined;
+        serverConfig.releaseOnDeref = undefined;
+        registerVersion(name$q, version$1, 'serverapp');
+    }
+    toJSON() {
+        return undefined;
+    }
+    get refCount() {
+        return this._refCount;
+    }
+    // Increment the reference count of this server app. If an object is provided, register it
+    // with the finalization registry.
+    incRefCount(obj) {
+        if (this.isDeleted) return;
+        this._refCount++;
+        if (obj !== undefined && this._finalizationRegistry !== null) this._finalizationRegistry.register(obj, this);
+    }
+    // Decrement the reference count.
+    decRefCount() {
+        if (this.isDeleted) return 0;
+        return --this._refCount;
+    }
+    // Invoked by the FinalizationRegistry callback to note that this app should go through its
+    // reference counts and delete itself if no reference count remain. The coordinating logic that
+    // handles this is in deleteApp(...).
+    automaticCleanup() {
+        deleteApp(this);
+    }
+    get settings() {
+        this.checkDestroyed();
+        return this._serverConfig;
+    }
+    /**
+     * This function will throw an Error if the App has already been deleted -
+     * use before performing API actions on the App.
+     */ checkDestroyed() {
+        if (this.isDeleted) throw ERROR_FACTORY.create("server-app-deleted" /* AppError.SERVER_APP_DELETED */ );
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The current SDK version.
+ *
+ * @public
+ */ const SDK_VERSION = version;
+function initializeApp(_options, rawConfig = {}) {
+    let options = _options;
+    if (typeof rawConfig !== 'object') {
+        const name = rawConfig;
+        rawConfig = {
+            name
+        };
+    }
+    const config = {
+        name: DEFAULT_ENTRY_NAME,
+        automaticDataCollectionEnabled: true,
+        ...rawConfig
+    };
+    const name = config.name;
+    if (typeof name !== 'string' || !name) throw ERROR_FACTORY.create("bad-app-name" /* AppError.BAD_APP_NAME */ , {
+        appName: String(name)
+    });
+    options || (options = (0, _util.getDefaultAppConfig)());
+    if (!options) throw ERROR_FACTORY.create("no-options" /* AppError.NO_OPTIONS */ );
+    const existingApp = _apps.get(name);
+    if (existingApp) {
+        // return the existing app if options and config deep equal the ones in the existing app.
+        if ((0, _util.deepEqual)(options, existingApp.options) && (0, _util.deepEqual)(config, existingApp.config)) return existingApp;
+        else throw ERROR_FACTORY.create("duplicate-app" /* AppError.DUPLICATE_APP */ , {
+            appName: name
+        });
+    }
+    const container = new (0, _component.ComponentContainer)(name);
+    for (const component of _components.values())container.addComponent(component);
+    const newApp = new FirebaseAppImpl(options, config, container);
+    _apps.set(name, newApp);
+    return newApp;
+}
+function initializeServerApp(_options, _serverAppConfig = {}) {
+    if ((0, _util.isBrowser)() && !(0, _util.isWebWorker)()) // FirebaseServerApp isn't designed to be run in browsers.
+    throw ERROR_FACTORY.create("invalid-server-app-environment" /* AppError.INVALID_SERVER_APP_ENVIRONMENT */ );
+    let firebaseOptions;
+    let serverAppSettings = _serverAppConfig || {};
+    if (_options) {
+        if (_isFirebaseApp(_options)) firebaseOptions = _options.options;
+        else if (_isFirebaseServerAppSettings(_options)) serverAppSettings = _options;
+        else firebaseOptions = _options;
+    }
+    if (serverAppSettings.automaticDataCollectionEnabled === undefined) serverAppSettings.automaticDataCollectionEnabled = true;
+    firebaseOptions || (firebaseOptions = (0, _util.getDefaultAppConfig)());
+    if (!firebaseOptions) throw ERROR_FACTORY.create("no-options" /* AppError.NO_OPTIONS */ );
+    // Build an app name based on a hash of the configuration options.
+    const nameObj = {
+        ...serverAppSettings,
+        ...firebaseOptions
+    };
+    // However, Do not mangle the name based on releaseOnDeref, since it will vary between the
+    // construction of FirebaseServerApp instances. For example, if the object is the request headers.
+    if (nameObj.releaseOnDeref !== undefined) delete nameObj.releaseOnDeref;
+    const hashCode = (s)=>{
+        return [
+            ...s
+        ].reduce((hash, c)=>Math.imul(31, hash) + c.charCodeAt(0) | 0, 0);
+    };
+    if (serverAppSettings.releaseOnDeref !== undefined) {
+        if (typeof FinalizationRegistry === 'undefined') throw ERROR_FACTORY.create("finalization-registry-not-supported" /* AppError.FINALIZATION_REGISTRY_NOT_SUPPORTED */ , {});
+    }
+    const nameString = '' + hashCode(JSON.stringify(nameObj));
+    const existingApp = _serverApps.get(nameString);
+    if (existingApp) {
+        existingApp.incRefCount(serverAppSettings.releaseOnDeref);
+        return existingApp;
+    }
+    const container = new (0, _component.ComponentContainer)(nameString);
+    for (const component of _components.values())container.addComponent(component);
+    const newApp = new FirebaseServerAppImpl(firebaseOptions, serverAppSettings, nameString, container);
+    _serverApps.set(nameString, newApp);
+    return newApp;
+}
+/**
+ * Retrieves a {@link @firebase/app#FirebaseApp} instance.
+ *
+ * When called with no arguments, the default app is returned. When an app name
+ * is provided, the app corresponding to that name is returned.
+ *
+ * An exception is thrown if the app being retrieved has not yet been
+ * initialized.
+ *
+ * @example
+ * ```javascript
+ * // Return the default app
+ * const app = getApp();
+ * ```
+ *
+ * @example
+ * ```javascript
+ * // Return a named app
+ * const otherApp = getApp("otherApp");
+ * ```
+ *
+ * @param name - Optional name of the app to return. If no name is
+ *   provided, the default is `"[DEFAULT]"`.
+ *
+ * @returns The app corresponding to the provided app name.
+ *   If no app name is provided, the default app is returned.
+ *
+ * @public
+ */ function getApp(name = DEFAULT_ENTRY_NAME) {
+    const app = _apps.get(name);
+    if (!app && name === DEFAULT_ENTRY_NAME && (0, _util.getDefaultAppConfig)()) return initializeApp();
+    if (!app) throw ERROR_FACTORY.create("no-app" /* AppError.NO_APP */ , {
+        appName: name
+    });
+    return app;
+}
+/**
+ * A (read-only) array of all initialized apps.
+ * @public
+ */ function getApps() {
+    return Array.from(_apps.values());
+}
+/**
+ * Renders this app unusable and frees the resources of all associated
+ * services.
+ *
+ * @example
+ * ```javascript
+ * deleteApp(app)
+ *   .then(function() {
+ *     console.log("App deleted successfully");
+ *   })
+ *   .catch(function(error) {
+ *     console.log("Error deleting app:", error);
+ *   });
+ * ```
+ *
+ * @public
+ */ async function deleteApp(app) {
+    let cleanupProviders = false;
+    const name = app.name;
+    if (_apps.has(name)) {
+        cleanupProviders = true;
+        _apps.delete(name);
+    } else if (_serverApps.has(name)) {
+        const firebaseServerApp = app;
+        if (firebaseServerApp.decRefCount() <= 0) {
+            _serverApps.delete(name);
+            cleanupProviders = true;
+        }
+    }
+    if (cleanupProviders) {
+        await Promise.all(app.container.getProviders().map((provider)=>provider.delete()));
+        app.isDeleted = true;
+    }
+}
+/**
+ * Registers a library's name and version for platform logging purposes.
+ * @param library - Name of 1p or 3p library (e.g. firestore, angularfire)
+ * @param version - Current version of that library.
+ * @param variant - Bundle variant, e.g., node, rn, etc.
+ *
+ * @public
+ */ function registerVersion(libraryKeyOrName, version, variant) {
+    // TODO: We can use this check to whitelist strings when/if we set up
+    // a good whitelist system.
+    let library = PLATFORM_LOG_STRING[libraryKeyOrName] ?? libraryKeyOrName;
+    if (variant) library += `-${variant}`;
+    const libraryMismatch = library.match(/\s|\//);
+    const versionMismatch = version.match(/\s|\//);
+    if (libraryMismatch || versionMismatch) {
+        const warning = [
+            `Unable to register library "${library}" with version "${version}":`
+        ];
+        if (libraryMismatch) warning.push(`library name "${library}" contains illegal characters (whitespace or "/")`);
+        if (libraryMismatch && versionMismatch) warning.push('and');
+        if (versionMismatch) warning.push(`version name "${version}" contains illegal characters (whitespace or "/")`);
+        logger.warn(warning.join(' '));
+        return;
+    }
+    _registerComponent(new (0, _component.Component)(`${library}-version`, ()=>({
+            library,
+            version
+        }), "VERSION" /* ComponentType.VERSION */ ));
+}
+/**
+ * Sets log handler for all Firebase SDKs.
+ * @param logCallback - An optional custom log handler that executes user code whenever
+ * the Firebase SDK makes a logging call.
+ *
+ * @public
+ */ function onLog(logCallback, options) {
+    if (logCallback !== null && typeof logCallback !== 'function') throw ERROR_FACTORY.create("invalid-log-argument" /* AppError.INVALID_LOG_ARGUMENT */ );
+    (0, _logger.setUserLogHandler)(logCallback, options);
+}
+/**
+ * Sets log level for all Firebase SDKs.
+ *
+ * All of the log types above the current log level are captured (i.e. if
+ * you set the log level to `info`, errors are logged, but `debug` and
+ * `verbose` logs are not).
+ *
+ * @public
+ */ function setLogLevel(logLevel) {
+    (0, _logger.setLogLevel)(logLevel);
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const DB_NAME = 'firebase-heartbeat-database';
+const DB_VERSION = 1;
+const STORE_NAME = 'firebase-heartbeat-store';
+let dbPromise = null;
+function getDbPromise() {
+    if (!dbPromise) dbPromise = (0, _idb.openDB)(DB_NAME, DB_VERSION, {
+        upgrade: (db, oldVersion)=>{
+            // We don't use 'break' in this switch statement, the fall-through
+            // behavior is what we want, because if there are multiple versions between
+            // the old version and the current version, we want ALL the migrations
+            // that correspond to those versions to run, not only the last one.
+            // eslint-disable-next-line default-case
+            switch(oldVersion){
+                case 0:
+                    try {
+                        db.createObjectStore(STORE_NAME);
+                    } catch (e) {
+                        // Safari/iOS browsers throw occasional exceptions on
+                        // db.createObjectStore() that may be a bug. Avoid blocking
+                        // the rest of the app functionality.
+                        console.warn(e);
+                    }
+            }
+        }
+    }).catch((e)=>{
+        throw ERROR_FACTORY.create("idb-open" /* AppError.IDB_OPEN */ , {
+            originalErrorMessage: e.message
+        });
+    });
+    return dbPromise;
+}
+async function readHeartbeatsFromIndexedDB(app) {
+    try {
+        const db = await getDbPromise();
+        const tx = db.transaction(STORE_NAME);
+        const result = await tx.objectStore(STORE_NAME).get(computeKey(app));
+        // We already have the value but tx.done can throw,
+        // so we need to await it here to catch errors
+        await tx.done;
+        return result;
+    } catch (e) {
+        if (e instanceof (0, _util.FirebaseError)) logger.warn(e.message);
+        else {
+            const idbGetError = ERROR_FACTORY.create("idb-get" /* AppError.IDB_GET */ , {
+                originalErrorMessage: e?.message
+            });
+            logger.warn(idbGetError.message);
+        }
+    }
+}
+async function writeHeartbeatsToIndexedDB(app, heartbeatObject) {
+    try {
+        const db = await getDbPromise();
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        const objectStore = tx.objectStore(STORE_NAME);
+        await objectStore.put(heartbeatObject, computeKey(app));
+        await tx.done;
+    } catch (e) {
+        if (e instanceof (0, _util.FirebaseError)) logger.warn(e.message);
+        else {
+            const idbGetError = ERROR_FACTORY.create("idb-set" /* AppError.IDB_WRITE */ , {
+                originalErrorMessage: e?.message
+            });
+            logger.warn(idbGetError.message);
+        }
+    }
+}
+function computeKey(app) {
+    return `${app.name}!${app.options.appId}`;
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const MAX_HEADER_BYTES = 1024;
+const MAX_NUM_STORED_HEARTBEATS = 30;
+class HeartbeatServiceImpl {
+    constructor(container){
+        this.container = container;
+        /**
+         * In-memory cache for heartbeats, used by getHeartbeatsHeader() to generate
+         * the header string.
+         * Stores one record per date. This will be consolidated into the standard
+         * format of one record per user agent string before being sent as a header.
+         * Populated from indexedDB when the controller is instantiated and should
+         * be kept in sync with indexedDB.
+         * Leave public for easier testing.
+         */ this._heartbeatsCache = null;
+        const app = this.container.getProvider('app').getImmediate();
+        this._storage = new HeartbeatStorageImpl(app);
+        this._heartbeatsCachePromise = this._storage.read().then((result)=>{
+            this._heartbeatsCache = result;
+            return result;
+        });
+    }
+    /**
+     * Called to report a heartbeat. The function will generate
+     * a HeartbeatsByUserAgent object, update heartbeatsCache, and persist it
+     * to IndexedDB.
+     * Note that we only store one heartbeat per day. So if a heartbeat for today is
+     * already logged, subsequent calls to this function in the same day will be ignored.
+     */ async triggerHeartbeat() {
+        try {
+            const platformLogger = this.container.getProvider('platform-logger').getImmediate();
+            // This is the "Firebase user agent" string from the platform logger
+            // service, not the browser user agent.
+            const agent = platformLogger.getPlatformInfoString();
+            const date = getUTCDateString();
+            if (this._heartbeatsCache?.heartbeats == null) {
+                this._heartbeatsCache = await this._heartbeatsCachePromise;
+                // If we failed to construct a heartbeats cache, then return immediately.
+                if (this._heartbeatsCache?.heartbeats == null) return;
+            }
+            // Do not store a heartbeat if one is already stored for this day
+            // or if a header has already been sent today.
+            if (this._heartbeatsCache.lastSentHeartbeatDate === date || this._heartbeatsCache.heartbeats.some((singleDateHeartbeat)=>singleDateHeartbeat.date === date)) return;
+            else {
+                // There is no entry for this date. Create one.
+                this._heartbeatsCache.heartbeats.push({
+                    date,
+                    agent
+                });
+                // If the number of stored heartbeats exceeds the maximum number of stored heartbeats, remove the heartbeat with the earliest date.
+                // Since this is executed each time a heartbeat is pushed, the limit can only be exceeded by one, so only one needs to be removed.
+                if (this._heartbeatsCache.heartbeats.length > MAX_NUM_STORED_HEARTBEATS) {
+                    const earliestHeartbeatIdx = getEarliestHeartbeatIdx(this._heartbeatsCache.heartbeats);
+                    this._heartbeatsCache.heartbeats.splice(earliestHeartbeatIdx, 1);
+                }
+            }
+            return this._storage.overwrite(this._heartbeatsCache);
+        } catch (e) {
+            logger.warn(e);
+        }
+    }
+    /**
+     * Returns a base64 encoded string which can be attached to the heartbeat-specific header directly.
+     * It also clears all heartbeats from memory as well as in IndexedDB.
+     *
+     * NOTE: Consuming product SDKs should not send the header if this method
+     * returns an empty string.
+     */ async getHeartbeatsHeader() {
+        try {
+            if (this._heartbeatsCache === null) await this._heartbeatsCachePromise;
+            // If it's still null or the array is empty, there is no data to send.
+            if (this._heartbeatsCache?.heartbeats == null || this._heartbeatsCache.heartbeats.length === 0) return '';
+            const date = getUTCDateString();
+            // Extract as many heartbeats from the cache as will fit under the size limit.
+            const { heartbeatsToSend, unsentEntries } = extractHeartbeatsForHeader(this._heartbeatsCache.heartbeats);
+            const headerString = (0, _util.base64urlEncodeWithoutPadding)(JSON.stringify({
+                version: 2,
+                heartbeats: heartbeatsToSend
+            }));
+            // Store last sent date to prevent another being logged/sent for the same day.
+            this._heartbeatsCache.lastSentHeartbeatDate = date;
+            if (unsentEntries.length > 0) {
+                // Store any unsent entries if they exist.
+                this._heartbeatsCache.heartbeats = unsentEntries;
+                // This seems more likely than emptying the array (below) to lead to some odd state
+                // since the cache isn't empty and this will be called again on the next request,
+                // and is probably safest if we await it.
+                await this._storage.overwrite(this._heartbeatsCache);
+            } else {
+                this._heartbeatsCache.heartbeats = [];
+                // Do not wait for this, to reduce latency.
+                this._storage.overwrite(this._heartbeatsCache);
+            }
+            return headerString;
+        } catch (e) {
+            logger.warn(e);
+            return '';
+        }
+    }
+}
+function getUTCDateString() {
+    const today = new Date();
+    // Returns date format 'YYYY-MM-DD'
+    return today.toISOString().substring(0, 10);
+}
+function extractHeartbeatsForHeader(heartbeatsCache, maxSize = MAX_HEADER_BYTES) {
+    // Heartbeats grouped by user agent in the standard format to be sent in
+    // the header.
+    const heartbeatsToSend = [];
+    // Single date format heartbeats that are not sent.
+    let unsentEntries = heartbeatsCache.slice();
+    for (const singleDateHeartbeat of heartbeatsCache){
+        // Look for an existing entry with the same user agent.
+        const heartbeatEntry = heartbeatsToSend.find((hb)=>hb.agent === singleDateHeartbeat.agent);
+        if (!heartbeatEntry) {
+            // If no entry for this user agent exists, create one.
+            heartbeatsToSend.push({
+                agent: singleDateHeartbeat.agent,
+                dates: [
+                    singleDateHeartbeat.date
+                ]
+            });
+            if (countBytes(heartbeatsToSend) > maxSize) {
+                // If the header would exceed max size, remove the added heartbeat
+                // entry and stop adding to the header.
+                heartbeatsToSend.pop();
+                break;
+            }
+        } else {
+            heartbeatEntry.dates.push(singleDateHeartbeat.date);
+            // If the header would exceed max size, remove the added date
+            // and stop adding to the header.
+            if (countBytes(heartbeatsToSend) > maxSize) {
+                heartbeatEntry.dates.pop();
+                break;
+            }
+        }
+        // Pop unsent entry from queue. (Skipped if adding the entry exceeded
+        // quota and the loop breaks early.)
+        unsentEntries = unsentEntries.slice(1);
+    }
+    return {
+        heartbeatsToSend,
+        unsentEntries
+    };
+}
+class HeartbeatStorageImpl {
+    constructor(app){
+        this.app = app;
+        this._canUseIndexedDBPromise = this.runIndexedDBEnvironmentCheck();
+    }
+    async runIndexedDBEnvironmentCheck() {
+        if (!(0, _util.isIndexedDBAvailable)()) return false;
+        else return (0, _util.validateIndexedDBOpenable)().then(()=>true).catch(()=>false);
+    }
+    /**
+     * Read all heartbeats.
+     */ async read() {
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) return {
+            heartbeats: []
+        };
+        else {
+            const idbHeartbeatObject = await readHeartbeatsFromIndexedDB(this.app);
+            if (idbHeartbeatObject?.heartbeats) return idbHeartbeatObject;
+            else return {
+                heartbeats: []
+            };
+        }
+    }
+    // overwrite the storage with the provided heartbeats
+    async overwrite(heartbeatsObject) {
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) return;
+        else {
+            const existingHeartbeatsObject = await this.read();
+            return writeHeartbeatsToIndexedDB(this.app, {
+                lastSentHeartbeatDate: heartbeatsObject.lastSentHeartbeatDate ?? existingHeartbeatsObject.lastSentHeartbeatDate,
+                heartbeats: heartbeatsObject.heartbeats
+            });
+        }
+    }
+    // add heartbeats
+    async add(heartbeatsObject) {
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) return;
+        else {
+            const existingHeartbeatsObject = await this.read();
+            return writeHeartbeatsToIndexedDB(this.app, {
+                lastSentHeartbeatDate: heartbeatsObject.lastSentHeartbeatDate ?? existingHeartbeatsObject.lastSentHeartbeatDate,
+                heartbeats: [
+                    ...existingHeartbeatsObject.heartbeats,
+                    ...heartbeatsObject.heartbeats
+                ]
+            });
+        }
+    }
+}
+/**
+ * Calculate bytes of a HeartbeatsByUserAgent array after being wrapped
+ * in a platform logging header JSON object, stringified, and converted
+ * to base 64.
+ */ function countBytes(heartbeatsCache) {
+    // base64 has a restricted set of characters, all of which should be 1 byte.
+    return (0, _util.base64urlEncodeWithoutPadding)(// heartbeatsCache wrapper properties
+    JSON.stringify({
+        version: 2,
+        heartbeats: heartbeatsCache
+    })).length;
+}
+/**
+ * Returns the index of the heartbeat with the earliest date.
+ * If the heartbeats array is empty, -1 is returned.
+ */ function getEarliestHeartbeatIdx(heartbeats) {
+    if (heartbeats.length === 0) return -1;
+    let earliestHeartbeatIdx = 0;
+    let earliestHeartbeatDate = heartbeats[0].date;
+    for(let i = 1; i < heartbeats.length; i++)if (heartbeats[i].date < earliestHeartbeatDate) {
+        earliestHeartbeatDate = heartbeats[i].date;
+        earliestHeartbeatIdx = i;
+    }
+    return earliestHeartbeatIdx;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function registerCoreComponents(variant) {
+    _registerComponent(new (0, _component.Component)('platform-logger', (container)=>new PlatformLoggerServiceImpl(container), "PRIVATE" /* ComponentType.PRIVATE */ ));
+    _registerComponent(new (0, _component.Component)('heartbeat', (container)=>new HeartbeatServiceImpl(container), "PRIVATE" /* ComponentType.PRIVATE */ ));
+    // Register `app` package.
+    registerVersion(name$q, version$1, variant);
+    // BUILD_TARGET will be replaced by values like esm, cjs, etc during the compilation
+    registerVersion(name$q, version$1, 'esm2020');
+    // Register platform SDK identifier (no version).
+    registerVersion('fire-js', '');
+}
+/**
+ * Firebase App
+ *
+ * @remarks This package coordinates the communication between the different Firebase components
+ * @packageDocumentation
+ */ registerCoreComponents('');
+
+},{"@firebase/component":"d6O5O","@firebase/logger":"9cikG","@firebase/util":"jy04l","idb":"258QC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"d6O5O":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Component", ()=>Component);
+parcelHelpers.export(exports, "ComponentContainer", ()=>ComponentContainer);
+parcelHelpers.export(exports, "Provider", ()=>Provider);
+var _util = require("@firebase/util");
+/**
+ * Component for service name T, e.g. `auth`, `auth-internal`
+ */ class Component {
+    /**
+     *
+     * @param name The public service name, e.g. app, auth, firestore, database
+     * @param instanceFactory Service factory responsible for creating the public interface
+     * @param type whether the service provided by the component is public or private
+     */ constructor(name, instanceFactory, type){
+        this.name = name;
+        this.instanceFactory = instanceFactory;
+        this.type = type;
+        this.multipleInstances = false;
+        /**
+         * Properties to be added to the service namespace
+         */ this.serviceProps = {};
+        this.instantiationMode = "LAZY" /* InstantiationMode.LAZY */ ;
+        this.onInstanceCreated = null;
+    }
+    setInstantiationMode(mode) {
+        this.instantiationMode = mode;
+        return this;
+    }
+    setMultipleInstances(multipleInstances) {
+        this.multipleInstances = multipleInstances;
+        return this;
+    }
+    setServiceProps(props) {
+        this.serviceProps = props;
+        return this;
+    }
+    setInstanceCreatedCallback(callback) {
+        this.onInstanceCreated = callback;
+        return this;
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Provider for instance for service name T, e.g. 'auth', 'auth-internal'
+ * NameServiceMapping[T] is an alias for the type of the instance
+ */ class Provider {
+    constructor(name, container){
+        this.name = name;
+        this.container = container;
+        this.component = null;
+        this.instances = new Map();
+        this.instancesDeferred = new Map();
+        this.instancesOptions = new Map();
+        this.onInitCallbacks = new Map();
+    }
+    /**
+     * @param identifier A provider can provide multiple instances of a service
+     * if this.component.multipleInstances is true.
+     */ get(identifier) {
+        // if multipleInstances is not supported, use the default name
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
+        if (!this.instancesDeferred.has(normalizedIdentifier)) {
+            const deferred = new (0, _util.Deferred)();
+            this.instancesDeferred.set(normalizedIdentifier, deferred);
+            if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) // initialize the service if it can be auto-initialized
+            try {
+                const instance = this.getOrInitializeService({
+                    instanceIdentifier: normalizedIdentifier
+                });
+                if (instance) deferred.resolve(instance);
+            } catch (e) {
+            // when the instance factory throws an exception during get(), it should not cause
+            // a fatal error. We just return the unresolved promise in this case.
+            }
+        }
+        return this.instancesDeferred.get(normalizedIdentifier).promise;
+    }
+    getImmediate(options) {
+        // if multipleInstances is not supported, use the default name
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(options?.identifier);
+        const optional = options?.optional ?? false;
+        if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) try {
+            return this.getOrInitializeService({
+                instanceIdentifier: normalizedIdentifier
+            });
+        } catch (e) {
+            if (optional) return null;
+            else throw e;
+        }
+        else {
+            // In case a component is not initialized and should/cannot be auto-initialized at the moment, return null if the optional flag is set, or throw
+            if (optional) return null;
+            else throw Error(`Service ${this.name} is not available`);
+        }
+    }
+    getComponent() {
+        return this.component;
+    }
+    setComponent(component) {
+        if (component.name !== this.name) throw Error(`Mismatching Component ${component.name} for Provider ${this.name}.`);
+        if (this.component) throw Error(`Component for ${this.name} has already been provided`);
+        this.component = component;
+        // return early without attempting to initialize the component if the component requires explicit initialization (calling `Provider.initialize()`)
+        if (!this.shouldAutoInitialize()) return;
+        // if the service is eager, initialize the default instance
+        if (isComponentEager(component)) try {
+            this.getOrInitializeService({
+                instanceIdentifier: DEFAULT_ENTRY_NAME
+            });
+        } catch (e) {
+        // when the instance factory for an eager Component throws an exception during the eager
+        // initialization, it should not cause a fatal error.
+        // TODO: Investigate if we need to make it configurable, because some component may want to cause
+        // a fatal error in this case?
+        }
+        // Create service instances for the pending promises and resolve them
+        // NOTE: if this.multipleInstances is false, only the default instance will be created
+        // and all promises with resolve with it regardless of the identifier.
+        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
+            const normalizedIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
+            try {
+                // `getOrInitializeService()` should always return a valid instance since a component is guaranteed. use ! to make typescript happy.
+                const instance = this.getOrInitializeService({
+                    instanceIdentifier: normalizedIdentifier
+                });
+                instanceDeferred.resolve(instance);
+            } catch (e) {
+            // when the instance factory throws an exception, it should not cause
+            // a fatal error. We just leave the promise unresolved.
+            }
+        }
+    }
+    clearInstance(identifier = DEFAULT_ENTRY_NAME) {
+        this.instancesDeferred.delete(identifier);
+        this.instancesOptions.delete(identifier);
+        this.instances.delete(identifier);
+    }
+    // app.delete() will call this method on every provider to delete the services
+    // TODO: should we mark the provider as deleted?
+    async delete() {
+        const services = Array.from(this.instances.values());
+        await Promise.all([
+            ...services.filter((service)=>'INTERNAL' in service) // legacy services
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            .map((service)=>service.INTERNAL.delete()),
+            ...services.filter((service)=>'_delete' in service) // modularized services
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            .map((service)=>service._delete())
+        ]);
+    }
+    isComponentSet() {
+        return this.component != null;
+    }
+    isInitialized(identifier = DEFAULT_ENTRY_NAME) {
+        return this.instances.has(identifier);
+    }
+    getOptions(identifier = DEFAULT_ENTRY_NAME) {
+        return this.instancesOptions.get(identifier) || {};
+    }
+    initialize(opts = {}) {
+        const { options = {} } = opts;
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(opts.instanceIdentifier);
+        if (this.isInitialized(normalizedIdentifier)) throw Error(`${this.name}(${normalizedIdentifier}) has already been initialized`);
+        if (!this.isComponentSet()) throw Error(`Component ${this.name} has not been registered yet`);
+        const instance = this.getOrInitializeService({
+            instanceIdentifier: normalizedIdentifier,
+            options
+        });
+        // resolve any pending promise waiting for the service instance
+        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
+            const normalizedDeferredIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
+            if (normalizedIdentifier === normalizedDeferredIdentifier) instanceDeferred.resolve(instance);
+        }
+        return instance;
+    }
+    /**
+     *
+     * @param callback - a function that will be invoked  after the provider has been initialized by calling provider.initialize().
+     * The function is invoked SYNCHRONOUSLY, so it should not execute any longrunning tasks in order to not block the program.
+     *
+     * @param identifier An optional instance identifier
+     * @returns a function to unregister the callback
+     */ onInit(callback, identifier) {
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
+        const existingCallbacks = this.onInitCallbacks.get(normalizedIdentifier) ?? new Set();
+        existingCallbacks.add(callback);
+        this.onInitCallbacks.set(normalizedIdentifier, existingCallbacks);
+        const existingInstance = this.instances.get(normalizedIdentifier);
+        if (existingInstance) callback(existingInstance, normalizedIdentifier);
+        return ()=>{
+            existingCallbacks.delete(callback);
+        };
+    }
+    /**
+     * Invoke onInit callbacks synchronously
+     * @param instance the service instance`
+     */ invokeOnInitCallbacks(instance, identifier) {
+        const callbacks = this.onInitCallbacks.get(identifier);
+        if (!callbacks) return;
+        for (const callback of callbacks)try {
+            callback(instance, identifier);
+        } catch  {
+        // ignore errors in the onInit callback
+        }
+    }
+    getOrInitializeService({ instanceIdentifier, options = {} }) {
+        let instance = this.instances.get(instanceIdentifier);
+        if (!instance && this.component) {
+            instance = this.component.instanceFactory(this.container, {
+                instanceIdentifier: normalizeIdentifierForFactory(instanceIdentifier),
+                options
+            });
+            this.instances.set(instanceIdentifier, instance);
+            this.instancesOptions.set(instanceIdentifier, options);
+            /**
+             * Invoke onInit listeners.
+             * Note this.component.onInstanceCreated is different, which is used by the component creator,
+             * while onInit listeners are registered by consumers of the provider.
+             */ this.invokeOnInitCallbacks(instance, instanceIdentifier);
+            /**
+             * Order is important
+             * onInstanceCreated() should be called after this.instances.set(instanceIdentifier, instance); which
+             * makes `isInitialized()` return true.
+             */ if (this.component.onInstanceCreated) try {
+                this.component.onInstanceCreated(this.container, instanceIdentifier, instance);
+            } catch  {
+            // ignore errors in the onInstanceCreatedCallback
+            }
+        }
+        return instance || null;
+    }
+    normalizeInstanceIdentifier(identifier = DEFAULT_ENTRY_NAME) {
+        if (this.component) return this.component.multipleInstances ? identifier : DEFAULT_ENTRY_NAME;
+        else return identifier; // assume multiple instances are supported before the component is provided.
+    }
+    shouldAutoInitialize() {
+        return !!this.component && this.component.instantiationMode !== "EXPLICIT" /* InstantiationMode.EXPLICIT */ ;
+    }
+}
+// undefined should be passed to the service factory for the default instance
+function normalizeIdentifierForFactory(identifier) {
+    return identifier === DEFAULT_ENTRY_NAME ? undefined : identifier;
+}
+function isComponentEager(component) {
+    return component.instantiationMode === "EAGER" /* InstantiationMode.EAGER */ ;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * ComponentContainer that provides Providers for service name T, e.g. `auth`, `auth-internal`
+ */ class ComponentContainer {
+    constructor(name){
+        this.name = name;
+        this.providers = new Map();
+    }
+    /**
+     *
+     * @param component Component being added
+     * @param overwrite When a component with the same name has already been registered,
+     * if overwrite is true: overwrite the existing component with the new component and create a new
+     * provider with the new component. It can be useful in tests where you want to use different mocks
+     * for different tests.
+     * if overwrite is false: throw an exception
+     */ addComponent(component) {
+        const provider = this.getProvider(component.name);
+        if (provider.isComponentSet()) throw new Error(`Component ${component.name} has already been registered with ${this.name}`);
+        provider.setComponent(component);
+    }
+    addOrOverwriteComponent(component) {
+        const provider = this.getProvider(component.name);
+        if (provider.isComponentSet()) // delete the existing provider from the container, so we can register the new component
+        this.providers.delete(component.name);
+        this.addComponent(component);
+    }
+    /**
+     * getProvider provides a type safe interface where it can only be called with a field name
+     * present in NameServiceMapping interface.
+     *
+     * Firebase SDKs providing services should extend NameServiceMapping interface to register
+     * themselves.
+     */ getProvider(name) {
+        if (this.providers.has(name)) return this.providers.get(name);
+        // create a Provider for a service that hasn't registered with Firebase
+        const provider = new Provider(name, this);
+        this.providers.set(name, provider);
+        return provider;
+    }
+    getProviders() {
+        return Array.from(this.providers.values());
+    }
+}
+
+},{"@firebase/util":"jy04l","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jy04l":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CONSTANTS", ()=>CONSTANTS);
+parcelHelpers.export(exports, "DecodeBase64StringError", ()=>DecodeBase64StringError);
+parcelHelpers.export(exports, "Deferred", ()=>Deferred);
+parcelHelpers.export(exports, "ErrorFactory", ()=>ErrorFactory);
+parcelHelpers.export(exports, "FirebaseError", ()=>FirebaseError);
+parcelHelpers.export(exports, "MAX_VALUE_MILLIS", ()=>MAX_VALUE_MILLIS);
+parcelHelpers.export(exports, "RANDOM_FACTOR", ()=>RANDOM_FACTOR);
+parcelHelpers.export(exports, "Sha1", ()=>Sha1);
+parcelHelpers.export(exports, "areCookiesEnabled", ()=>areCookiesEnabled);
+parcelHelpers.export(exports, "assert", ()=>assert);
+parcelHelpers.export(exports, "assertionError", ()=>assertionError);
+parcelHelpers.export(exports, "async", ()=>async);
+parcelHelpers.export(exports, "base64", ()=>base64);
+parcelHelpers.export(exports, "base64Decode", ()=>base64Decode);
+parcelHelpers.export(exports, "base64Encode", ()=>base64Encode);
+parcelHelpers.export(exports, "base64urlEncodeWithoutPadding", ()=>base64urlEncodeWithoutPadding);
+parcelHelpers.export(exports, "calculateBackoffMillis", ()=>calculateBackoffMillis);
+parcelHelpers.export(exports, "contains", ()=>contains);
+parcelHelpers.export(exports, "createMockUserToken", ()=>createMockUserToken);
+parcelHelpers.export(exports, "createSubscribe", ()=>createSubscribe);
+parcelHelpers.export(exports, "decode", ()=>decode);
+parcelHelpers.export(exports, "deepCopy", ()=>deepCopy);
+parcelHelpers.export(exports, "deepEqual", ()=>deepEqual);
+parcelHelpers.export(exports, "deepExtend", ()=>deepExtend);
+parcelHelpers.export(exports, "errorPrefix", ()=>errorPrefix);
+parcelHelpers.export(exports, "extractQuerystring", ()=>extractQuerystring);
+parcelHelpers.export(exports, "getDefaultAppConfig", ()=>getDefaultAppConfig);
+parcelHelpers.export(exports, "getDefaultEmulatorHost", ()=>getDefaultEmulatorHost);
+parcelHelpers.export(exports, "getDefaultEmulatorHostnameAndPort", ()=>getDefaultEmulatorHostnameAndPort);
+parcelHelpers.export(exports, "getDefaults", ()=>getDefaults);
+parcelHelpers.export(exports, "getExperimentalSetting", ()=>getExperimentalSetting);
+parcelHelpers.export(exports, "getGlobal", ()=>getGlobal);
+parcelHelpers.export(exports, "getModularInstance", ()=>getModularInstance);
+parcelHelpers.export(exports, "getUA", ()=>getUA);
+parcelHelpers.export(exports, "isAdmin", ()=>isAdmin);
+parcelHelpers.export(exports, "isBrowser", ()=>isBrowser);
+parcelHelpers.export(exports, "isBrowserExtension", ()=>isBrowserExtension);
+parcelHelpers.export(exports, "isCloudWorkstation", ()=>isCloudWorkstation);
+parcelHelpers.export(exports, "isCloudflareWorker", ()=>isCloudflareWorker);
+parcelHelpers.export(exports, "isElectron", ()=>isElectron);
+parcelHelpers.export(exports, "isEmpty", ()=>isEmpty);
+parcelHelpers.export(exports, "isIE", ()=>isIE);
+parcelHelpers.export(exports, "isIndexedDBAvailable", ()=>isIndexedDBAvailable);
+parcelHelpers.export(exports, "isMobileCordova", ()=>isMobileCordova);
+parcelHelpers.export(exports, "isNode", ()=>isNode);
+parcelHelpers.export(exports, "isNodeSdk", ()=>isNodeSdk);
+parcelHelpers.export(exports, "isReactNative", ()=>isReactNative);
+parcelHelpers.export(exports, "isSafari", ()=>isSafari);
+parcelHelpers.export(exports, "isSafariOrWebkit", ()=>isSafariOrWebkit);
+parcelHelpers.export(exports, "isUWP", ()=>isUWP);
+parcelHelpers.export(exports, "isValidFormat", ()=>isValidFormat);
+parcelHelpers.export(exports, "isValidTimestamp", ()=>isValidTimestamp);
+parcelHelpers.export(exports, "isWebWorker", ()=>isWebWorker);
+parcelHelpers.export(exports, "issuedAtTime", ()=>issuedAtTime);
+parcelHelpers.export(exports, "jsonEval", ()=>jsonEval);
+parcelHelpers.export(exports, "map", ()=>map);
+parcelHelpers.export(exports, "ordinal", ()=>ordinal);
+parcelHelpers.export(exports, "pingServer", ()=>pingServer);
+parcelHelpers.export(exports, "promiseWithTimeout", ()=>promiseWithTimeout);
+parcelHelpers.export(exports, "querystring", ()=>querystring);
+parcelHelpers.export(exports, "querystringDecode", ()=>querystringDecode);
+parcelHelpers.export(exports, "safeGet", ()=>safeGet);
+parcelHelpers.export(exports, "stringLength", ()=>stringLength);
+parcelHelpers.export(exports, "stringToByteArray", ()=>stringToByteArray);
+parcelHelpers.export(exports, "stringify", ()=>stringify);
+parcelHelpers.export(exports, "updateEmulatorBanner", ()=>updateEmulatorBanner);
+parcelHelpers.export(exports, "validateArgCount", ()=>validateArgCount);
+parcelHelpers.export(exports, "validateCallback", ()=>validateCallback);
+parcelHelpers.export(exports, "validateContextObject", ()=>validateContextObject);
+parcelHelpers.export(exports, "validateIndexedDBOpenable", ()=>validateIndexedDBOpenable);
+parcelHelpers.export(exports, "validateNamespace", ()=>validateNamespace);
+var _postinstallMjs = require("./postinstall.mjs");
+var global = arguments[3];
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @fileoverview Firebase constants.  Some of these (@defines) can be overridden at compile-time.
+ */ const CONSTANTS = {
+    /**
+     * @define {boolean} Whether this is the client Node.js SDK.
+     */ NODE_CLIENT: false,
+    /**
+     * @define {boolean} Whether this is the Admin Node.js SDK.
+     */ NODE_ADMIN: false,
+    /**
+     * Firebase SDK Version
+     */ SDK_VERSION: '${JSCORE_VERSION}'
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Throws an error if the provided assertion is falsy
+ */ const assert = function(assertion, message) {
+    if (!assertion) throw assertionError(message);
+};
+/**
+ * Returns an Error object suitable for throwing.
+ */ const assertionError = function(message) {
+    return new Error('Firebase Database (' + CONSTANTS.SDK_VERSION + ') INTERNAL ASSERT FAILED: ' + message);
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const stringToByteArray$1 = function(str) {
+    // TODO(user): Use native implementations if/when available
+    const out = [];
+    let p = 0;
+    for(let i = 0; i < str.length; i++){
+        let c = str.charCodeAt(i);
+        if (c < 128) out[p++] = c;
+        else if (c < 2048) {
+            out[p++] = c >> 6 | 192;
+            out[p++] = c & 63 | 128;
+        } else if ((c & 0xfc00) === 0xd800 && i + 1 < str.length && (str.charCodeAt(i + 1) & 0xfc00) === 0xdc00) {
+            // Surrogate Pair
+            c = 0x10000 + ((c & 0x03ff) << 10) + (str.charCodeAt(++i) & 0x03ff);
+            out[p++] = c >> 18 | 240;
+            out[p++] = c >> 12 & 63 | 128;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        } else {
+            out[p++] = c >> 12 | 224;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        }
+    }
+    return out;
+};
+/**
+ * Turns an array of numbers into the string given by the concatenation of the
+ * characters to which the numbers correspond.
+ * @param bytes Array of numbers representing characters.
+ * @return Stringification of the array.
+ */ const byteArrayToString = function(bytes) {
+    // TODO(user): Use native implementations if/when available
+    const out = [];
+    let pos = 0, c = 0;
+    while(pos < bytes.length){
+        const c1 = bytes[pos++];
+        if (c1 < 128) out[c++] = String.fromCharCode(c1);
+        else if (c1 > 191 && c1 < 224) {
+            const c2 = bytes[pos++];
+            out[c++] = String.fromCharCode((c1 & 31) << 6 | c2 & 63);
+        } else if (c1 > 239 && c1 < 365) {
+            // Surrogate Pair
+            const c2 = bytes[pos++];
+            const c3 = bytes[pos++];
+            const c4 = bytes[pos++];
+            const u = ((c1 & 7) << 18 | (c2 & 63) << 12 | (c3 & 63) << 6 | c4 & 63) - 0x10000;
+            out[c++] = String.fromCharCode(0xd800 + (u >> 10));
+            out[c++] = String.fromCharCode(0xdc00 + (u & 1023));
+        } else {
+            const c2 = bytes[pos++];
+            const c3 = bytes[pos++];
+            out[c++] = String.fromCharCode((c1 & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+        }
+    }
+    return out.join('');
+};
+// We define it as an object literal instead of a class because a class compiled down to es5 can't
+// be treeshaked. https://github.com/rollup/rollup/issues/1691
+// Static lookup maps, lazily populated by init_()
+// TODO(dlarocque): Define this as a class, since we no longer target ES5.
+const base64 = {
+    /**
+     * Maps bytes to characters.
+     */ byteToCharMap_: null,
+    /**
+     * Maps characters to bytes.
+     */ charToByteMap_: null,
+    /**
+     * Maps bytes to websafe characters.
+     * @private
+     */ byteToCharMapWebSafe_: null,
+    /**
+     * Maps websafe characters to bytes.
+     * @private
+     */ charToByteMapWebSafe_: null,
+    /**
+     * Our default alphabet, shared between
+     * ENCODED_VALS and ENCODED_VALS_WEBSAFE
+     */ ENCODED_VALS_BASE: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+    /**
+     * Our default alphabet. Value 64 (=) is special; it means "nothing."
+     */ get ENCODED_VALS () {
+        return this.ENCODED_VALS_BASE + '+/=';
+    },
+    /**
+     * Our websafe alphabet.
+     */ get ENCODED_VALS_WEBSAFE () {
+        return this.ENCODED_VALS_BASE + '-_.';
+    },
+    /**
+     * Whether this browser supports the atob and btoa functions. This extension
+     * started at Mozilla but is now implemented by many browsers. We use the
+     * ASSUME_* variables to avoid pulling in the full useragent detection library
+     * but still allowing the standard per-browser compilations.
+     *
+     */ HAS_NATIVE_SUPPORT: typeof atob === 'function',
+    /**
+     * Base64-encode an array of bytes.
+     *
+     * @param input An array of bytes (numbers with
+     *     value in [0, 255]) to encode.
+     * @param webSafe Boolean indicating we should use the
+     *     alternative alphabet.
+     * @return The base64 encoded string.
+     */ encodeByteArray (input, webSafe) {
+        if (!Array.isArray(input)) throw Error('encodeByteArray takes an array as a parameter');
+        this.init_();
+        const byteToCharMap = webSafe ? this.byteToCharMapWebSafe_ : this.byteToCharMap_;
+        const output = [];
+        for(let i = 0; i < input.length; i += 3){
+            const byte1 = input[i];
+            const haveByte2 = i + 1 < input.length;
+            const byte2 = haveByte2 ? input[i + 1] : 0;
+            const haveByte3 = i + 2 < input.length;
+            const byte3 = haveByte3 ? input[i + 2] : 0;
+            const outByte1 = byte1 >> 2;
+            const outByte2 = (byte1 & 0x03) << 4 | byte2 >> 4;
+            let outByte3 = (byte2 & 0x0f) << 2 | byte3 >> 6;
+            let outByte4 = byte3 & 0x3f;
+            if (!haveByte3) {
+                outByte4 = 64;
+                if (!haveByte2) outByte3 = 64;
+            }
+            output.push(byteToCharMap[outByte1], byteToCharMap[outByte2], byteToCharMap[outByte3], byteToCharMap[outByte4]);
+        }
+        return output.join('');
+    },
+    /**
+     * Base64-encode a string.
+     *
+     * @param input A string to encode.
+     * @param webSafe If true, we should use the
+     *     alternative alphabet.
+     * @return The base64 encoded string.
+     */ encodeString (input, webSafe) {
+        // Shortcut for Mozilla browsers that implement
+        // a native base64 encoder in the form of "btoa/atob"
+        if (this.HAS_NATIVE_SUPPORT && !webSafe) return btoa(input);
+        return this.encodeByteArray(stringToByteArray$1(input), webSafe);
+    },
+    /**
+     * Base64-decode a string.
+     *
+     * @param input to decode.
+     * @param webSafe True if we should use the
+     *     alternative alphabet.
+     * @return string representing the decoded value.
+     */ decodeString (input, webSafe) {
+        // Shortcut for Mozilla browsers that implement
+        // a native base64 encoder in the form of "btoa/atob"
+        if (this.HAS_NATIVE_SUPPORT && !webSafe) return atob(input);
+        return byteArrayToString(this.decodeStringToByteArray(input, webSafe));
+    },
+    /**
+     * Base64-decode a string.
+     *
+     * In base-64 decoding, groups of four characters are converted into three
+     * bytes.  If the encoder did not apply padding, the input length may not
+     * be a multiple of 4.
+     *
+     * In this case, the last group will have fewer than 4 characters, and
+     * padding will be inferred.  If the group has one or two characters, it decodes
+     * to one byte.  If the group has three characters, it decodes to two bytes.
+     *
+     * @param input Input to decode.
+     * @param webSafe True if we should use the web-safe alphabet.
+     * @return bytes representing the decoded value.
+     */ decodeStringToByteArray (input, webSafe) {
+        this.init_();
+        const charToByteMap = webSafe ? this.charToByteMapWebSafe_ : this.charToByteMap_;
+        const output = [];
+        for(let i = 0; i < input.length;){
+            const byte1 = charToByteMap[input.charAt(i++)];
+            const haveByte2 = i < input.length;
+            const byte2 = haveByte2 ? charToByteMap[input.charAt(i)] : 0;
+            ++i;
+            const haveByte3 = i < input.length;
+            const byte3 = haveByte3 ? charToByteMap[input.charAt(i)] : 64;
+            ++i;
+            const haveByte4 = i < input.length;
+            const byte4 = haveByte4 ? charToByteMap[input.charAt(i)] : 64;
+            ++i;
+            if (byte1 == null || byte2 == null || byte3 == null || byte4 == null) throw new DecodeBase64StringError();
+            const outByte1 = byte1 << 2 | byte2 >> 4;
+            output.push(outByte1);
+            if (byte3 !== 64) {
+                const outByte2 = byte2 << 4 & 0xf0 | byte3 >> 2;
+                output.push(outByte2);
+                if (byte4 !== 64) {
+                    const outByte3 = byte3 << 6 & 0xc0 | byte4;
+                    output.push(outByte3);
+                }
+            }
+        }
+        return output;
+    },
+    /**
+     * Lazy static initialization function. Called before
+     * accessing any of the static map variables.
+     * @private
+     */ init_ () {
+        if (!this.byteToCharMap_) {
+            this.byteToCharMap_ = {};
+            this.charToByteMap_ = {};
+            this.byteToCharMapWebSafe_ = {};
+            this.charToByteMapWebSafe_ = {};
+            // We want quick mappings back and forth, so we precompute two maps.
+            for(let i = 0; i < this.ENCODED_VALS.length; i++){
+                this.byteToCharMap_[i] = this.ENCODED_VALS.charAt(i);
+                this.charToByteMap_[this.byteToCharMap_[i]] = i;
+                this.byteToCharMapWebSafe_[i] = this.ENCODED_VALS_WEBSAFE.charAt(i);
+                this.charToByteMapWebSafe_[this.byteToCharMapWebSafe_[i]] = i;
+                // Be forgiving when decoding and correctly decode both encodings.
+                if (i >= this.ENCODED_VALS_BASE.length) {
+                    this.charToByteMap_[this.ENCODED_VALS_WEBSAFE.charAt(i)] = i;
+                    this.charToByteMapWebSafe_[this.ENCODED_VALS.charAt(i)] = i;
+                }
+            }
+        }
+    }
+};
+/**
+ * An error encountered while decoding base64 string.
+ */ class DecodeBase64StringError extends Error {
+    constructor(){
+        super(...arguments);
+        this.name = 'DecodeBase64StringError';
+    }
+}
+/**
+ * URL-safe base64 encoding
+ */ const base64Encode = function(str) {
+    const utf8Bytes = stringToByteArray$1(str);
+    return base64.encodeByteArray(utf8Bytes, true);
+};
+/**
+ * URL-safe base64 encoding (without "." padding in the end).
+ * e.g. Used in JSON Web Token (JWT) parts.
+ */ const base64urlEncodeWithoutPadding = function(str) {
+    // Use base64url encoding and remove padding in the end (dot characters).
+    return base64Encode(str).replace(/\./g, '');
+};
+/**
+ * URL-safe base64 decoding
+ *
+ * NOTE: DO NOT use the global atob() function - it does NOT support the
+ * base64Url variant encoding.
+ *
+ * @param str To be decoded
+ * @return Decoded result, if possible
+ */ const base64Decode = function(str) {
+    try {
+        return base64.decodeString(str, true);
+    } catch (e) {
+        console.error('base64Decode failed: ', e);
+    }
+    return null;
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Do a deep-copy of basic JavaScript Objects or Arrays.
+ */ function deepCopy(value) {
+    return deepExtend(undefined, value);
+}
+/**
+ * Copy properties from source to target (recursively allows extension
+ * of Objects and Arrays).  Scalar values in the target are over-written.
+ * If target is undefined, an object of the appropriate type will be created
+ * (and returned).
+ *
+ * We recursively copy all child properties of plain Objects in the source- so
+ * that namespace- like dictionaries are merged.
+ *
+ * Note that the target can be a function, in which case the properties in
+ * the source Object are copied onto it as static properties of the Function.
+ *
+ * Note: we don't merge __proto__ to prevent prototype pollution
+ */ function deepExtend(target, source) {
+    if (!(source instanceof Object)) return source;
+    switch(source.constructor){
+        case Date:
+            // Treat Dates like scalars; if the target date object had any child
+            // properties - they will be lost!
+            const dateValue = source;
+            return new Date(dateValue.getTime());
+        case Object:
+            if (target === undefined) target = {};
+            break;
+        case Array:
+            // Always copy the array source and overwrite the target.
+            target = [];
+            break;
+        default:
+            // Not a plain Object - treat it as a scalar.
+            return source;
+    }
+    for(const prop in source){
+        // use isValidKey to guard against prototype pollution. See https://snyk.io/vuln/SNYK-JS-LODASH-450202
+        if (!source.hasOwnProperty(prop) || !isValidKey(prop)) continue;
+        target[prop] = deepExtend(target[prop], source[prop]);
+    }
+    return target;
+}
+function isValidKey(key) {
+    return key !== '__proto__';
+}
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Polyfill for `globalThis` object.
+ * @returns the `globalThis` object for the given environment.
+ * @public
+ */ function getGlobal() {
+    if (typeof self !== 'undefined') return self;
+    if (typeof window !== 'undefined') return window;
+    if (typeof global !== 'undefined') return global;
+    throw new Error('Unable to locate global object.');
+}
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const getDefaultsFromGlobal = ()=>getGlobal().__FIREBASE_DEFAULTS__;
+/**
+ * Attempt to read defaults from a JSON string provided to
+ * process(.)env(.)__FIREBASE_DEFAULTS__ or a JSON file whose path is in
+ * process(.)env(.)__FIREBASE_DEFAULTS_PATH__
+ * The dots are in parens because certain compilers (Vite?) cannot
+ * handle seeing that variable in comments.
+ * See https://github.com/firebase/firebase-js-sdk/issues/6838
+ */ const getDefaultsFromEnvVariable = ()=>{
+    return;
+};
+const getDefaultsFromCookie = ()=>{
+    if (typeof document === 'undefined') return;
+    let match;
+    try {
+        match = document.cookie.match(/__FIREBASE_DEFAULTS__=([^;]+)/);
+    } catch (e) {
+        // Some environments such as Angular Universal SSR have a
+        // `document` object but error on accessing `document.cookie`.
+        return;
+    }
+    const decoded = match && base64Decode(match[1]);
+    return decoded && JSON.parse(decoded);
+};
+/**
+ * Get the __FIREBASE_DEFAULTS__ object. It checks in order:
+ * (1) if such an object exists as a property of `globalThis`
+ * (2) if such an object was provided on a shell environment variable
+ * (3) if such an object exists in a cookie
+ * @public
+ */ const getDefaults = ()=>{
+    try {
+        return (0, _postinstallMjs.getDefaultsFromPostinstall)() || getDefaultsFromGlobal() || getDefaultsFromEnvVariable() || getDefaultsFromCookie();
+    } catch (e) {
+        /**
+         * Catch-all for being unable to get __FIREBASE_DEFAULTS__ due
+         * to any environment case we have not accounted for. Log to
+         * info instead of swallowing so we can find these unknown cases
+         * and add paths for them if needed.
+         */ console.info(`Unable to get __FIREBASE_DEFAULTS__ due to: ${e}`);
+        return;
+    }
+};
+/**
+ * Returns emulator host stored in the __FIREBASE_DEFAULTS__ object
+ * for the given product.
+ * @returns a URL host formatted like `127.0.0.1:9999` or `[::1]:4000` if available
+ * @public
+ */ const getDefaultEmulatorHost = (productName)=>getDefaults()?.emulatorHosts?.[productName];
+/**
+ * Returns emulator hostname and port stored in the __FIREBASE_DEFAULTS__ object
+ * for the given product.
+ * @returns a pair of hostname and port like `["::1", 4000]` if available
+ * @public
+ */ const getDefaultEmulatorHostnameAndPort = (productName)=>{
+    const host = getDefaultEmulatorHost(productName);
+    if (!host) return undefined;
+    const separatorIndex = host.lastIndexOf(':'); // Finding the last since IPv6 addr also has colons.
+    if (separatorIndex <= 0 || separatorIndex + 1 === host.length) throw new Error(`Invalid host ${host} with no separate hostname and port!`);
+    // eslint-disable-next-line no-restricted-globals
+    const port = parseInt(host.substring(separatorIndex + 1), 10);
+    if (host[0] === '[') // Bracket-quoted `[ipv6addr]:port` => return "ipv6addr" (without brackets).
+    return [
+        host.substring(1, separatorIndex - 1),
+        port
+    ];
+    else return [
+        host.substring(0, separatorIndex),
+        port
+    ];
+};
+/**
+ * Returns Firebase app config stored in the __FIREBASE_DEFAULTS__ object.
+ * @public
+ */ const getDefaultAppConfig = ()=>getDefaults()?.config;
+/**
+ * Returns an experimental setting on the __FIREBASE_DEFAULTS__ object (properties
+ * prefixed by "_")
+ * @public
+ */ const getExperimentalSetting = (name)=>getDefaults()?.[`_${name}`];
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class Deferred {
+    constructor(){
+        this.reject = ()=>{};
+        this.resolve = ()=>{};
+        this.promise = new Promise((resolve, reject)=>{
+            this.resolve = resolve;
+            this.reject = reject;
+        });
+    }
+    /**
+     * Our API internals are not promisified and cannot because our callback APIs have subtle expectations around
+     * invoking promises inline, which Promises are forbidden to do. This method accepts an optional node-style callback
+     * and returns a node-style callback which will resolve or reject the Deferred's promise.
+     */ wrapCallback(callback) {
+        return (error, value)=>{
+            if (error) this.reject(error);
+            else this.resolve(value);
+            if (typeof callback === 'function') {
+                // Attaching noop handler just in case developer wasn't expecting
+                // promises
+                this.promise.catch(()=>{});
+                // Some of our callbacks don't expect a value and our own tests
+                // assert that the parameter length is 1
+                if (callback.length === 1) callback(error);
+                else callback(error, value);
+            }
+        };
+    }
+}
+/**
+ * @license
+ * Copyright 2025 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Checks whether host is a cloud workstation or not.
+ * @public
+ */ function isCloudWorkstation(url) {
+    // `isCloudWorkstation` is called without protocol in certain connect*Emulator functions
+    // In HTTP request builders, it's called with the protocol.
+    // If called with protocol prefix, it's a valid URL, so we extract the hostname
+    // If called without, we assume the string is the hostname.
+    try {
+        const host = url.startsWith('http://') || url.startsWith('https://') ? new URL(url).hostname : url;
+        return host.endsWith('.cloudworkstations.dev');
+    } catch  {
+        return false;
+    }
+}
+/**
+ * Makes a fetch request to the given server.
+ * Mostly used for forwarding cookies in Firebase Studio.
+ * @public
+ */ async function pingServer(endpoint) {
+    const result = await fetch(endpoint, {
+        credentials: 'include'
+    });
+    return result.ok;
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function createMockUserToken(token, projectId) {
+    if (token.uid) throw new Error('The "uid" field is no longer supported by mockUserToken. Please use "sub" instead for Firebase Auth User ID.');
+    // Unsecured JWTs use "none" as the algorithm.
+    const header = {
+        alg: 'none',
+        type: 'JWT'
+    };
+    const project = projectId || 'demo-project';
+    const iat = token.iat || 0;
+    const sub = token.sub || token.user_id;
+    if (!sub) throw new Error("mockUserToken must contain 'sub' or 'user_id' field!");
+    const payload = {
+        // Set all required fields to decent defaults
+        iss: `https://securetoken.google.com/${project}`,
+        aud: project,
+        iat,
+        exp: iat + 3600,
+        auth_time: iat,
+        sub,
+        user_id: sub,
+        firebase: {
+            sign_in_provider: 'custom',
+            identities: {}
+        },
+        // Override with user options
+        ...token
+    };
+    // Unsecured JWTs use the empty string as a signature.
+    const signature = '';
+    return [
+        base64urlEncodeWithoutPadding(JSON.stringify(header)),
+        base64urlEncodeWithoutPadding(JSON.stringify(payload)),
+        signature
+    ].join('.');
+}
+const emulatorStatus = {};
+// Checks whether any products are running on an emulator
+function getEmulatorSummary() {
+    const summary = {
+        prod: [],
+        emulator: []
+    };
+    for (const key of Object.keys(emulatorStatus))if (emulatorStatus[key]) summary.emulator.push(key);
+    else summary.prod.push(key);
+    return summary;
+}
+function getOrCreateEl(id) {
+    let parentDiv = document.getElementById(id);
+    let created = false;
+    if (!parentDiv) {
+        parentDiv = document.createElement('div');
+        parentDiv.setAttribute('id', id);
+        created = true;
+    }
+    return {
+        created,
+        element: parentDiv
+    };
+}
+let previouslyDismissed = false;
+/**
+ * Updates Emulator Banner. Primarily used for Firebase Studio
+ * @param name
+ * @param isRunningEmulator
+ * @public
+ */ function updateEmulatorBanner(name, isRunningEmulator) {
+    if (typeof window === 'undefined' || typeof document === 'undefined' || !isCloudWorkstation(window.location.host) || emulatorStatus[name] === isRunningEmulator || emulatorStatus[name] || // If already set to use emulator, can't go back to prod.
+    previouslyDismissed) return;
+    emulatorStatus[name] = isRunningEmulator;
+    function prefixedId(id) {
+        return `__firebase__banner__${id}`;
+    }
+    const bannerId = '__firebase__banner';
+    const summary = getEmulatorSummary();
+    const showError = summary.prod.length > 0;
+    function tearDown() {
+        const element = document.getElementById(bannerId);
+        if (element) element.remove();
+    }
+    function setupBannerStyles(bannerEl) {
+        bannerEl.style.display = 'flex';
+        bannerEl.style.background = '#7faaf0';
+        bannerEl.style.position = 'fixed';
+        bannerEl.style.bottom = '5px';
+        bannerEl.style.left = '5px';
+        bannerEl.style.padding = '.5em';
+        bannerEl.style.borderRadius = '5px';
+        bannerEl.style.alignItems = 'center';
+    }
+    function setupIconStyles(prependIcon, iconId) {
+        prependIcon.setAttribute('width', '24');
+        prependIcon.setAttribute('id', iconId);
+        prependIcon.setAttribute('height', '24');
+        prependIcon.setAttribute('viewBox', '0 0 24 24');
+        prependIcon.setAttribute('fill', 'none');
+        prependIcon.style.marginLeft = '-6px';
+    }
+    function setupCloseBtn() {
+        const closeBtn = document.createElement('span');
+        closeBtn.style.cursor = 'pointer';
+        closeBtn.style.marginLeft = '16px';
+        closeBtn.style.fontSize = '24px';
+        closeBtn.innerHTML = ' &times;';
+        closeBtn.onclick = ()=>{
+            previouslyDismissed = true;
+            tearDown();
+        };
+        return closeBtn;
+    }
+    function setupLinkStyles(learnMoreLink, learnMoreId) {
+        learnMoreLink.setAttribute('id', learnMoreId);
+        learnMoreLink.innerText = 'Learn more';
+        learnMoreLink.href = 'https://firebase.google.com/docs/studio/preview-apps#preview-backend';
+        learnMoreLink.setAttribute('target', '__blank');
+        learnMoreLink.style.paddingLeft = '5px';
+        learnMoreLink.style.textDecoration = 'underline';
+    }
+    function setupDom() {
+        const banner = getOrCreateEl(bannerId);
+        const firebaseTextId = prefixedId('text');
+        const firebaseText = document.getElementById(firebaseTextId) || document.createElement('span');
+        const learnMoreId = prefixedId('learnmore');
+        const learnMoreLink = document.getElementById(learnMoreId) || document.createElement('a');
+        const prependIconId = prefixedId('preprendIcon');
+        const prependIcon = document.getElementById(prependIconId) || document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        if (banner.created) {
+            // update styles
+            const bannerEl = banner.element;
+            setupBannerStyles(bannerEl);
+            setupLinkStyles(learnMoreLink, learnMoreId);
+            const closeBtn = setupCloseBtn();
+            setupIconStyles(prependIcon, prependIconId);
+            bannerEl.append(prependIcon, firebaseText, learnMoreLink, closeBtn);
+            document.body.appendChild(bannerEl);
+        }
+        if (showError) {
+            firebaseText.innerText = `Preview backend disconnected.`;
+            prependIcon.innerHTML = `<g clip-path="url(#clip0_6013_33858)">
+<path d="M4.8 17.6L12 5.6L19.2 17.6H4.8ZM6.91667 16.4H17.0833L12 7.93333L6.91667 16.4ZM12 15.6C12.1667 15.6 12.3056 15.5444 12.4167 15.4333C12.5389 15.3111 12.6 15.1667 12.6 15C12.6 14.8333 12.5389 14.6944 12.4167 14.5833C12.3056 14.4611 12.1667 14.4 12 14.4C11.8333 14.4 11.6889 14.4611 11.5667 14.5833C11.4556 14.6944 11.4 14.8333 11.4 15C11.4 15.1667 11.4556 15.3111 11.5667 15.4333C11.6889 15.5444 11.8333 15.6 12 15.6ZM11.4 13.6H12.6V10.4H11.4V13.6Z" fill="#212121"/>
+</g>
+<defs>
+<clipPath id="clip0_6013_33858">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>`;
+        } else {
+            prependIcon.innerHTML = `<g clip-path="url(#clip0_6083_34804)">
+<path d="M11.4 15.2H12.6V11.2H11.4V15.2ZM12 10C12.1667 10 12.3056 9.94444 12.4167 9.83333C12.5389 9.71111 12.6 9.56667 12.6 9.4C12.6 9.23333 12.5389 9.09444 12.4167 8.98333C12.3056 8.86111 12.1667 8.8 12 8.8C11.8333 8.8 11.6889 8.86111 11.5667 8.98333C11.4556 9.09444 11.4 9.23333 11.4 9.4C11.4 9.56667 11.4556 9.71111 11.5667 9.83333C11.6889 9.94444 11.8333 10 12 10ZM12 18.4C11.1222 18.4 10.2944 18.2333 9.51667 17.9C8.73889 17.5667 8.05556 17.1111 7.46667 16.5333C6.88889 15.9444 6.43333 15.2611 6.1 14.4833C5.76667 13.7056 5.6 12.8778 5.6 12C5.6 11.1111 5.76667 10.2833 6.1 9.51667C6.43333 8.73889 6.88889 8.06111 7.46667 7.48333C8.05556 6.89444 8.73889 6.43333 9.51667 6.1C10.2944 5.76667 11.1222 5.6 12 5.6C12.8889 5.6 13.7167 5.76667 14.4833 6.1C15.2611 6.43333 15.9389 6.89444 16.5167 7.48333C17.1056 8.06111 17.5667 8.73889 17.9 9.51667C18.2333 10.2833 18.4 11.1111 18.4 12C18.4 12.8778 18.2333 13.7056 17.9 14.4833C17.5667 15.2611 17.1056 15.9444 16.5167 16.5333C15.9389 17.1111 15.2611 17.5667 14.4833 17.9C13.7167 18.2333 12.8889 18.4 12 18.4ZM12 17.2C13.4444 17.2 14.6722 16.6944 15.6833 15.6833C16.6944 14.6722 17.2 13.4444 17.2 12C17.2 10.5556 16.6944 9.32778 15.6833 8.31667C14.6722 7.30555 13.4444 6.8 12 6.8C10.5556 6.8 9.32778 7.30555 8.31667 8.31667C7.30556 9.32778 6.8 10.5556 6.8 12C6.8 13.4444 7.30556 14.6722 8.31667 15.6833C9.32778 16.6944 10.5556 17.2 12 17.2Z" fill="#212121"/>
+</g>
+<defs>
+<clipPath id="clip0_6083_34804">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>`;
+            firebaseText.innerText = 'Preview backend running in this workspace.';
+        }
+        firebaseText.setAttribute('id', firebaseTextId);
+    }
+    if (document.readyState === 'loading') window.addEventListener('DOMContentLoaded', setupDom);
+    else setupDom();
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Returns navigator.userAgent string or '' if it's not defined.
+ * @return user agent string
+ */ function getUA() {
+    if (typeof navigator !== 'undefined' && typeof navigator['userAgent'] === 'string') return navigator['userAgent'];
+    else return '';
+}
+/**
+ * Detect Cordova / PhoneGap / Ionic frameworks on a mobile device.
+ *
+ * Deliberately does not rely on checking `file://` URLs (as this fails PhoneGap
+ * in the Ripple emulator) nor Cordova `onDeviceReady`, which would normally
+ * wait for a callback.
+ */ function isMobileCordova() {
+    return typeof window !== 'undefined' && // @ts-ignore Setting up an broadly applicable index signature for Window
+    // just to deal with this case would probably be a bad idea.
+    !!(window['cordova'] || window['phonegap'] || window['PhoneGap']) && /ios|iphone|ipod|ipad|android|blackberry|iemobile/i.test(getUA());
+}
+/**
+ * Detect Node.js.
+ *
+ * @return true if Node.js environment is detected or specified.
+ */ // Node detection logic from: https://github.com/iliakan/detect-node/
+function isNode() {
+    const forceEnvironment = getDefaults()?.forceEnvironment;
+    if (forceEnvironment === 'node') return true;
+    else if (forceEnvironment === 'browser') return false;
+    try {
+        return Object.prototype.toString.call(global.process) === '[object process]';
+    } catch (e) {
+        return false;
+    }
+}
+/**
+ * Detect Browser Environment.
+ * Note: This will return true for certain test frameworks that are incompletely
+ * mimicking a browser, and should not lead to assuming all browser APIs are
+ * available.
+ */ function isBrowser() {
+    return typeof window !== 'undefined' || isWebWorker();
+}
+/**
+ * Detect Web Worker context.
+ */ function isWebWorker() {
+    return typeof WorkerGlobalScope !== 'undefined' && typeof self !== 'undefined' && self instanceof WorkerGlobalScope;
+}
+/**
+ * Detect Cloudflare Worker context.
+ */ function isCloudflareWorker() {
+    return typeof navigator !== 'undefined' && navigator.userAgent === 'Cloudflare-Workers';
+}
+function isBrowserExtension() {
+    const runtime = typeof chrome === 'object' ? chrome.runtime : typeof browser === 'object' ? browser.runtime : undefined;
+    return typeof runtime === 'object' && runtime.id !== undefined;
+}
+/**
+ * Detect React Native.
+ *
+ * @return true if ReactNative environment is detected.
+ */ function isReactNative() {
+    return typeof navigator === 'object' && navigator['product'] === 'ReactNative';
+}
+/** Detects Electron apps. */ function isElectron() {
+    return getUA().indexOf('Electron/') >= 0;
+}
+/** Detects Internet Explorer. */ function isIE() {
+    const ua = getUA();
+    return ua.indexOf('MSIE ') >= 0 || ua.indexOf('Trident/') >= 0;
+}
+/** Detects Universal Windows Platform apps. */ function isUWP() {
+    return getUA().indexOf('MSAppHost/') >= 0;
+}
+/**
+ * Detect whether the current SDK build is the Node version.
+ *
+ * @return true if it's the Node SDK build.
+ */ function isNodeSdk() {
+    return CONSTANTS.NODE_CLIENT === true || CONSTANTS.NODE_ADMIN === true;
+}
+/** Returns true if we are running in Safari. */ function isSafari() {
+    return !isNode() && !!navigator.userAgent && navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome');
+}
+/** Returns true if we are running in Safari or WebKit */ function isSafariOrWebkit() {
+    return !isNode() && !!navigator.userAgent && (navigator.userAgent.includes('Safari') || navigator.userAgent.includes('WebKit')) && !navigator.userAgent.includes('Chrome');
+}
+/**
+ * This method checks if indexedDB is supported by current browser/service worker context
+ * @return true if indexedDB is supported by current browser/service worker context
+ */ function isIndexedDBAvailable() {
+    try {
+        return typeof indexedDB === 'object';
+    } catch (e) {
+        return false;
+    }
+}
+/**
+ * This method validates browser/sw context for indexedDB by opening a dummy indexedDB database and reject
+ * if errors occur during the database open operation.
+ *
+ * @throws exception if current browser/sw context can't run idb.open (ex: Safari iframe, Firefox
+ * private browsing)
+ */ function validateIndexedDBOpenable() {
+    return new Promise((resolve, reject)=>{
+        try {
+            let preExist = true;
+            const DB_CHECK_NAME = 'validate-browser-context-for-indexeddb-analytics-module';
+            const request = self.indexedDB.open(DB_CHECK_NAME);
+            request.onsuccess = ()=>{
+                request.result.close();
+                // delete database only when it doesn't pre-exist
+                if (!preExist) self.indexedDB.deleteDatabase(DB_CHECK_NAME);
+                resolve(true);
+            };
+            request.onupgradeneeded = ()=>{
+                preExist = false;
+            };
+            request.onerror = ()=>{
+                reject(request.error?.message || '');
+            };
+        } catch (error) {
+            reject(error);
+        }
+    });
+}
+/**
+ *
+ * This method checks whether cookie is enabled within current browser
+ * @return true if cookie is enabled within current browser
+ */ function areCookiesEnabled() {
+    if (typeof navigator === 'undefined' || !navigator.cookieEnabled) return false;
+    return true;
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @fileoverview Standardized Firebase Error.
+ *
+ * Usage:
+ *
+ *   // TypeScript string literals for type-safe codes
+ *   type Err =
+ *     'unknown' |
+ *     'object-not-found'
+ *     ;
+ *
+ *   // Closure enum for type-safe error codes
+ *   // at-enum {string}
+ *   var Err = {
+ *     UNKNOWN: 'unknown',
+ *     OBJECT_NOT_FOUND: 'object-not-found',
+ *   }
+ *
+ *   let errors: Map<Err, string> = {
+ *     'generic-error': "Unknown error",
+ *     'file-not-found': "Could not find file: {$file}",
+ *   };
+ *
+ *   // Type-safe function - must pass a valid error code as param.
+ *   let error = new ErrorFactory<Err>('service', 'Service', errors);
+ *
+ *   ...
+ *   throw error.create(Err.GENERIC);
+ *   ...
+ *   throw error.create(Err.FILE_NOT_FOUND, {'file': fileName});
+ *   ...
+ *   // Service: Could not file file: foo.txt (service/file-not-found).
+ *
+ *   catch (e) {
+ *     assert(e.message === "Could not find file: foo.txt.");
+ *     if ((e as FirebaseError)?.code === 'service/file-not-found') {
+ *       console.log("Could not read file: " + e['file']);
+ *     }
+ *   }
+ */ const ERROR_NAME = 'FirebaseError';
+// Based on code from:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Custom_Error_Types
+class FirebaseError extends Error {
+    constructor(/** The error code for this error. */ code, message, /** Custom data for this error. */ customData){
+        super(message);
+        this.code = code;
+        this.customData = customData;
+        /** The custom name for all FirebaseErrors. */ this.name = ERROR_NAME;
+        // Fix For ES5
+        // https://github.com/Microsoft/TypeScript-wiki/blob/master/Breaking-Changes.md#extending-built-ins-like-error-array-and-map-may-no-longer-work
+        // TODO(dlarocque): Replace this with `new.target`: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html#support-for-newtarget
+        //                   which we can now use since we no longer target ES5.
+        Object.setPrototypeOf(this, FirebaseError.prototype);
+        // Maintains proper stack trace for where our error was thrown.
+        // Only available on V8.
+        if (Error.captureStackTrace) Error.captureStackTrace(this, ErrorFactory.prototype.create);
+    }
+}
+class ErrorFactory {
+    constructor(service, serviceName, errors){
+        this.service = service;
+        this.serviceName = serviceName;
+        this.errors = errors;
+    }
+    create(code, ...data) {
+        const customData = data[0] || {};
+        const fullCode = `${this.service}/${code}`;
+        const template = this.errors[code];
+        const message = template ? replaceTemplate(template, customData) : 'Error';
+        // Service Name: Error message (service/code).
+        const fullMessage = `${this.serviceName}: ${message} (${fullCode}).`;
+        const error = new FirebaseError(fullCode, fullMessage, customData);
+        return error;
+    }
+}
+function replaceTemplate(template, data) {
+    return template.replace(PATTERN, (_, key)=>{
+        const value = data[key];
+        return value != null ? String(value) : `<${key}?>`;
+    });
+}
+const PATTERN = /\{\$([^}]+)}/g;
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Evaluates a JSON string into a javascript object.
+ *
+ * @param {string} str A string containing JSON.
+ * @return {*} The javascript object representing the specified JSON.
+ */ function jsonEval(str) {
+    return JSON.parse(str);
+}
+/**
+ * Returns JSON representing a javascript object.
+ * @param {*} data JavaScript object to be stringified.
+ * @return {string} The JSON contents of the object.
+ */ function stringify(data) {
+    return JSON.stringify(data);
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Decodes a Firebase auth. token into constituent parts.
+ *
+ * Notes:
+ * - May return with invalid / incomplete claims if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const decode = function(token) {
+    let header = {}, claims = {}, data = {}, signature = '';
+    try {
+        const parts = token.split('.');
+        header = jsonEval(base64Decode(parts[0]) || '');
+        claims = jsonEval(base64Decode(parts[1]) || '');
+        signature = parts[2];
+        data = claims['d'] || {};
+        delete claims['d'];
+    } catch (e) {}
+    return {
+        header,
+        claims,
+        data,
+        signature
+    };
+};
+/**
+ * Decodes a Firebase auth. token and checks the validity of its time-based claims. Will return true if the
+ * token is within the time window authorized by the 'nbf' (not-before) and 'iat' (issued-at) claims.
+ *
+ * Notes:
+ * - May return a false negative if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const isValidTimestamp = function(token) {
+    const claims = decode(token).claims;
+    const now = Math.floor(new Date().getTime() / 1000);
+    let validSince = 0, validUntil = 0;
+    if (typeof claims === 'object') {
+        if (claims.hasOwnProperty('nbf')) validSince = claims['nbf'];
+        else if (claims.hasOwnProperty('iat')) validSince = claims['iat'];
+        if (claims.hasOwnProperty('exp')) validUntil = claims['exp'];
+        else // token will expire after 24h by default
+        validUntil = validSince + 86400;
+    }
+    return !!now && !!validSince && !!validUntil && now >= validSince && now <= validUntil;
+};
+/**
+ * Decodes a Firebase auth. token and returns its issued at time if valid, null otherwise.
+ *
+ * Notes:
+ * - May return null if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const issuedAtTime = function(token) {
+    const claims = decode(token).claims;
+    if (typeof claims === 'object' && claims.hasOwnProperty('iat')) return claims['iat'];
+    return null;
+};
+/**
+ * Decodes a Firebase auth. token and checks the validity of its format. Expects a valid issued-at time.
+ *
+ * Notes:
+ * - May return a false negative if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const isValidFormat = function(token) {
+    const decoded = decode(token), claims = decoded.claims;
+    return !!claims && typeof claims === 'object' && claims.hasOwnProperty('iat');
+};
+/**
+ * Attempts to peer into an auth token and determine if it's an admin auth token by looking at the claims portion.
+ *
+ * Notes:
+ * - May return a false negative if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const isAdmin = function(token) {
+    const claims = decode(token).claims;
+    return typeof claims === 'object' && claims['admin'] === true;
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function contains(obj, key) {
+    return Object.prototype.hasOwnProperty.call(obj, key);
+}
+function safeGet(obj, key) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) return obj[key];
+    else return undefined;
+}
+function isEmpty(obj) {
+    for(const key in obj){
+        if (Object.prototype.hasOwnProperty.call(obj, key)) return false;
+    }
+    return true;
+}
+function map(obj, fn, contextObj) {
+    const res = {};
+    for(const key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) res[key] = fn.call(contextObj, obj[key], key, obj);
+    return res;
+}
+/**
+ * Deep equal two objects. Support Arrays and Objects.
+ */ function deepEqual(a, b) {
+    if (a === b) return true;
+    const aKeys = Object.keys(a);
+    const bKeys = Object.keys(b);
+    for (const k of aKeys){
+        if (!bKeys.includes(k)) return false;
+        const aProp = a[k];
+        const bProp = b[k];
+        if (isObject(aProp) && isObject(bProp)) {
+            if (!deepEqual(aProp, bProp)) return false;
+        } else if (aProp !== bProp) return false;
+    }
+    for (const k of bKeys){
+        if (!aKeys.includes(k)) return false;
+    }
+    return true;
+}
+function isObject(thing) {
+    return thing !== null && typeof thing === 'object';
+}
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Rejects if the given promise doesn't resolve in timeInMS milliseconds.
+ * @internal
+ */ function promiseWithTimeout(promise, timeInMS = 2000) {
+    const deferredPromise = new Deferred();
+    setTimeout(()=>deferredPromise.reject('timeout!'), timeInMS);
+    promise.then(deferredPromise.resolve, deferredPromise.reject);
+    return deferredPromise.promise;
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Returns a querystring-formatted string (e.g. &arg=val&arg2=val2) from a
+ * params object (e.g. {arg: 'val', arg2: 'val2'})
+ * Note: You must prepend it with ? when adding it to a URL.
+ */ function querystring(querystringParams) {
+    const params = [];
+    for (const [key, value] of Object.entries(querystringParams))if (Array.isArray(value)) value.forEach((arrayVal)=>{
+        params.push(encodeURIComponent(key) + '=' + encodeURIComponent(arrayVal));
+    });
+    else params.push(encodeURIComponent(key) + '=' + encodeURIComponent(value));
+    return params.length ? '&' + params.join('&') : '';
+}
+/**
+ * Decodes a querystring (e.g. ?arg=val&arg2=val2) into a params object
+ * (e.g. {arg: 'val', arg2: 'val2'})
+ */ function querystringDecode(querystring) {
+    const obj = {};
+    const tokens = querystring.replace(/^\?/, '').split('&');
+    tokens.forEach((token)=>{
+        if (token) {
+            const [key, value] = token.split('=');
+            obj[decodeURIComponent(key)] = decodeURIComponent(value);
+        }
+    });
+    return obj;
+}
+/**
+ * Extract the query string part of a URL, including the leading question mark (if present).
+ */ function extractQuerystring(url) {
+    const queryStart = url.indexOf('?');
+    if (!queryStart) return '';
+    const fragmentStart = url.indexOf('#', queryStart);
+    return url.substring(queryStart, fragmentStart > 0 ? fragmentStart : undefined);
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @fileoverview SHA-1 cryptographic hash.
+ * Variable names follow the notation in FIPS PUB 180-3:
+ * http://csrc.nist.gov/publications/fips/fips180-3/fips180-3_final.pdf.
+ *
+ * Usage:
+ *   var sha1 = new sha1();
+ *   sha1.update(bytes);
+ *   var hash = sha1.digest();
+ *
+ * Performance:
+ *   Chrome 23:   ~400 Mbit/s
+ *   Firefox 16:  ~250 Mbit/s
+ *
+ */ /**
+ * SHA-1 cryptographic hash constructor.
+ *
+ * The properties declared here are discussed in the above algorithm document.
+ * @constructor
+ * @final
+ * @struct
+ */ class Sha1 {
+    constructor(){
+        /**
+         * Holds the previous values of accumulated variables a-e in the compress_
+         * function.
+         * @private
+         */ this.chain_ = [];
+        /**
+         * A buffer holding the partially computed hash result.
+         * @private
+         */ this.buf_ = [];
+        /**
+         * An array of 80 bytes, each a part of the message to be hashed.  Referred to
+         * as the message schedule in the docs.
+         * @private
+         */ this.W_ = [];
+        /**
+         * Contains data needed to pad messages less than 64 bytes.
+         * @private
+         */ this.pad_ = [];
+        /**
+         * @private {number}
+         */ this.inbuf_ = 0;
+        /**
+         * @private {number}
+         */ this.total_ = 0;
+        this.blockSize = 64;
+        this.pad_[0] = 128;
+        for(let i = 1; i < this.blockSize; ++i)this.pad_[i] = 0;
+        this.reset();
+    }
+    reset() {
+        this.chain_[0] = 0x67452301;
+        this.chain_[1] = 0xefcdab89;
+        this.chain_[2] = 0x98badcfe;
+        this.chain_[3] = 0x10325476;
+        this.chain_[4] = 0xc3d2e1f0;
+        this.inbuf_ = 0;
+        this.total_ = 0;
+    }
+    /**
+     * Internal compress helper function.
+     * @param buf Block to compress.
+     * @param offset Offset of the block in the buffer.
+     * @private
+     */ compress_(buf, offset) {
+        if (!offset) offset = 0;
+        const W = this.W_;
+        // get 16 big endian words
+        if (typeof buf === 'string') for(let i = 0; i < 16; i++){
+            // TODO(user): [bug 8140122] Recent versions of Safari for Mac OS and iOS
+            // have a bug that turns the post-increment ++ operator into pre-increment
+            // during JIT compilation.  We have code that depends heavily on SHA-1 for
+            // correctness and which is affected by this bug, so I've removed all uses
+            // of post-increment ++ in which the result value is used.  We can revert
+            // this change once the Safari bug
+            // (https://bugs.webkit.org/show_bug.cgi?id=109036) has been fixed and
+            // most clients have been updated.
+            W[i] = buf.charCodeAt(offset) << 24 | buf.charCodeAt(offset + 1) << 16 | buf.charCodeAt(offset + 2) << 8 | buf.charCodeAt(offset + 3);
+            offset += 4;
+        }
+        else for(let i = 0; i < 16; i++){
+            W[i] = buf[offset] << 24 | buf[offset + 1] << 16 | buf[offset + 2] << 8 | buf[offset + 3];
+            offset += 4;
+        }
+        // expand to 80 words
+        for(let i = 16; i < 80; i++){
+            const t = W[i - 3] ^ W[i - 8] ^ W[i - 14] ^ W[i - 16];
+            W[i] = (t << 1 | t >>> 31) & 0xffffffff;
+        }
+        let a = this.chain_[0];
+        let b = this.chain_[1];
+        let c = this.chain_[2];
+        let d = this.chain_[3];
+        let e = this.chain_[4];
+        let f, k;
+        // TODO(user): Try to unroll this loop to speed up the computation.
+        for(let i = 0; i < 80; i++){
+            if (i < 40) {
+                if (i < 20) {
+                    f = d ^ b & (c ^ d);
+                    k = 0x5a827999;
+                } else {
+                    f = b ^ c ^ d;
+                    k = 0x6ed9eba1;
+                }
+            } else if (i < 60) {
+                f = b & c | d & (b | c);
+                k = 0x8f1bbcdc;
+            } else {
+                f = b ^ c ^ d;
+                k = 0xca62c1d6;
+            }
+            const t = (a << 5 | a >>> 27) + f + e + k + W[i] & 0xffffffff;
+            e = d;
+            d = c;
+            c = (b << 30 | b >>> 2) & 0xffffffff;
+            b = a;
+            a = t;
+        }
+        this.chain_[0] = this.chain_[0] + a & 0xffffffff;
+        this.chain_[1] = this.chain_[1] + b & 0xffffffff;
+        this.chain_[2] = this.chain_[2] + c & 0xffffffff;
+        this.chain_[3] = this.chain_[3] + d & 0xffffffff;
+        this.chain_[4] = this.chain_[4] + e & 0xffffffff;
+    }
+    update(bytes, length) {
+        // TODO(johnlenz): tighten the function signature and remove this check
+        if (bytes == null) return;
+        if (length === undefined) length = bytes.length;
+        const lengthMinusBlock = length - this.blockSize;
+        let n = 0;
+        // Using local instead of member variables gives ~5% speedup on Firefox 16.
+        const buf = this.buf_;
+        let inbuf = this.inbuf_;
+        // The outer while loop should execute at most twice.
+        while(n < length){
+            // When we have no data in the block to top up, we can directly process the
+            // input buffer (assuming it contains sufficient data). This gives ~25%
+            // speedup on Chrome 23 and ~15% speedup on Firefox 16, but requires that
+            // the data is provided in large chunks (or in multiples of 64 bytes).
+            if (inbuf === 0) while(n <= lengthMinusBlock){
+                this.compress_(bytes, n);
+                n += this.blockSize;
+            }
+            if (typeof bytes === 'string') while(n < length){
+                buf[inbuf] = bytes.charCodeAt(n);
+                ++inbuf;
+                ++n;
+                if (inbuf === this.blockSize) {
+                    this.compress_(buf);
+                    inbuf = 0;
+                    break;
+                }
+            }
+            else while(n < length){
+                buf[inbuf] = bytes[n];
+                ++inbuf;
+                ++n;
+                if (inbuf === this.blockSize) {
+                    this.compress_(buf);
+                    inbuf = 0;
+                    break;
+                }
+            }
+        }
+        this.inbuf_ = inbuf;
+        this.total_ += length;
+    }
+    /** @override */ digest() {
+        const digest = [];
+        let totalBits = this.total_ * 8;
+        // Add pad 0x80 0x00*.
+        if (this.inbuf_ < 56) this.update(this.pad_, 56 - this.inbuf_);
+        else this.update(this.pad_, this.blockSize - (this.inbuf_ - 56));
+        // Add # bits.
+        for(let i = this.blockSize - 1; i >= 56; i--){
+            this.buf_[i] = totalBits & 255;
+            totalBits /= 256; // Don't use bit-shifting here!
+        }
+        this.compress_(this.buf_);
+        let n = 0;
+        for(let i = 0; i < 5; i++)for(let j = 24; j >= 0; j -= 8){
+            digest[n] = this.chain_[i] >> j & 255;
+            ++n;
+        }
+        return digest;
+    }
+}
+/**
+ * Helper to make a Subscribe function (just like Promise helps make a
+ * Thenable).
+ *
+ * @param executor Function which can make calls to a single Observer
+ *     as a proxy.
+ * @param onNoObservers Callback when count of Observers goes to zero.
+ */ function createSubscribe(executor, onNoObservers) {
+    const proxy = new ObserverProxy(executor, onNoObservers);
+    return proxy.subscribe.bind(proxy);
+}
+/**
+ * Implement fan-out for any number of Observers attached via a subscribe
+ * function.
+ */ class ObserverProxy {
+    /**
+     * @param executor Function which can make calls to a single Observer
+     *     as a proxy.
+     * @param onNoObservers Callback when count of Observers goes to zero.
+     */ constructor(executor, onNoObservers){
+        this.observers = [];
+        this.unsubscribes = [];
+        this.observerCount = 0;
+        // Micro-task scheduling by calling task.then().
+        this.task = Promise.resolve();
+        this.finalized = false;
+        this.onNoObservers = onNoObservers;
+        // Call the executor asynchronously so subscribers that are called
+        // synchronously after the creation of the subscribe function
+        // can still receive the very first value generated in the executor.
+        this.task.then(()=>{
+            executor(this);
+        }).catch((e)=>{
+            this.error(e);
+        });
+    }
+    next(value) {
+        this.forEachObserver((observer)=>{
+            observer.next(value);
+        });
+    }
+    error(error) {
+        this.forEachObserver((observer)=>{
+            observer.error(error);
+        });
+        this.close(error);
+    }
+    complete() {
+        this.forEachObserver((observer)=>{
+            observer.complete();
+        });
+        this.close();
+    }
+    /**
+     * Subscribe function that can be used to add an Observer to the fan-out list.
+     *
+     * - We require that no event is sent to a subscriber synchronously to their
+     *   call to subscribe().
+     */ subscribe(nextOrObserver, error, complete) {
+        let observer;
+        if (nextOrObserver === undefined && error === undefined && complete === undefined) throw new Error('Missing Observer.');
+        // Assemble an Observer object when passed as callback functions.
+        if (implementsAnyMethods(nextOrObserver, [
+            'next',
+            'error',
+            'complete'
+        ])) observer = nextOrObserver;
+        else observer = {
+            next: nextOrObserver,
+            error,
+            complete
+        };
+        if (observer.next === undefined) observer.next = noop;
+        if (observer.error === undefined) observer.error = noop;
+        if (observer.complete === undefined) observer.complete = noop;
+        const unsub = this.unsubscribeOne.bind(this, this.observers.length);
+        // Attempt to subscribe to a terminated Observable - we
+        // just respond to the Observer with the final error or complete
+        // event.
+        if (this.finalized) // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        this.task.then(()=>{
+            try {
+                if (this.finalError) observer.error(this.finalError);
+                else observer.complete();
+            } catch (e) {
+            // nothing
+            }
+            return;
+        });
+        this.observers.push(observer);
+        return unsub;
+    }
+    // Unsubscribe is synchronous - we guarantee that no events are sent to
+    // any unsubscribed Observer.
+    unsubscribeOne(i) {
+        if (this.observers === undefined || this.observers[i] === undefined) return;
+        delete this.observers[i];
+        this.observerCount -= 1;
+        if (this.observerCount === 0 && this.onNoObservers !== undefined) this.onNoObservers(this);
+    }
+    forEachObserver(fn) {
+        if (this.finalized) // Already closed by previous event....just eat the additional values.
+        return;
+        // Since sendOne calls asynchronously - there is no chance that
+        // this.observers will become undefined.
+        for(let i = 0; i < this.observers.length; i++)this.sendOne(i, fn);
+    }
+    // Call the Observer via one of it's callback function. We are careful to
+    // confirm that the observe has not been unsubscribed since this asynchronous
+    // function had been queued.
+    sendOne(i, fn) {
+        // Execute the callback asynchronously
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        this.task.then(()=>{
+            if (this.observers !== undefined && this.observers[i] !== undefined) try {
+                fn(this.observers[i]);
+            } catch (e) {
+                // Ignore exceptions raised in Observers or missing methods of an
+                // Observer.
+                // Log error to console. b/31404806
+                if (typeof console !== 'undefined' && console.error) console.error(e);
+            }
+        });
+    }
+    close(err) {
+        if (this.finalized) return;
+        this.finalized = true;
+        if (err !== undefined) this.finalError = err;
+        // Proxy is no longer needed - garbage collect references
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        this.task.then(()=>{
+            this.observers = undefined;
+            this.onNoObservers = undefined;
+        });
+    }
+}
+/** Turn synchronous function into one called asynchronously. */ // eslint-disable-next-line @typescript-eslint/ban-types
+function async(fn, onError) {
+    return (...args)=>{
+        Promise.resolve(true).then(()=>{
+            fn(...args);
+        }).catch((error)=>{
+            if (onError) onError(error);
+        });
+    };
+}
+/**
+ * Return true if the object passed in implements any of the named methods.
+ */ function implementsAnyMethods(obj, methods) {
+    if (typeof obj !== 'object' || obj === null) return false;
+    for (const method of methods){
+        if (method in obj && typeof obj[method] === 'function') return true;
+    }
+    return false;
+}
+function noop() {
+// do nothing
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Check to make sure the appropriate number of arguments are provided for a public function.
+ * Throws an error if it fails.
+ *
+ * @param fnName The function name
+ * @param minCount The minimum number of arguments to allow for the function call
+ * @param maxCount The maximum number of argument to allow for the function call
+ * @param argCount The actual number of arguments provided.
+ */ const validateArgCount = function(fnName, minCount, maxCount, argCount) {
+    let argError;
+    if (argCount < minCount) argError = 'at least ' + minCount;
+    else if (argCount > maxCount) argError = maxCount === 0 ? 'none' : 'no more than ' + maxCount;
+    if (argError) {
+        const error = fnName + ' failed: Was called with ' + argCount + (argCount === 1 ? ' argument.' : ' arguments.') + ' Expects ' + argError + '.';
+        throw new Error(error);
+    }
+};
+/**
+ * Generates a string to prefix an error message about failed argument validation
+ *
+ * @param fnName The function name
+ * @param argName The name of the argument
+ * @return The prefix to add to the error thrown for validation.
+ */ function errorPrefix(fnName, argName) {
+    return `${fnName} failed: ${argName} argument `;
+}
+/**
+ * @param fnName
+ * @param argumentNumber
+ * @param namespace
+ * @param optional
+ */ function validateNamespace(fnName, namespace, optional) {
+    if (optional && !namespace) return;
+    if (typeof namespace !== 'string') //TODO: I should do more validation here. We only allow certain chars in namespaces.
+    throw new Error(errorPrefix(fnName, 'namespace') + 'must be a valid firebase namespace.');
+}
+function validateCallback(fnName, argumentName, // eslint-disable-next-line @typescript-eslint/ban-types
+callback, optional) {
+    if (optional && !callback) return;
+    if (typeof callback !== 'function') throw new Error(errorPrefix(fnName, argumentName) + 'must be a valid function.');
+}
+function validateContextObject(fnName, argumentName, context, optional) {
+    if (optional && !context) return;
+    if (typeof context !== 'object' || context === null) throw new Error(errorPrefix(fnName, argumentName) + 'must be a valid context object.');
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ // Code originally came from goog.crypt.stringToUtf8ByteArray, but for some reason they
+// automatically replaced '\r\n' with '\n', and they didn't handle surrogate pairs,
+// so it's been modified.
+// Note that not all Unicode characters appear as single characters in JavaScript strings.
+// fromCharCode returns the UTF-16 encoding of a character - so some Unicode characters
+// use 2 characters in JavaScript.  All 4-byte UTF-8 characters begin with a first
+// character in the range 0xD800 - 0xDBFF (the first character of a so-called surrogate
+// pair).
+// See http://www.ecma-international.org/ecma-262/5.1/#sec-15.1.3
+/**
+ * @param {string} str
+ * @return {Array}
+ */ const stringToByteArray = function(str) {
+    const out = [];
+    let p = 0;
+    for(let i = 0; i < str.length; i++){
+        let c = str.charCodeAt(i);
+        // Is this the lead surrogate in a surrogate pair?
+        if (c >= 0xd800 && c <= 0xdbff) {
+            const high = c - 0xd800; // the high 10 bits.
+            i++;
+            assert(i < str.length, 'Surrogate pair missing trail surrogate.');
+            const low = str.charCodeAt(i) - 0xdc00; // the low 10 bits.
+            c = 0x10000 + (high << 10) + low;
+        }
+        if (c < 128) out[p++] = c;
+        else if (c < 2048) {
+            out[p++] = c >> 6 | 192;
+            out[p++] = c & 63 | 128;
+        } else if (c < 65536) {
+            out[p++] = c >> 12 | 224;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        } else {
+            out[p++] = c >> 18 | 240;
+            out[p++] = c >> 12 & 63 | 128;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        }
+    }
+    return out;
+};
+/**
+ * Calculate length without actually converting; useful for doing cheaper validation.
+ * @param {string} str
+ * @return {number}
+ */ const stringLength = function(str) {
+    let p = 0;
+    for(let i = 0; i < str.length; i++){
+        const c = str.charCodeAt(i);
+        if (c < 128) p++;
+        else if (c < 2048) p += 2;
+        else if (c >= 0xd800 && c <= 0xdbff) {
+            // Lead surrogate of a surrogate pair.  The pair together will take 4 bytes to represent.
+            p += 4;
+            i++; // skip trail surrogate.
+        } else p += 3;
+    }
+    return p;
+};
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The amount of milliseconds to exponentially increase.
+ */ const DEFAULT_INTERVAL_MILLIS = 1000;
+/**
+ * The factor to backoff by.
+ * Should be a number greater than 1.
+ */ const DEFAULT_BACKOFF_FACTOR = 2;
+/**
+ * The maximum milliseconds to increase to.
+ *
+ * <p>Visible for testing
+ */ const MAX_VALUE_MILLIS = 14400000; // Four hours, like iOS and Android.
+/**
+ * The percentage of backoff time to randomize by.
+ * See
+ * http://go/safe-client-behavior#step-1-determine-the-appropriate-retry-interval-to-handle-spike-traffic
+ * for context.
+ *
+ * <p>Visible for testing
+ */ const RANDOM_FACTOR = 0.5;
+/**
+ * Based on the backoff method from
+ * https://github.com/google/closure-library/blob/master/closure/goog/math/exponentialbackoff.js.
+ * Extracted here so we don't need to pass metadata and a stateful ExponentialBackoff object around.
+ */ function calculateBackoffMillis(backoffCount, intervalMillis = DEFAULT_INTERVAL_MILLIS, backoffFactor = DEFAULT_BACKOFF_FACTOR) {
+    // Calculates an exponentially increasing value.
+    // Deviation: calculates value from count and a constant interval, so we only need to save value
+    // and count to restore state.
+    const currBaseValue = intervalMillis * Math.pow(backoffFactor, backoffCount);
+    // A random "fuzz" to avoid waves of retries.
+    // Deviation: randomFactor is required.
+    const randomWait = Math.round(// A fraction of the backoff value to add/subtract.
+    // Deviation: changes multiplication order to improve readability.
+    RANDOM_FACTOR * currBaseValue * // A random float (rounded to int by Math.round above) in the range [-1, 1]. Determines
+    // if we add or subtract.
+    (Math.random() - 0.5) * 2);
+    // Limits backoff to max to avoid effectively permanent backoff.
+    return Math.min(MAX_VALUE_MILLIS, currBaseValue + randomWait);
+}
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Provide English ordinal letters after a number
+ */ function ordinal(i) {
+    if (!Number.isFinite(i)) return `${i}`;
+    return i + indicator(i);
+}
+function indicator(i) {
+    i = Math.abs(i);
+    const cent = i % 100;
+    if (cent >= 10 && cent <= 20) return 'th';
+    const dec = i % 10;
+    if (dec === 1) return 'st';
+    if (dec === 2) return 'nd';
+    if (dec === 3) return 'rd';
+    return 'th';
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function getModularInstance(service) {
+    if (service && service._delegate) return service._delegate;
+    else return service;
+}
+
+},{"./postinstall.mjs":"2zIBV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2zIBV":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getDefaultsFromPostinstall", ()=>getDefaultsFromPostinstall);
+const getDefaultsFromPostinstall = ()=>undefined;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9cikG":[function(require,module,exports,__globalThis) {
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * A container for all of the Logger instances
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LogLevel", ()=>LogLevel);
+parcelHelpers.export(exports, "Logger", ()=>Logger);
+parcelHelpers.export(exports, "setLogLevel", ()=>setLogLevel);
+parcelHelpers.export(exports, "setUserLogHandler", ()=>setUserLogHandler);
+const instances = [];
+/**
+ * The JS SDK supports 5 log levels and also allows a user the ability to
+ * silence the logs altogether.
+ *
+ * The order is a follows:
+ * DEBUG < VERBOSE < INFO < WARN < ERROR
+ *
+ * All of the log types above the current log level will be captured (i.e. if
+ * you set the log level to `INFO`, errors will still be logged, but `DEBUG` and
+ * `VERBOSE` logs will not)
+ */ var LogLevel;
+(function(LogLevel) {
+    LogLevel[LogLevel["DEBUG"] = 0] = "DEBUG";
+    LogLevel[LogLevel["VERBOSE"] = 1] = "VERBOSE";
+    LogLevel[LogLevel["INFO"] = 2] = "INFO";
+    LogLevel[LogLevel["WARN"] = 3] = "WARN";
+    LogLevel[LogLevel["ERROR"] = 4] = "ERROR";
+    LogLevel[LogLevel["SILENT"] = 5] = "SILENT";
+})(LogLevel || (LogLevel = {}));
+const levelStringToEnum = {
+    'debug': LogLevel.DEBUG,
+    'verbose': LogLevel.VERBOSE,
+    'info': LogLevel.INFO,
+    'warn': LogLevel.WARN,
+    'error': LogLevel.ERROR,
+    'silent': LogLevel.SILENT
+};
+/**
+ * The default log level
+ */ const defaultLogLevel = LogLevel.INFO;
+/**
+ * By default, `console.debug` is not displayed in the developer console (in
+ * chrome). To avoid forcing users to have to opt-in to these logs twice
+ * (i.e. once for firebase, and once in the console), we are sending `DEBUG`
+ * logs to the `console.log` function.
+ */ const ConsoleMethod = {
+    [LogLevel.DEBUG]: 'log',
+    [LogLevel.VERBOSE]: 'log',
+    [LogLevel.INFO]: 'info',
+    [LogLevel.WARN]: 'warn',
+    [LogLevel.ERROR]: 'error'
+};
+/**
+ * The default log handler will forward DEBUG, VERBOSE, INFO, WARN, and ERROR
+ * messages on to their corresponding console counterparts (if the log method
+ * is supported by the current log level)
+ */ const defaultLogHandler = (instance, logType, ...args)=>{
+    if (logType < instance.logLevel) return;
+    const now = new Date().toISOString();
+    const method = ConsoleMethod[logType];
+    if (method) console[method](`[${now}]  ${instance.name}:`, ...args);
+    else throw new Error(`Attempted to log a message with an invalid logType (value: ${logType})`);
+};
+class Logger {
+    /**
+     * Gives you an instance of a Logger to capture messages according to
+     * Firebase's logging scheme.
+     *
+     * @param name The name that the logs will be associated with
+     */ constructor(name){
+        this.name = name;
+        /**
+         * The log level of the given Logger instance.
+         */ this._logLevel = defaultLogLevel;
+        /**
+         * The main (internal) log handler for the Logger instance.
+         * Can be set to a new function in internal package code but not by user.
+         */ this._logHandler = defaultLogHandler;
+        /**
+         * The optional, additional, user-defined log handler for the Logger instance.
+         */ this._userLogHandler = null;
+        /**
+         * Capture the current instance for later use
+         */ instances.push(this);
+    }
+    get logLevel() {
+        return this._logLevel;
+    }
+    set logLevel(val) {
+        if (!(val in LogLevel)) throw new TypeError(`Invalid value "${val}" assigned to \`logLevel\``);
+        this._logLevel = val;
+    }
+    // Workaround for setter/getter having to be the same type.
+    setLogLevel(val) {
+        this._logLevel = typeof val === 'string' ? levelStringToEnum[val] : val;
+    }
+    get logHandler() {
+        return this._logHandler;
+    }
+    set logHandler(val) {
+        if (typeof val !== 'function') throw new TypeError('Value assigned to `logHandler` must be a function');
+        this._logHandler = val;
+    }
+    get userLogHandler() {
+        return this._userLogHandler;
+    }
+    set userLogHandler(val) {
+        this._userLogHandler = val;
+    }
+    /**
+     * The functions below are all based on the `console` interface
+     */ debug(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.DEBUG, ...args);
+        this._logHandler(this, LogLevel.DEBUG, ...args);
+    }
+    log(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.VERBOSE, ...args);
+        this._logHandler(this, LogLevel.VERBOSE, ...args);
+    }
+    info(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.INFO, ...args);
+        this._logHandler(this, LogLevel.INFO, ...args);
+    }
+    warn(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.WARN, ...args);
+        this._logHandler(this, LogLevel.WARN, ...args);
+    }
+    error(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.ERROR, ...args);
+        this._logHandler(this, LogLevel.ERROR, ...args);
+    }
+}
+function setLogLevel(level) {
+    instances.forEach((inst)=>{
+        inst.setLogLevel(level);
+    });
+}
+function setUserLogHandler(logCallback, options) {
+    for (const instance of instances){
+        let customLogLevel = null;
+        if (options && options.level) customLogLevel = levelStringToEnum[options.level];
+        if (logCallback === null) instance.userLogHandler = null;
+        else instance.userLogHandler = (instance, level, ...args)=>{
+            const message = args.map((arg)=>{
+                if (arg == null) return null;
+                else if (typeof arg === 'string') return arg;
+                else if (typeof arg === 'number' || typeof arg === 'boolean') return arg.toString();
+                else if (arg instanceof Error) return arg.message;
+                else try {
+                    return JSON.stringify(arg);
+                } catch (ignored) {
+                    return null;
+                }
+            }).filter((arg)=>arg).join(' ');
+            if (level >= (customLogLevel ?? instance.logLevel)) logCallback({
+                level: LogLevel[level].toLowerCase(),
+                message,
+                args,
+                type: instance.name
+            });
+        };
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"258QC":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "unwrap", ()=>(0, _wrapIdbValueJs.u));
+parcelHelpers.export(exports, "wrap", ()=>(0, _wrapIdbValueJs.w));
+parcelHelpers.export(exports, "deleteDB", ()=>deleteDB);
+parcelHelpers.export(exports, "openDB", ()=>openDB);
+var _wrapIdbValueJs = require("./wrap-idb-value.js");
+/**
+ * Open a database.
+ *
+ * @param name Name of the database.
+ * @param version Schema version.
+ * @param callbacks Additional callbacks.
+ */ function openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {
+    const request = indexedDB.open(name, version);
+    const openPromise = (0, _wrapIdbValueJs.w)(request);
+    if (upgrade) request.addEventListener('upgradeneeded', (event)=>{
+        upgrade((0, _wrapIdbValueJs.w)(request.result), event.oldVersion, event.newVersion, (0, _wrapIdbValueJs.w)(request.transaction), event);
+    });
+    if (blocked) request.addEventListener('blocked', (event)=>blocked(// Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+        event.oldVersion, event.newVersion, event));
+    openPromise.then((db)=>{
+        if (terminated) db.addEventListener('close', ()=>terminated());
+        if (blocking) db.addEventListener('versionchange', (event)=>blocking(event.oldVersion, event.newVersion, event));
+    }).catch(()=>{});
+    return openPromise;
+}
+/**
+ * Delete a database.
+ *
+ * @param name Name of the database.
+ */ function deleteDB(name, { blocked } = {}) {
+    const request = indexedDB.deleteDatabase(name);
+    if (blocked) request.addEventListener('blocked', (event)=>blocked(// Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+        event.oldVersion, event));
+    return (0, _wrapIdbValueJs.w)(request).then(()=>undefined);
+}
+const readMethods = [
+    'get',
+    'getKey',
+    'getAll',
+    'getAllKeys',
+    'count'
+];
+const writeMethods = [
+    'put',
+    'add',
+    'delete',
+    'clear'
+];
+const cachedMethods = new Map();
+function getMethod(target, prop) {
+    if (!(target instanceof IDBDatabase && !(prop in target) && typeof prop === 'string')) return;
+    if (cachedMethods.get(prop)) return cachedMethods.get(prop);
+    const targetFuncName = prop.replace(/FromIndex$/, '');
+    const useIndex = prop !== targetFuncName;
+    const isWrite = writeMethods.includes(targetFuncName);
+    if (// Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.
+    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) || !(isWrite || readMethods.includes(targetFuncName))) return;
+    const method = async function(storeName, ...args) {
+        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(
+        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');
+        let target = tx.store;
+        if (useIndex) target = target.index(args.shift());
+        // Must reject if op rejects.
+        // If it's a write operation, must reject if tx.done rejects.
+        // Must reject with op rejection first.
+        // Must resolve with op value.
+        // Must handle both promises (no unhandled rejections)
+        return (await Promise.all([
+            target[targetFuncName](...args),
+            isWrite && tx.done
+        ]))[0];
+    };
+    cachedMethods.set(prop, method);
+    return method;
+}
+(0, _wrapIdbValueJs.r)((oldTraps)=>({
+        ...oldTraps,
+        get: (target, prop, receiver)=>getMethod(target, prop) || oldTraps.get(target, prop, receiver),
+        has: (target, prop)=>!!getMethod(target, prop) || oldTraps.has(target, prop)
+    }));
+
+},{"./wrap-idb-value.js":"98T2L","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"98T2L":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "a", ()=>reverseTransformCache);
+parcelHelpers.export(exports, "i", ()=>instanceOfAny);
+parcelHelpers.export(exports, "r", ()=>replaceTraps);
+parcelHelpers.export(exports, "u", ()=>unwrap);
+parcelHelpers.export(exports, "w", ()=>wrap);
+const instanceOfAny = (object, constructors)=>constructors.some((c)=>object instanceof c);
+let idbProxyableTypes;
+let cursorAdvanceMethods;
+// This is a function to prevent it throwing up in node environments.
+function getIdbProxyableTypes() {
+    return idbProxyableTypes || (idbProxyableTypes = [
+        IDBDatabase,
+        IDBObjectStore,
+        IDBIndex,
+        IDBCursor,
+        IDBTransaction
+    ]);
+}
+// This is a function to prevent it throwing up in node environments.
+function getCursorAdvanceMethods() {
+    return cursorAdvanceMethods || (cursorAdvanceMethods = [
+        IDBCursor.prototype.advance,
+        IDBCursor.prototype.continue,
+        IDBCursor.prototype.continuePrimaryKey
+    ]);
+}
+const cursorRequestMap = new WeakMap();
+const transactionDoneMap = new WeakMap();
+const transactionStoreNamesMap = new WeakMap();
+const transformCache = new WeakMap();
+const reverseTransformCache = new WeakMap();
+function promisifyRequest(request) {
+    const promise = new Promise((resolve, reject)=>{
+        const unlisten = ()=>{
+            request.removeEventListener('success', success);
+            request.removeEventListener('error', error);
+        };
+        const success = ()=>{
+            resolve(wrap(request.result));
+            unlisten();
+        };
+        const error = ()=>{
+            reject(request.error);
+            unlisten();
+        };
+        request.addEventListener('success', success);
+        request.addEventListener('error', error);
+    });
+    promise.then((value)=>{
+        // Since cursoring reuses the IDBRequest (*sigh*), we cache it for later retrieval
+        // (see wrapFunction).
+        if (value instanceof IDBCursor) cursorRequestMap.set(value, request);
+    // Catching to avoid "Uncaught Promise exceptions"
+    }).catch(()=>{});
+    // This mapping exists in reverseTransformCache but doesn't doesn't exist in transformCache. This
+    // is because we create many promises from a single IDBRequest.
+    reverseTransformCache.set(promise, request);
+    return promise;
+}
+function cacheDonePromiseForTransaction(tx) {
+    // Early bail if we've already created a done promise for this transaction.
+    if (transactionDoneMap.has(tx)) return;
+    const done = new Promise((resolve, reject)=>{
+        const unlisten = ()=>{
+            tx.removeEventListener('complete', complete);
+            tx.removeEventListener('error', error);
+            tx.removeEventListener('abort', error);
+        };
+        const complete = ()=>{
+            resolve();
+            unlisten();
+        };
+        const error = ()=>{
+            reject(tx.error || new DOMException('AbortError', 'AbortError'));
+            unlisten();
+        };
+        tx.addEventListener('complete', complete);
+        tx.addEventListener('error', error);
+        tx.addEventListener('abort', error);
+    });
+    // Cache it for later retrieval.
+    transactionDoneMap.set(tx, done);
+}
+let idbProxyTraps = {
+    get (target, prop, receiver) {
+        if (target instanceof IDBTransaction) {
+            // Special handling for transaction.done.
+            if (prop === 'done') return transactionDoneMap.get(target);
+            // Polyfill for objectStoreNames because of Edge.
+            if (prop === 'objectStoreNames') return target.objectStoreNames || transactionStoreNamesMap.get(target);
+            // Make tx.store return the only store in the transaction, or undefined if there are many.
+            if (prop === 'store') return receiver.objectStoreNames[1] ? undefined : receiver.objectStore(receiver.objectStoreNames[0]);
+        }
+        // Else transform whatever we get back.
+        return wrap(target[prop]);
+    },
+    set (target, prop, value) {
+        target[prop] = value;
+        return true;
+    },
+    has (target, prop) {
+        if (target instanceof IDBTransaction && (prop === 'done' || prop === 'store')) return true;
+        return prop in target;
+    }
+};
+function replaceTraps(callback) {
+    idbProxyTraps = callback(idbProxyTraps);
+}
+function wrapFunction(func) {
+    // Due to expected object equality (which is enforced by the caching in `wrap`), we
+    // only create one new func per func.
+    // Edge doesn't support objectStoreNames (booo), so we polyfill it here.
+    if (func === IDBDatabase.prototype.transaction && !('objectStoreNames' in IDBTransaction.prototype)) return function(storeNames, ...args) {
+        const tx = func.call(unwrap(this), storeNames, ...args);
+        transactionStoreNamesMap.set(tx, storeNames.sort ? storeNames.sort() : [
+            storeNames
+        ]);
+        return wrap(tx);
+    };
+    // Cursor methods are special, as the behaviour is a little more different to standard IDB. In
+    // IDB, you advance the cursor and wait for a new 'success' on the IDBRequest that gave you the
+    // cursor. It's kinda like a promise that can resolve with many values. That doesn't make sense
+    // with real promises, so each advance methods returns a new promise for the cursor object, or
+    // undefined if the end of the cursor has been reached.
+    if (getCursorAdvanceMethods().includes(func)) return function(...args) {
+        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+        // the original object.
+        func.apply(unwrap(this), args);
+        return wrap(cursorRequestMap.get(this));
+    };
+    return function(...args) {
+        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+        // the original object.
+        return wrap(func.apply(unwrap(this), args));
+    };
+}
+function transformCachableValue(value) {
+    if (typeof value === 'function') return wrapFunction(value);
+    // This doesn't return, it just creates a 'done' promise for the transaction,
+    // which is later returned for transaction.done (see idbObjectHandler).
+    if (value instanceof IDBTransaction) cacheDonePromiseForTransaction(value);
+    if (instanceOfAny(value, getIdbProxyableTypes())) return new Proxy(value, idbProxyTraps);
+    // Return the same value back if we're not going to transform it.
+    return value;
+}
+function wrap(value) {
+    // We sometimes generate multiple promises from a single IDBRequest (eg when cursoring), because
+    // IDB is weird and a single IDBRequest can yield many responses, so these can't be cached.
+    if (value instanceof IDBRequest) return promisifyRequest(value);
+    // If we've already transformed this value before, reuse the transformed value.
+    // This is faster, but it also provides object equality.
+    if (transformCache.has(value)) return transformCache.get(value);
+    const newValue = transformCachableValue(value);
+    // Not all types are transformed.
+    // These may be primitive types, so they can't be WeakMap keys.
+    if (newValue !== value) {
+        transformCache.set(value, newValue);
+        reverseTransformCache.set(newValue, value);
+    }
+    return newValue;
+}
+const unwrap = (value)=>reverseTransformCache.get(value);
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dvzOB":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "auth", ()=>auth);
+var _app = require("firebase/app");
+var _auth = require("firebase/auth");
+const firebaseConfig = {
+    apiKey: "AIzaSyBBnp_GZQBlwyKR80gOdrcdqrVPvByu4Gs",
+    authDomain: "biterun-873be.firebaseapp.com",
+    projectId: "biterun-873be",
+    storageBucket: "biterun-873be.firebasestorage.app",
+    messagingSenderId: "641948850638",
+    appId: "1:641948850638:web:46a6e0856b5ce59f19739f",
+    measurementId: "G-2FQWWPQV12"
+};
+const app = (0, _app.initializeApp)(firebaseConfig);
+const auth = (0, _auth.getAuth)(app);
+
+},{"firebase/app":"cYOm2","firebase/auth":"4ZBbi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"cYOm2":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _app = require("@firebase/app");
+parcelHelpers.exportAll(_app, exports);
+var name = "firebase";
+var version = "12.2.1";
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ (0, _app.registerVersion)(name, version, 'app');
+
+},{"@firebase/app":"3WDcU","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"52tJd":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a04d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a04d.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a04d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _stripeJs = require("@stripe/stripe-js");
+var _billSummary = require("./BillSummary");
+var _billSummaryDefault = parcelHelpers.interopDefault(_billSummary);
+var _s = $RefreshSig$();
+const stripePromise = (0, _stripeJs.loadStripe)("pk_test_51S0qJtCPENAtPfIIyOx4WatEvwsjzeQ1UUQvNKUX9wAmOdX5rqacvhTy9GrqjqLawuR6gTrGZlASlamJXAymcsyL00OhcAHTfc");
+const ReviewOrder = ()=>{
+    _s();
+    const { state } = (0, _reactRouterDom.useLocation)();
+    const { paymentMethod, totalAmount } = state || {};
+    const [loading, setLoading] = (0, _react.useState)(false);
+    if (!paymentMethod || !totalAmount) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        className: "text-center text-red-600",
+        children: "No order details found. Please go back."
+    }, void 0, false, {
+        fileName: "src/components/ReviewOrder.js",
+        lineNumber: 15,
+        columnNumber: 12
+    }, undefined);
+    const handleStripePay = async ()=>{
+        setLoading(true);
+        try {
+            const response = await fetch("http://localhost:4000/create-checkout-session", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    amount: totalAmount
+                })
+            });
+            if (!response.ok) throw new Error("Failed to create Stripe session");
+            const session = await response.json();
+            const stripe = await stripePromise;
+            await stripe.redirectToCheckout({
+                sessionId: session.id
+            });
+        } catch (err) {
+            console.error("Payment failed:", err);
+            alert("Payment failed. Try again.");
+            setLoading(false);
+        }
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "my-6 p-6 rounded-lg bg-white shadow-lg max-w-md mx-auto",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _billSummaryDefault.default), {
+                total: totalAmount
+            }, void 0, false, {
+                fileName: "src/components/ReviewOrder.js",
+                lineNumber: 43,
+                columnNumber: 6
+            }, undefined),
+            paymentMethod === "Cash On Delivery" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/order",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "w-full py-3 px-4 font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors",
+                    children: "Place Order"
+                }, void 0, false, {
+                    fileName: "src/components/ReviewOrder.js",
+                    lineNumber: 47,
+                    columnNumber: 10
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/ReviewOrder.js",
+                lineNumber: 46,
+                columnNumber: 9
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: handleStripePay,
+                disabled: loading,
+                className: "w-full py-3 px-4 font-semibold text-white bg-pink-600 rounded-lg hover:bg-pink-700 disabled:bg-gray-400 transition-colors",
+                children: loading ? "Processing..." : "Proceed to Pay"
+            }, void 0, false, {
+                fileName: "src/components/ReviewOrder.js",
+                lineNumber: 54,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ReviewOrder.js",
+        lineNumber: 42,
+        columnNumber: 5
+    }, undefined);
+};
+_s(ReviewOrder, "k2NOyuE2b9S21kEwedK/qB47rjE=", false, function() {
+    return [
+        (0, _reactRouterDom.useLocation)
+    ];
+});
+_c = ReviewOrder;
+exports.default = ReviewOrder;
+var _c;
+$RefreshReg$(_c, "ReviewOrder");
+
+  $parcel$ReactRefreshHelpers$a04d.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","@stripe/stripe-js":"iij0x","./BillSummary":"aPtmG","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"iij0x":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _indexMjs = require("../dist/index.mjs");
+parcelHelpers.exportAll(_indexMjs, exports);
+
+},{"../dist/index.mjs":"lWhCw","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lWhCw":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "loadStripe", ()=>loadStripe);
+var RELEASE_TRAIN = 'basil';
+var runtimeVersionToUrlVersion = function runtimeVersionToUrlVersion(version) {
+    return version === 3 ? 'v3' : version;
+};
+var ORIGIN = 'https://js.stripe.com';
+var STRIPE_JS_URL = "".concat(ORIGIN, "/").concat(RELEASE_TRAIN, "/stripe.js");
+var V3_URL_REGEX = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/;
+var STRIPE_JS_URL_REGEX = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
+var EXISTING_SCRIPT_MESSAGE = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used';
+var isStripeJSURL = function isStripeJSURL(url) {
+    return V3_URL_REGEX.test(url) || STRIPE_JS_URL_REGEX.test(url);
+};
+var findScript = function findScript() {
+    var scripts = document.querySelectorAll("script[src^=\"".concat(ORIGIN, "\"]"));
+    for(var i = 0; i < scripts.length; i++){
+        var script = scripts[i];
+        if (!isStripeJSURL(script.src)) continue;
+        return script;
+    }
+    return null;
+};
+var injectScript = function injectScript(params) {
+    var queryString = params && !params.advancedFraudSignals ? '?advancedFraudSignals=false' : '';
+    var script = document.createElement('script');
+    script.src = "".concat(STRIPE_JS_URL).concat(queryString);
+    var headOrBody = document.head || document.body;
+    if (!headOrBody) throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
+    headOrBody.appendChild(script);
+    return script;
+};
+var registerWrapper = function registerWrapper(stripe, startTime) {
+    if (!stripe || !stripe._registerWrapper) return;
+    stripe._registerWrapper({
+        name: 'stripe-js',
+        version: "7.9.0",
+        startTime: startTime
+    });
+};
+var stripePromise$1 = null;
+var onErrorListener = null;
+var onLoadListener = null;
+var onError = function onError(reject) {
+    return function(cause) {
+        reject(new Error('Failed to load Stripe.js', {
+            cause: cause
+        }));
+    };
+};
+var onLoad = function onLoad(resolve, reject) {
+    return function() {
+        if (window.Stripe) resolve(window.Stripe);
+        else reject(new Error('Stripe.js not available'));
+    };
+};
+var loadScript = function loadScript(params) {
+    // Ensure that we only attempt to load Stripe.js at most once
+    if (stripePromise$1 !== null) return stripePromise$1;
+    stripePromise$1 = new Promise(function(resolve, reject) {
+        if (typeof window === 'undefined' || typeof document === 'undefined') {
+            // Resolve to null when imported server side. This makes the module
+            // safe to import in an isomorphic code base.
+            resolve(null);
+            return;
+        }
+        if (window.Stripe && params) console.warn(EXISTING_SCRIPT_MESSAGE);
+        if (window.Stripe) {
+            resolve(window.Stripe);
+            return;
+        }
+        try {
+            var script = findScript();
+            if (script && params) console.warn(EXISTING_SCRIPT_MESSAGE);
+            else if (!script) script = injectScript(params);
+            else if (script && onLoadListener !== null && onErrorListener !== null) {
+                var _script$parentNode;
+                // remove event listeners
+                script.removeEventListener('load', onLoadListener);
+                script.removeEventListener('error', onErrorListener); // if script exists, but we are reloading due to an error,
+                // reload script to trigger 'load' event
+                (_script$parentNode = script.parentNode) === null || _script$parentNode === void 0 || _script$parentNode.removeChild(script);
+                script = injectScript(params);
+            }
+            onLoadListener = onLoad(resolve, reject);
+            onErrorListener = onError(reject);
+            script.addEventListener('load', onLoadListener);
+            script.addEventListener('error', onErrorListener);
+        } catch (error) {
+            reject(error);
+            return;
+        }
+    }); // Resets stripePromise on error
+    return stripePromise$1["catch"](function(error) {
+        stripePromise$1 = null;
+        return Promise.reject(error);
+    });
+};
+var initStripe = function initStripe(maybeStripe, args, startTime) {
+    if (maybeStripe === null) return null;
+    var pk = args[0];
+    var isTestKey = pk.match(/^pk_test/); // @ts-expect-error this is not publicly typed
+    var version = runtimeVersionToUrlVersion(maybeStripe.version);
+    var expectedVersion = RELEASE_TRAIN;
+    if (isTestKey && version !== expectedVersion) console.warn("Stripe.js@".concat(version, " was loaded on the page, but @stripe/stripe-js@").concat("7.9.0", " expected Stripe.js@").concat(expectedVersion, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
+    var stripe = maybeStripe.apply(undefined, args);
+    registerWrapper(stripe, startTime);
+    return stripe;
+}; // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+var stripePromise;
+var loadCalled = false;
+var getStripePromise = function getStripePromise() {
+    if (stripePromise) return stripePromise;
+    stripePromise = loadScript(null)["catch"](function(error) {
+        // clear cache on error
+        stripePromise = null;
+        return Promise.reject(error);
+    });
+    return stripePromise;
+}; // Execute our own script injection after a tick to give users time to do their
+// own script injection.
+Promise.resolve().then(function() {
+    return getStripePromise();
+})["catch"](function(error) {
+    if (!loadCalled) console.warn(error);
+});
+var loadStripe = function loadStripe() {
+    for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+    loadCalled = true;
+    var startTime = Date.now(); // if previous attempts are unsuccessful, will re-load script
+    return getStripePromise().then(function(maybeStripe) {
+        return initStripe(maybeStripe, args, startTime);
+    });
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gbXY4":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$7c97 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$7c97.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7c97.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+const PaymentFailed = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-col items-center justify-center h-screen bg-red-50",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-3xl font-bold text-red-600 mb-4",
+                children: "Payment Failed"
+            }, void 0, false, {
+                fileName: "src/components/PaymentFailed.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-gray-700 mb-6",
+                children: "Oops! Something went wrong. Your payment could not be completed."
+            }, void 0, false, {
+                fileName: "src/components/PaymentFailed.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/cart",
+                className: "px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors",
+                children: "Return to Cart"
+            }, void 0, false, {
+                fileName: "src/components/PaymentFailed.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/PaymentFailed.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = PaymentFailed;
+exports.default = PaymentFailed;
+var _c;
+$RefreshReg$(_c, "PaymentFailed");
+
+  $parcel$ReactRefreshHelpers$7c97.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"baeVm":[function(require,module,exports,__globalThis) {
 module.exports = import("./Grocery.390591cb.js").then(()=>module.bundle.root('cz4SJ'));
 
 },{"cz4SJ":"cz4SJ"}]},["7wZbQ","2R06K"], "2R06K", "parcelRequire77dd", {}, null, null, "http://localhost:1234")

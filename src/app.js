@@ -17,6 +17,8 @@ import useOnlineStatus from "./utils/useOnlineStatus.js";
 import OfflinePage from "./components/OfflinePage.js";
 import ThemeManager from "./components/ThemeManager.js";
 import LoginRegister from "./components/LoginRegister.js";
+import ReviewOrder from "./components/ReviewOrder.js";
+import PaymentFailed from "./components/PaymentFailed.js";
 // import Grocery from "./components/Grocery";
  const Grocery =lazy(()=>import("./components/Grocery")) 
  // ondemand Loading
@@ -87,6 +89,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/login",
         element: <LoginRegister />,
+      },
+       {
+        path: "/checkout",
+        element: <ReviewOrder />,
+      },
+      {
+        path: "/paymentfail",
+        element: <PaymentFailed />,
       },
     ],
     errorElement: <Error />,

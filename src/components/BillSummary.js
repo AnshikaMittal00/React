@@ -1,14 +1,8 @@
 import { useSelector } from "react-redux"
 
-const BillSummary=()=>{
+const BillSummary=({total})=>{
     const cartItems=useSelector((store)=>store.cart.items);
-    const calculate=()=>{
-        return cartItems.reduce((total,item)=>{
-          const price=(item?.card?.info?.defaultPrice || 0);
-          const count=item.count;
-          return total+(price*count) ;
-        },0);
-    }
+  
     
     return(
        <div className=" m-2 font-sans shadow-md">
@@ -42,11 +36,11 @@ const BillSummary=()=>{
                     <td className="p-3 text-center">{item.count}</td>
                  
                     <td className="p-3 text-right">
-                      ${((item?.card?.info?.defaultPrice || 0) / 100).toFixed(2)}
+                     ₹{((item?.card?.info?.defaultPrice || 0) / 100).toFixed(2)}
                     </td>
                    
                     <td className="p-3 text-right ">
-                       ${(((item?.card?.info?.defaultPrice || 0) / 100) * item.count).toFixed(2)}
+                       ₹{(((item?.card?.info?.defaultPrice || 0) / 100) * item.count).toFixed(2)}
                     </td>
                   </tr>
                 ))}
@@ -57,7 +51,7 @@ const BillSummary=()=>{
                   <td colSpan="3" className="p-3 text-right text-pink-600 text-md">Total Price</td>
     
                   <td className="p-3 text-right text-md  text-pink-600">
-                     ${ calculate().toFixed(2)/100}
+                     ₹{ total/100}
                   </td>
                 </tr>
               </tfoot>

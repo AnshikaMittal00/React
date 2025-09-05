@@ -32,21 +32,17 @@ const Cart=()=>{
           // This div contains the summary, address, and clear button
           <div>
              <Address />
-            <BillSummary />
-            <Payment/>
+    
+             <Payment/>
            
-            <div className="flex my-4 mx-2 space-x-2">
+            <div className="flex my-4 mx-2 space-x-2 items-center">
                  <button 
-              className="p-2 my-2 w-40 flex justify-center items-center font-sans hover:bg-pink-800 hover:text-white font-semibold rounded-lg bg-pink-500 text-white transition-colors" 
+              className="p-2 my-2 w-40 flex justify-center items-center font-sans hover:bg-pink-800 hover:text-white font-semibold rounded-lg bg-pink-600 text-white transition-colors" 
               onClick={handleCart}
             >
               Clear Cart
             </button>
-            <Link to="/order" className=" my-2 w-full   flex justify-center items-center font-sans  hover:bg-pink-800 hover:text-white font-semibold rounded-lg bg-pink-500 text-white transition-colors" >
-             <button      
-            >
-              Place Order
-            </button></Link>
+           
            
             </div>
            

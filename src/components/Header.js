@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <header className="bg-pink-100 text-black p-4">
             <div className="container mx-auto flex justify-between items-center relative">
-                <img className="w-20" src={LOGO_URL} alt="Logo" />
+                <img className="rounded-full object-cover w-20 mx-2  border-8 border-white shadow-xl" src={LOGO_URL} alt="Logo" />
 
                 
                 <button
@@ -36,8 +36,9 @@ const Header = () => {
                     {btn==="Logout" &&(
                         <li className="flex">
                            {photoUrl&& <img src={photoUrl} alt="photo" className="inline-block ml-1 h-6 w-6 rounded-full"></img>}
-                           <h1 className="px-2">{username.split(" ")[0]}</h1>
-                    </li>   
+                         {username&& <h1 className="px-2">{username.split(" ")[0]}</h1>
+         }   
+                      </li> 
                     )} 
                     <li>
                       <Link to="/login">
@@ -67,13 +68,15 @@ const Header = () => {
                         )} 
                         </li>
                         <li>
+                            <Link to="/login">
                             <button
                                 className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
                                 onClick={() => {
                                     btn === "Login" ? setBtn("Logout") : setBtn("Login");
                                 }}>
                                 {btn}
-                            </button>
+                            </button></Link>
+                            
                         </li>
                     </ul>
                 )}
